@@ -55,8 +55,8 @@ def parse_pdf(file_path, grobid_client):
     xml_content = grobid_client.process_pdf(file_path)
     result = grobid_client.extract_content(xml_content)
 
-    for section in result.get('sections', []):
-        _concatenate_content(section)
+    # for section in result.get('sections', []):
+    #     _concatenate_content(section)
 
     # format output
 
