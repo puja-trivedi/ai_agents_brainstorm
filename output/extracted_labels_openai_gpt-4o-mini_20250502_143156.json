@@ -1,0 +1,106 @@
+{
+  "model_name": "openai/gpt-4o-mini",
+  "prompt": {
+    "template": "Background: You are an expert in Research Publication Entity Annotation (RPEA). Research Publication Entity Annotation is a specialized form of Named Entity Recognition (NER) focused on identifying and classifying key information elements within scientific literature.                                          Task: Given a neuroscience paper, indentify all the entities present and categories these entities.                                          Output: Return the output as JSON including the label for the categories as well as the respective entities.                                          Input: Here is the input neuroscience text {neuroscience_text}",
+    "input_variables": [
+      "neuroscience_text"
+    ]
+  },
+  "entities": {
+    "Authors": [
+      "Robert A Phillips Iii",
+      "Jennifer J Tuscher",
+      "N Dalton Fitzgerald",
+      "Ethan Wan",
+      "Morgan E Zipperly",
+      "Corey G Duke",
+      "Lara Ianov",
+      "Jeremy J Day"
+    ],
+    "Keywords": [
+      "D1 medium spiny neurons",
+      "transcriptional responsiveness",
+      "cocaine",
+      "dopamine",
+      "nucleus accumbens",
+      "cell type heterogeneity",
+      "snRNA-seq",
+      "Sprague-Dawley rats",
+      "acute cocaine",
+      "repeated cocaine",
+      "medium spiny neurons (MSNs)",
+      "Drd1 dopamine receptor",
+      "marker genes",
+      "astrocytes",
+      "serotonin receptors",
+      "opioid receptors",
+      "Drd1-MSNs",
+      "Drd2-MSNs",
+      "Ebf1",
+      "Htr4"
+    ],
+    "Concepts": [
+      "Drug addiction",
+      "neuropsychiatric disorder",
+      "pharmacological treatments",
+      "behavioral adaptations",
+      "transcriptional changes",
+      "cell type-specific responses",
+      "GABAergic neurons",
+      "transcriptional atlas",
+      "molecular function pathway",
+      "genetic sex"
+    ],
+    "Terms": [
+      "nucleus accumbens (NAc)",
+      "ventral tegmental area (VTA)",
+      "single nucleus RNA-seq (snRNA-seq)",
+      "acute",
+      "repeated",
+      "transcriptionally distinct",
+      "immediate early genes (IEGs)",
+      "cumulative addiction",
+      "locomotor testing",
+      "Cocaine hydrochloride"
+    ],
+    "Methodologies": [
+      "fluorescence in situ hybridization (FISH)",
+      "RNA in situ hybridization",
+      "differential expression testing",
+      "pseudobulk approach",
+      "Local Inverse Simpsons Index (LISI)",
+      "molecular count data",
+      "GEM (gel beads in emulsion)",
+      "Seurat",
+      "Cell Ranger"
+    ],
+    "Annotations": {
+      "Gene and Protein Names": [
+        "Savell et al.",
+        "Hedegaard et al.",
+        "Cisneros and Cunningham",
+        "Giros et al.",
+        "Nishi et al.",
+        "Carpenter et al.",
+        "Zhang et al."
+      ],
+      "Substance Names": [
+        "Cocaine",
+        "Saline",
+        "fentanyl",
+        "Psychedelic drugs"
+      ]
+    },
+    "Species": [
+      "male and female adult Sprague-Dawley rats",
+      "non-human primates",
+      "humans"
+    ],
+    "Date": "24 March 2023",
+    "Conclusions": [
+      "cocaine-induced transcriptional changes",
+      "cell-type specific molecular mechanisms",
+      "cross-species comparisons of cell types"
+    ]
+  }
+}
