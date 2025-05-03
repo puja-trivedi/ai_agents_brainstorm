@@ -1,0 +1,23 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore environment files
+.env
+*.env
+venv/
+
+# Ignore build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Data Directory
+data/
