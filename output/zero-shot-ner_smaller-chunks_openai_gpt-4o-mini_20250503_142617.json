@@ -1,0 +1,2306 @@
+{
+  "model_name": "openai/gpt-4o-mini",
+  "prompt": {
+    "template": "Task: Perform Named Entity Recognition (NER) with a deep understanding of neuroscience-specific terminology. Use precise and domain-relevant entity labels.Return the output in a training-ready JSON object for spaCy NER training, provide the entity,start position, end position, and respective label.Here is an example output: ```json 'text': 'Drug addiction is a chronic','entities': ['entity': 'Drug addiction','start': 0,'end': 13,'label': 'DISORDER']```The text is provided here: {neuroscience_text}",
+    "input_variables": [
+      "neuroscience_text"
+    ]
+  },
+  "output": [
+    {
+      "text": "Drug addiction is a chronic, complex neuropsychiatric disorder characterized by a loss of control of drug-taking behaviors. The current drug addiction and overdose epidemic in the United States has been worsened by the COVID-19 pandemic as people struggle with social isolation and economic distress (Cisneros and Cunningham, 2021). Much of the current addiction epidemic and surge in overdose deaths has been attributed to the use of opioids and, in particular, synthetic opioids such as fentanyl. However, drug overdose deaths associated with psychostimulants rose 50% between 2019 and 2020 (Hedegaard et al., 2021). Furthermore, drug overdose deaths associated with cocaine have increased 3-fold since 1999 (Hedegaard et al., 2021; Ciccarone, 2021). While pharmacological treatments exist for opioid use disorder, no such treatments are available for stimulant use disorder. Thus, continued research on the molecular adaptations that occur following exposure to cocaine, and the cell types that may be susceptible to these adaptations, is important for development of future therapeutics.",
+      "entities": [
+        {
+          "entity": "Drug addiction",
+          "start": 0,
+          "end": 13,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "neuropsychiatric disorder",
+          "start": 38,
+          "end": 61,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "United States",
+          "start": 140,
+          "end": 153,
+          "label": "LOCATION"
+        },
+        {
+          "entity": "COVID-19 pandemic",
+          "start": 160,
+          "end": 177,
+          "label": "EVENT"
+        },
+        {
+          "entity": "opioids",
+          "start": 281,
+          "end": 288,
+          "label": "DRUG"
+        },
+        {
+          "entity": "synthetic opioids",
+          "start": 305,
+          "end": 322,
+          "label": "DRUG"
+        },
+        {
+          "entity": "fentanyl",
+          "start": 338,
+          "end": 345,
+          "label": "DRUG"
+        },
+        {
+          "entity": "psychostimulants",
+          "start": 398,
+          "end": 414,
+          "label": "DRUG"
+        },
+        {
+          "entity": "drug overdose deaths",
+          "start": 424,
+          "end": 445,
+          "label": "EVENT"
+        },
+        {
+          "entity": "cocaine",
+          "start": 485,
+          "end": 492,
+          "label": "DRUG"
+        },
+        {
+          "entity": "opioid use disorder",
+          "start": 654,
+          "end": 673,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "stimulant use disorder",
+          "start": 676,
+          "end": 696,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "molecular adaptations",
+          "start": 720,
+          "end": 741,
+          "label": "CONCEPT"
+        },
+        {
+          "entity": "cocaine",
+          "start": 783,
+          "end": 790,
+          "label": "DRUG"
+        },
+        {
+          "entity": "cell types",
+          "start": 800,
+          "end": 810,
+          "label": "CONCEPT"
+        },
+        {
+          "entity": "therapeutics",
+          "start": 897,
+          "end": 909,
+          "label": "CONCEPT"
+        }
+      ]
+    },
+    {
+      "text": "The mesolimbic dopamine pathway is heavily implicated in molecular, cellular, and behavioral responses to drugs of abuse. This pathway consists of dopaminergic neurons in the ventral tegmental area (VTA) that project to the nucleus accumbens (NAc). Dopaminergic neurotransmission in the NAc is important for adaptive behavior, as dopamine (DA) release tracks reward-predictive cues as a function of learning (Day et al., 2007). Exposure to drugs of abuse, such as cocaine, increases extracellular concentrations of DA within the NAc. Cocaine extends DA transmission by blocking the DA transporter present on VTA dopaminergic neurons, and this mechanism is required for behavioral and physiological responses to cocaine (Giros et al., 1996). Drug-induced elevations in DA promote transcriptional and epigenetic reorganization that ultimately gives rise to the cellular and behavioral adaptations that drive addiction-linked behaviors. Within the NAc, DA engages the type-1 DA receptor (DRD1, encoded by the Drd1 gene) that is present on a subset of medium spiny neurons (MSNs), called D1-MSNs. DRD1 activation stimulates signal transduction cascades that results in CREB phosphorylation and activation of immediate early gene (IEG) expression programs. These IEG programs are comprised largely of activity-dependent transcription factors such as Fos, FosB, and Nr4a1 (Savell et al., 2020; Nishi et al., 2011; Bertran-Gonzalez et al., 2008), each of which are critical mediators for cellular and behavioral adaptations to drugs of abuse (Zhang et al., 2006; Nestler et al., 2001; Carpenter et al., 2020).",
+      "entities": [
+        {
+          "entity": "mesolimbic dopamine pathway",
+          "start": 4,
+          "end": 29,
+          "label": "NEURAL_PATHWAY"
+        },
+        {
+          "entity": "dopaminergic neurons",
+          "start": 91,
+          "end": 112,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "ventral tegmental area",
+          "start": 117,
+          "end": 143,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "nucleus accumbens",
+          "start": 155,
+          "end": 173,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "dopamine",
+          "start": 261,
+          "end": 268,
+          "label": "NEUROTRANSMITTER"
+        },
+        {
+          "entity": "cocaine",
+          "start": 410,
+          "end": 417,
+          "label": "DRUG"
+        },
+        {
+          "entity": "DA transporter",
+          "start": 468,
+          "end": 484,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 703,
+          "end": 709,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "type-1 DA receptor",
+          "start": 679,
+          "end": 698,
+          "label": "RECEPTOR"
+        },
+        {
+          "entity": "CREB",
+          "start": 742,
+          "end": 746,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "immediate early gene",
+          "start": 773,
+          "end": 795,
+          "label": "GENE"
+        },
+        {
+          "entity": "Fos",
+          "start": 865,
+          "end": 868,
+          "label": "TRANSCRIPTION_FACTOR"
+        },
+        {
+          "entity": "FosB",
+          "start": 870,
+          "end": 874,
+          "label": "TRANSCRIPTION_FACTOR"
+        },
+        {
+          "entity": "Nr4a1",
+          "start": 878,
+          "end": 882,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "The NAc is a heterogeneous brain region consisting of many transcriptionally defined cell types. While a significant amount of research has focused on the role of DA receptor-expressing MSNs in adaptations to drugs of abuse, recent reports have also demonstrated significant roles for other cell types. For example, optogenetic inhibition of NAc somatostatin expressing interneurons (Sst-interneurons) attenuates cocaine-induced conditioned place preference (Ribeiro et al., 2018), suggesting that these cells are important for behavioral adaptations to drugs of abuse. Similarly, photoinhibition of cholinergic interneurons (Chat-interneurons) also blocks cocaine-induced conditioned place preference (Witten et al., 2010). Interestingly, recent research has also demonstrated an important role for astrocytes in mediating cocaine-induced synaptic and behavioral adaptations (Wang et al., 2021;Corkrum et al., 2020). These results demonstrate that diverse cell types within the NAc contribute to the molecular, cellular, and behavioral effects of cocaine.",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 8,
+          "end": 11,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "DA receptor-expressing MSNs",
+          "start": 107,
+          "end": 133,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc somatostatin expressing interneurons",
+          "start": 174,
+          "end": 213,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine-induced conditioned place preference",
+          "start": 225,
+          "end": 267,
+          "label": "BEHAVIORAL_ADAPTATION"
+        },
+        {
+          "entity": "ChAT-interneurons",
+          "start": 292,
+          "end": 309,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine-induced conditioned place preference",
+          "start": 327,
+          "end": 367,
+          "label": "BEHAVIORAL_ADAPTATION"
+        },
+        {
+          "entity": "astrocytes",
+          "start": 498,
+          "end": 508,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine-induced synaptic and behavioral adaptations",
+          "start": 512,
+          "end": 563,
+          "label": "BEHAVIORAL_ADAPTATION"
+        },
+        {
+          "entity": "cocaine",
+          "start": 592,
+          "end": 599,
+          "label": "SUBSTANCE"
+        }
+      ]
+    },
+    {
+      "text": "Despite established cell type heterogeneity in the NAc, many studies rely on transgenic animal models that allow for the investigation of these changes only in individual cell populations. Unlike many techniques focused on a defined class of cells, single nucleus RNA-sequencing (snRNA-seq) provides unprecedented resolution that allows for the investigation of thousands of genes in thousands of cells with a single assay. This resolution not only permits detection of cocaine-induced transcriptional changes in many cell types, but also allows for better understanding of the molecular heterogeneity within the NAc. Recently, snRNA-seq approaches have been used to generate cellular atlases of the mouse (Chen et al., 2021), non-human primate (He et al., 2021), and human (Tran et al., 2021) NAc. However, snRNA-seq has only been used to define early gene expression changes to acute cocaine, while the transcriptional effects of repeated cocaine in various NAc cell types is less well studied. Here, we used snRNA-seq to transcriptionally profile 39,254 nuclei from male and female Sprague-Dawley rats. Rats were further subdivided by treatment (cocaine or saline) and exposure paradigm (acute or repeated). This study confirms both the presence of many previously defined cell types within the rat NAc, and reveals that D1-MSNs exhibit the most robust transcriptional response to cocaine across all cell populations. Additionally, snRNA-seq of the rat NAc allowed for the investigation of cluster-specific expression of different neurotransmitter receptor systems and identified novel marker genes for two populations of transcriptionally distinct D1-MSNs.",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 41,
+          "end": 44,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "single nucleus RNA-sequencing",
+          "start": 168,
+          "end": 198,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "cocaine",
+          "start": 386,
+          "end": 393,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "mouse",
+          "start": 390,
+          "end": 395,
+          "label": "ANIMAL_MODEL"
+        },
+        {
+          "entity": "non-human primate",
+          "start": 403,
+          "end": 422,
+          "label": "ANIMAL_MODEL"
+        },
+        {
+          "entity": "human",
+          "start": 427,
+          "end": 432,
+          "label": "ANIMAL_MODEL"
+        },
+        {
+          "entity": "acute cocaine",
+          "start": 560,
+          "end": 573,
+          "label": "CONDITION"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 616,
+          "end": 635,
+          "label": "ANIMAL_MODEL"
+        },
+        {
+          "entity": "cocaine",
+          "start": 691,
+          "end": 698,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "saline",
+          "start": 703,
+          "end": 709,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 864,
+          "end": 870,
+          "label": "CELL_TYPE"
+        }
+      ]
+    },
+    {
+      "text": "To begin understanding cell-type heterogeneity within the rat NAc, we first integrated 15,655 nuclei from a previously published dataset (Savell et al., 2020) consisting of male and female adult Sprague-Dawley rats that received a single (acute) injection of cocaine with 23,599 nuclei from a new dataset following seven daily (repeated) injections of cocaine (Fig. 1a, Supp. Fig. 1). Following integration and dimensionality reduction, we identified 11 transcriptionally distinct neuronal populations and 5 glial populations that were not specific to a single dataset and did not differ by sex (Fig. 1b,c,Supp. Figs. 2,3). Furthermore, calculation of Local Inverse Simpsons Index (LISI) demonstrated that all clusters were well mixed, indicating successful integration (Supp. Fig. 2). A significant portion of neurons within the NAc are GABAergic MSNs that express high levels of Gad1, Ppp1r1b,Foxp2,and Bcl11b (Fig. 1d,e). A large majority of MSNs can be further classified by the expression of Drd1, the gene encoding the type-1 dopamine receptor, or Drd2, the gene encoding the type-2 dopamine receptor (Fig. 1d). While we have previously reported the presence of two transcriptionally distinct Drd2-expressing MSN populations (Drd2-MSN-1 and Drd2-MSN-2) (Savell et al., 2020), this analysis also identified two transcriptionally distinct Drd1-expressing MSN populations as well (Drd1-MSN-1 and Drd1-MSN-2; Fig. 1b,d). In addition to Drd1-and Drd2-MSNs, this analysis also identified previously reported Drd3-and Grm8-expressing MSNs (Drd3-MSN and Grm8-MSN), which have also been identified within the striatum of non-human primates (He et al., 2021). While most of the GABAergic neurons in the NAc are MSNs, distinct populations of GABAergic interneurons are also known to play critical yet distinct roles in striatal function (Kawaguchi, 1993). While we have previously characterized parvalbumin and somatostatin interneurons within the NAc (Savell et al., 2020), this analysis also identified a cholinergic interneuron population marked by the expression of Chat (Chat-Interneuron). Previous research has demonstrated that Chat-Interneurons are critical regulators of drug-induced behavioral adaptations (Witten et al., 2010), and this dataset now provides comprehensive transcriptional profiling of these cells within the rat NAc. In addition to transcriptionally distinct neuronal populations, we also identified 5 glial clusters that are almost entirely devoid of Gad1 and Syt1 mRNA, and expressed canonical markers of their respective populations (Fig. 1d,e). For example, Astrocytes exhibit high expression of both Aqp4 and Gja1, while Oligodendrocytes exhibit high expression of Mbp, the gene encoding myelin basic protein (Fig. 1d,e).",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 46,
+          "end": 49,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "Sprague-Dawley",
+          "start": 113,
+          "end": 128,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "cocaine",
+          "start": 182,
+          "end": 189,
+          "label": "DRUG"
+        },
+        {
+          "entity": "Local Inverse Simpsons Index",
+          "start": 469,
+          "end": 502,
+          "label": "MEASURE"
+        },
+        {
+          "entity": "GABAergic MSNs",
+          "start": 534,
+          "end": 549,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Gad1",
+          "start": 569,
+          "end": 573,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ppp1r1b",
+          "start": 575,
+          "end": 583,
+          "label": "GENE"
+        },
+        {
+          "entity": "Foxp2",
+          "start": 585,
+          "end": 590,
+          "label": "GENE"
+        },
+        {
+          "entity": "Bcl11b",
+          "start": 592,
+          "end": 598,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 653,
+          "end": 657,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 671,
+          "end": 675,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 824,
+          "end": 828,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 967,
+          "end": 979,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd2-MSN-2",
+          "start": 982,
+          "end": 994,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 1011,
+          "end": 1024,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 1027,
+          "end": 1039,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd3",
+          "start": 1106,
+          "end": 1110,
+          "label": "GENE"
+        },
+        {
+          "entity": "Grm8",
+          "start": 1115,
+          "end": 1120,
+          "label": "GENE"
+        },
+        {
+          "entity": "GABAergic interneurons",
+          "start": 1169,
+          "end": 1192,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "parvalbumin",
+          "start": 1258,
+          "end": 1268,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "somatostatin",
+          "start": 1276,
+          "end": 1289,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "Chat",
+          "start": 1314,
+          "end": 318,
+          "label": "GENE"
+        },
+        {
+          "entity": "Astrocytes",
+          "start": 1469,
+          "end": 1479,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Aqp4",
+          "start": 1488,
+          "end": 1493,
+          "label": "GENE"
+        },
+        {
+          "entity": "Gja1",
+          "start": 1496,
+          "end": 1501,
+          "label": "GENE"
+        },
+        {
+          "entity": "Oligodendrocytes",
+          "start": 1511,
+          "end": 1526,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Mbp",
+          "start": 1532,
+          "end": 535,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "The integration of over 39,000 nuclei from rats that underwent different cocaine exposure paradigms identified two populations of Drd1-expressing MSNs (Drd1-MSN-1 and Drd1-MSN-2; Fig. 2a). To begin understanding the distinct gene expression signatures of these Drd1-MSN populations, we conducted a differential expression analysis using pseudobulked gene expression matrices. This analysis identified 506 genes enriched in the Drd1-MSN-1 cluster and 665 genes enriched in the Drd1-MSN-2 cluster. Interestingly, Ebf1 is the most highly enriched differentially expressed gene in the Drd1-MSN-1 population (Fig. 2b). Ebf1 is a known marker of D1-MSNs and is implicated in MSN early development (Lobo et al., 2008). Calb1, the gene encoding the calcium binding protein Calbindin 1, is another gene that is enriched in the Drd1-MSN-1 population (Fig. 2b). Calb1 is a spatial marker within the NAc and is highly enriched in the NAc core (Jongen-R\u00ealo et al., 1994). Included in the top 10 differentially expressed genes in the Drd1-MSN-2 population was Htr4, the gene that codes for the serotonin receptor 4 (Fig. 2b). HTR4 autoradiography suggests that this receptor is located in the ventral portion of the NAc shell (Jean et al., 2012). The differential enrichment of Htr4 and Calb1 suggests that the two populations of Drd1-expressing MSNs identified by snRNA-seq are both transcriptionally and spatially distinct.",
+      "entities": [
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 117,
+          "end": 139,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 162,
+          "end": 173,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 178,
+          "end": 189,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 382,
+          "end": 386,
+          "label": "GENE"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 424,
+          "end": 430,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Calb1",
+          "start": 448,
+          "end": 453,
+          "label": "GENE"
+        },
+        {
+          "entity": "Calbindin 1",
+          "start": 463,
+          "end": 477,
+          "label": "GENE"
+        },
+        {
+          "entity": "NAc",
+          "start": 516,
+          "end": 519,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "NAc core",
+          "start": 533,
+          "end": 541,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 608,
+          "end": 612,
+          "label": "GENE"
+        },
+        {
+          "entity": "serotonin receptor 4",
+          "start": 633,
+          "end": 655,
+          "label": "RECEPTOR"
+        }
+      ]
+    },
+    {
+      "text": "Next, we set out to understand the specific gene networks and pathways that may be enriched in these two D1-MSN populations. Molecular function pathway analysis revealed an enrichment of genes involved in calcium transport and signaling in the Drd1-MSN-1 population, but enrichment of genes involved in potassium transport in the Drd1-MSN-2 population (Fig. 2c). For example, Trpc3, a gene encoding a calcium permeable channel, and Cacng3, a gene encoding an L-type calcium channel, are both highly enriched in the Drd1-MSN-1 population (Fig. 2d). Conversely, several genes encoding potassium channels, such as Kcnc1, Kcnc2, and Kcng3, are enriched in the Drd1-MSN-2 population, further highlighting the enrichment of genes involved in potassium transport in this population. While these genes are differentially enriched, both calcium-and potassium-related genes are expressed to some extent in both clusters (Fig. 2d).",
+      "entities": [
+        {
+          "entity": "D1-MSN populations",
+          "start": 114,
+          "end": 131,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 174,
+          "end": 185,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "calcium transport",
+          "start": 196,
+          "end": 213,
+          "label": "MOLECULAR_FUNCTION"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 278,
+          "end": 289,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "potassium transport",
+          "start": 302,
+          "end": 320,
+          "label": "MOLECULAR_FUNCTION"
+        },
+        {
+          "entity": "Trpc3",
+          "start": 384,
+          "end": 389,
+          "label": "GENE"
+        },
+        {
+          "entity": "Cacng3",
+          "start": 445,
+          "end": 450,
+          "label": "GENE"
+        },
+        {
+          "entity": "calcium permeable channel",
+          "start": 399,
+          "end": 426,
+          "label": "MOLECULAR_FUNCTION"
+        },
+        {
+          "entity": "L-type calcium channel",
+          "start": 459,
+          "end": 481,
+          "label": "MOLECULAR_FUNCTION"
+        },
+        {
+          "entity": "Kcnc1",
+          "start": 553,
+          "end": 558,
+          "label": "GENE"
+        },
+        {
+          "entity": "Kcnc2",
+          "start": 564,
+          "end": 569,
+          "label": "GENE"
+        },
+        {
+          "entity": "Kcng3",
+          "start": 575,
+          "end": 580,
+          "label": "GENE"
+        },
+        {
+          "entity": "calcium-and potassium-related genes",
+          "start": 723,
+          "end": 759,
+          "label": "MOLECULAR_FUNCTION"
+        }
+      ]
+    },
+    {
+      "text": "Functional investigation of transcriptionally distinct populations of neurons in the mammalian brain requires the use of cell type-specific promoters. To facilitate the future investigation of the two populations of transcriptionally distinct Drd1-expressing MSNs, we next identified potential marker genes that are both differentially and highly expressed within a population. This analysis identified Ebf1 as a potential marker gene for the Drd1-MSN-1 population (Fig. 2e) and Htr4 as a potential marker gene for the Drd1-MSN-2 population (Fig. 2f). An additional characteristic of marker genes is that they are expressed in a large proportion of cells within the cluster. Plotting the expression of these genes on a UMAP shows differential enrichment of Ebf1 and Htr4 between the Drd1-expressing MSN populations (Fig. 2g). However, Ebf1 is also expressed in endothelial cells, while Htr4 is also expressed in Drd2and Drd3-MSNs. Thus, these genes may act as marker genes in combination with Drd1 but cannot act as marker genes alone.",
+      "entities": [
+        {
+          "entity": "Drd1",
+          "start": 157,
+          "end": 161,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 165,
+          "end": 169,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 278,
+          "end": 282,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 332,
+          "end": 343,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 368,
+          "end": 372,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 399,
+          "end": 410,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 445,
+          "end": 449,
+          "label": "GENE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 463,
+          "end": 467,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 537,
+          "end": 541,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 590,
+          "end": 594,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd3",
+          "start": 598,
+          "end": 602,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 604,
+          "end": 608,
+          "label": "CELL_TYPE"
+        }
+      ]
+    },
+    {
+      "text": "To validate snRNA-seq findings demonstrating that Htr4 and Ebf1 are in largely distinct populations of Drd1-expressing MSNs in the NAc, we used RNAscope (Wang et al., 2012), a previously established fluorescence in situ hybridization (FISH) protocol. To enable visualization of distinct puncta representing cells expressing a combination of Drd1, Htr4, and Ebf1, we performed multiplexed analysis with probe sets specific to each transcript (Fig. 3a-c). Consistent with our computational analysis, we identify unique subpopulations of Drd1 cells that are either Ebf1 or Htr4, with significantly fewer cells that are positive for both Ebf1 and Htr4 (Fig. 3b-c). Furthermore, our in situ experiments revealed unique spatial distributions for these subpopulations with a significantly higher proportion of Drd1Htr4 cells in the NAc shell and Drd1Ebf1 cells in the NAc core (Fig. 3d-e). There was no significant spatial distribution difference in the proportion of Drd1 Ebf1Htr4 cells. Overall, these results are consistent with snRNA-seq analysis, and confirm largely non-overlapping expression of Ebf1 and Htr4 within Drd1 cells (Fig. 3f).",
+      "entities": [
+        {
+          "entity": "snRNA-seq",
+          "start": 29,
+          "end": 38,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 68,
+          "end": 73,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 78,
+          "end": 83,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 107,
+          "end": 112,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 119,
+          "end": 123,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc",
+          "start": 131,
+          "end": 134,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "RNAscope",
+          "start": 165,
+          "end": 174,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "FISH",
+          "start": 192,
+          "end": 196,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 303,
+          "end": 308,
+          "label": "GENE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 316,
+          "end": 321,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 325,
+          "end": 330,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1Htr4",
+          "start": 386,
+          "end": 393,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc shell",
+          "start": 397,
+          "end": 406,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1Ebf1",
+          "start": 410,
+          "end": 418,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc core",
+          "start": 424,
+          "end": 433,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1",
+          "start": 445,
+          "end": 450,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 451,
+          "end": 456,
+          "label": "GENE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 458,
+          "end": 463,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "We previously demonstrated that a single acute cocaine exposure differentially alters the transcriptome of molecularly defined cell types within the NAc (Savell et al., 2020). To begin understanding how repeated cocaine exposure alters the transcriptome of distinct NAc populations, we injected male and female Sprague-Dawley rats with 20 mgkg cocaine for 7 consecutive days (Fig. 1a, Supp. Fig. 1). Before directly comparing acute and repeated exposures, we first investigated cell type-specific transcriptional responses to cocaine exposure, regardless of type or duration. To do this, we collapsed both datasets and used a pseudobulk approach to identify cocaine-dependent, cell typespecific differentially expressed genes (DEGs; Supp. Table 2). This approach increased the number of replicates used for statistical comparisons and circumvented previously identified issues with deprecated differential expression methods previously used for snRNA-seq (Squair et al., 2021). Strikingly, the Drd1-MSN-1 population exhibited the most robust transcriptional response to cocaine, with 236 total DEGs following cocaine experience (184 upregulated, 52 downregulated; Fig. 4a,b). These upregulated DEGs include immediate early genes (IEGs) such as Nr4a3, Tiparp, and Fosl2 (Fig. 4b). Recent evidence has demonstrated that astrocytes within the NAc also play a key role in the neuronal and behavioral response to dopamine and drugs of abuse (Wang et al., 2021; Corkrum et al., 2020; Shelkar et al., 2022). Disruption of glutamatergic transport, release, and signaling is implicated in substance use disorders (Reissner and Kalivas, 2010; Kalivas, 2009), and astrocytes are heavily involved in the regulation of this process across the brain (Mahmoud et al., 2019). Interestingly, Gria1, an ionotropic AMPA receptor, is significantly decreased in Astrocytes following cocaine exposure (Fig. 4c). Unlike the Drd1-MSN-1 population, Astrocytes exhibited more genes with cocaine-dependent decreases in expression (Fig. 4c,g). While most DEGs in the Astrocyte population are downregulated with cocaine, Pde10a, the gene encoding the cAMP-regulated phosphodiesterase 10A, is upregulated by cocaine in both the Astrocyte and Sst-Interneuron cluster (Fig. 4c,d).",
+      "entities": [
+        {
+          "entity": "cocaine",
+          "start": 55,
+          "end": 62,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "NAc",
+          "start": 72,
+          "end": 75,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 127,
+          "end": 146,
+          "label": "MODEL_ORGANISM"
+        },
+        {
+          "entity": "DEGs",
+          "start": 468,
+          "end": 472,
+          "label": "GENE_EXPRESSION"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 289,
+          "end": 298,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "astrocytes",
+          "start": 649,
+          "end": 657,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "substance use disorders",
+          "start": 921,
+          "end": 943,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "Gria1",
+          "start": 1132,
+          "end": 1137,
+          "label": "GENE"
+        },
+        {
+          "entity": "AMPA receptor",
+          "start": 1140,
+          "end": 1153,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "Pde10a",
+          "start": 1369,
+          "end": 1375,
+          "label": "GENE"
+        },
+        {
+          "entity": "Sst-Interneuron",
+          "start": 1390,
+          "end": 1406,
+          "label": "CELL_TYPE"
+        }
+      ]
+    },
+    {
+      "text": "Previous research has demonstrated that Drd1-expressing MSNs exhibit robust transcriptional changes in response to cocaine (Savell et al., 2020; Bertran-Gonzalez et al., 2008; Zhang et al., 2006; Zhang et al., 2005). More specifically, snRNA-seq from the rat NAc following acute cocaine exposure demonstrated that D1-MSNs have the most robust transcriptional response to cocaine when compared to other transcriptionally distinct NAc cell types (Savell et al., 2020). In this dataset, only one of the Drd1-expressing MSN populations (Drd1-MSN-1) had a robust transcriptional response to cocaine. For example, Nr4a3, Fosb, Fosl2, and Tiparp are all significantly increased following cocaine exposure only in the Drd1-MSN-1 population (Fig. 4e).",
+      "entities": [
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 66,
+          "end": 86,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine",
+          "start": 119,
+          "end": 126,
+          "label": "DRUG"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 178,
+          "end": 185,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc",
+          "start": 220,
+          "end": 223,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 347,
+          "end": 359,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 433,
+          "end": 438,
+          "label": "GENE"
+        },
+        {
+          "entity": "Fosb",
+          "start": 440,
+          "end": 444,
+          "label": "GENE"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 446,
+          "end": 451,
+          "label": "GENE"
+        },
+        {
+          "entity": "Tiparp",
+          "start": 454,
+          "end": 459,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "Next, we set out to investigate the relationship of cocaine dependent DEGs across cocaine exposure paradigms. To do this, we first conducted DEG analyses comparing cocaine and saline samples with exposure type ignored (i.e., all cocaine samples vs all saline samples), acute exposure only, and repeated exposure samples only. The log2 (Fold Change) values for all DEGs were then concatenated and subject to hierarchical clustering. Overall, this analysis identified that many of the genes altered by acute cocaine are also altered by repeated cocaine in the same direction (Fig. 4f-h). However, for the Drd1-MSN-1 population some genes altered by acute cocaine are not altered by repeated cocaine. Furthermore, while the overall pattern shows concordant gene expression patterns, some cocaine-regulated genes within the Astrocyte cluster demonstrate opposite changes with an acute or repeated exposure. To estimate the degree of concordance between gene expression programs altered by acute and repeated cocaine exposure in a threshold-free manner, we next used the rank-rank hypergeometric overlap (RRHO) algorithm (Cahill et al., 2018). To complete this analysis, we ranked gene lists by the log2 (Fold Change), which was calculated by dividing the log-normalized expression values of cocaine cells by the log-normalized expression values of saline cells. This analysis identified that, on a cell type-specific basis, acute and repeated cocaine gene expression signatures are primarily concordant. For example, the acute and repeated cocaine changes for the Drd1-MSN-1, Astrocyte, and Sst-Interneuron populations are significantly concordant for both upregulated and downregulated genes (Fig. 4i-l). However, the strength of this overlap and concordance is substantially different for these populations.",
+      "entities": [
+        {
+          "entity": "cocaine dependent DEGs",
+          "start": 51,
+          "end": 73,
+          "label": "GENE_EXPRESSION"
+        },
+        {
+          "entity": "cocaine",
+          "start": 122,
+          "end": 129,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "saline",
+          "start": 135,
+          "end": 141,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "acute exposure",
+          "start": 207,
+          "end": 222,
+          "label": "EXPOSURE_TYPE"
+        },
+        {
+          "entity": "repeated exposure",
+          "start": 227,
+          "end": 244,
+          "label": "EXPOSURE_TYPE"
+        },
+        {
+          "entity": "log2 (Fold Change)",
+          "start": 247,
+          "end": 266,
+          "label": "METRIC"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 310,
+          "end": 321,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Astrocyte",
+          "start": 476,
+          "end": 485,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Sst-Interneuron",
+          "start": 524,
+          "end": 540,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "rank-rank hypergeometric overlap (RRHO)",
+          "start": 476,
+          "end": 528,
+          "label": "ALGORITHM"
+        },
+        {
+          "entity": "Cahill et al., 2018",
+          "start": 537,
+          "end": 556,
+          "label": "REFERENCE"
+        }
+      ]
+    },
+    {
+      "text": "Recently, transcriptional atlases of the non-human primate (NHP) striatum (He et al., 2021) and human NAc (Tran et al., 2021) have demonstrated similar gene expression profiles of specific marker genes that we identify within the rat NAc. To quantify this overlap and perform cross-species comparisons, we focused on conservation of MSNs given that both NHP and human datasets identified and validated the presence of several transcriptionally distinct MSN subtypes. Direct comparison of our rat snRNA-seq dataset to monkey or human datasets revealed potential conservation of many NHP and human cell types (Fig. 5a-c). For example, the rat Drd1-MSN-1 population is correlated with the human D1.MSN_A and NHP D1.Matrix populations, and the rat Drd2-MSN-1 population is correlated with the human D2.MSN_A and the NHP D2.Matrix population (Fig. 5a-d).",
+      "entities": [
+        {
+          "entity": "non-human primate",
+          "start": 40,
+          "end": 58,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "NHP",
+          "start": 60,
+          "end": 63,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "human NAc",
+          "start": 70,
+          "end": 80,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "rat NAc",
+          "start": 151,
+          "end": 158,
+          "label": "ANATOMICAL_STRUCTURE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 203,
+          "end": 207,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "rat snRNA-seq",
+          "start": 246,
+          "end": 259,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 284,
+          "end": 295,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "human D1.MSN_A",
+          "start": 310,
+          "end": 324,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NHP D1.Matrix",
+          "start": 331,
+          "end": 345,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 371,
+          "end": 382,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "human D2.MSN_A",
+          "start": 395,
+          "end": 409,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NHP D2.Matrix",
+          "start": 417,
+          "end": 429,
+          "label": "CELL_TYPE"
+        }
+      ]
+    },
+    {
+      "text": "Transcriptionally conserved cell types should exhibit similar expression and enrichment of marker genes. For example, Drd2-MSNs are classically characterized by the enrichment of Drd2 and Penk, while Drd1-MSNs are characterized by the enrichment of Drd1 and Ebf1. Across species, transcriptionally distinct populations of Drd2-MSNs are similarly enriched for Drd2, but differ in their enrichment of Penk (Fig. 5c, Supp. Fig. 4a-c). A similar pattern is observed in Drd1-MSNs across species, as Drd1 is highly enriched in Drd1-MSNs, but Ebf1 enrichment differs (Fig. 5c, Supp. Fig. 4a-c). While the differential expression of Htr4 or Ebf1 distinguishes Drd1-MSNs in the rat NAc, this pattern is not observed in higher order mammals as Htr4 is ubiquitously expressed across cell types (Supp. Fig. 4a-c). Furthermore, Htr4 is enriched in the MSN.D1_A human population (Fig. 5c) along with Ebf1. Thus, Htr4 and Ebf1 may not be suitable markers for distinguishing between transcriptionally distinct populations of Drd1-MSNs in higher order mammals.",
+      "entities": [
+        {
+          "entity": "Drd2-MSNs",
+          "start": 85,
+          "end": 94,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 112,
+          "end": 116,
+          "label": "GENE"
+        },
+        {
+          "entity": "Penk",
+          "start": 121,
+          "end": 125,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 161,
+          "end": 169,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 185,
+          "end": 189,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 194,
+          "end": 198,
+          "label": "GENE"
+        },
+        {
+          "entity": "Penk",
+          "start": 250,
+          "end": 254,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 300,
+          "end": 308,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 314,
+          "end": 318,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 348,
+          "end": 352,
+          "label": "GENE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 415,
+          "end": 419,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 424,
+          "end": 428,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 442,
+          "end": 450,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "rat",
+          "start": 467,
+          "end": 471,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "NAc",
+          "start": 473,
+          "end": 476,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Htr4",
+          "start": 489,
+          "end": 493,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSN.D1_A",
+          "start": 562,
+          "end": 570,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "human",
+          "start": 571,
+          "end": 576,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 581,
+          "end": 585,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "Within the past few decades, a major focus of drug addiction research has been on the transcriptional and epigenetic changes occurring in the NAc following drug exposure. While these studies have been integral in our understanding of how drug experience shapes the brain, they have Fig. 5. Identification of conserved neuronal cell types across higher order mammals. a-b, Heatmap colored by the Pearsons correlation coefficient between rat, nonhuman primate, and human cell types. Correlation coefficients were calculated using t-statistic for rat MSN DEGs and their orthologs. c, Heatmaps colored by tstatistic for specific MSN marker genes in rat, non-human primate, and human. d, Estimated conservation of NAc neuronal cell types across rat, non-human primate, and human.",
+      "entities": [
+        {
+          "entity": "drug addiction",
+          "start": 62,
+          "end": 75,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "NAc",
+          "start": 113,
+          "end": 116,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "neuronal cell types",
+          "start": 201,
+          "end": 219,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Pearsons correlation coefficient",
+          "start": 261,
+          "end": 290,
+          "label": "STATISTICAL_MEASURE"
+        },
+        {
+          "entity": "rat",
+          "start": 297,
+          "end": 301,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "nonhuman primate",
+          "start": 305,
+          "end": 322,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "human",
+          "start": 326,
+          "end": 331,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "MSN DEGs",
+          "start": 362,
+          "end": 370,
+          "label": "GENE_SET"
+        },
+        {
+          "entity": "t-statistic",
+          "start": 434,
+          "end": 446,
+          "label": "STATISTICAL_MEASURE"
+        },
+        {
+          "entity": "MSN marker genes",
+          "start": 487,
+          "end": 505,
+          "label": "GENE_SET"
+        }
+      ]
+    },
+    {
+      "text": "primarily used techniques that ignore cell-type heterogeneity. Furthermore, although the NAc is fundamental in reward processing and the rat is a primary model organism used for reward-related research, few studies have comprehensively profiled the rat NAc at the transcriptional level. snRNA-seq provides the unique opportunity to study both the cell type-specific transcriptional responses to drugs of abuse, as well as the cell-type heterogeneity that exists within the NAc. In the present study, we report the integration of a previously published NAc snRNA-seq dataset collected following acute cocaine exposure (Savell et al., 2020) with a new dataset collected following repeated cocaine exposure. The resulting dataset contains 39,254 nuclei across 16 transcriptionally distinct populations (11 neuronal and 5 non-neuronal), which more than doubles the size of our previously published work. The addition of both biological and technical replicates, along with the addition of over 24,000 nuclei, allowed us to generate a comprehensive transcriptional atlas of the rat NAc and investigate cell type-specific transcriptional responses to cocaine.",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 54,
+          "end": 57,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "rat",
+          "start": 112,
+          "end": 115,
+          "label": "MODEL_ORGANISM"
+        },
+        {
+          "entity": "NAc",
+          "start": 141,
+          "end": 144,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 168,
+          "end": 176,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "cocaine",
+          "start": 237,
+          "end": 244,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "NAc",
+          "start": 305,
+          "end": 308,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "cocaine",
+          "start": 367,
+          "end": 374,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "cocaine",
+          "start": 460,
+          "end": 467,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "NAc",
+          "start": 498,
+          "end": 501,
+          "label": "BRAIN_REGION"
+        }
+      ]
+    },
+    {
+      "text": "We were also interested in understanding the distribution of expression of genes encoding different receptor systems, which provides additional information regarding which cell types may respond to diverse classes of drugs. For example, there is significant renewed interest in the action of psychedelic drugs, many of which act on serotonin receptors. Htr2a, the gene encoding serotonin receptor type 2A and the expected target of many psychedelics, is expressed in a small proportion of Drd1-and Drd2-expressing MSNs, as well as Sst-interneurons (Supp. Fig. 5a). Thus, these populations of cells will most likely respond to classic psychedelics. There is also considerable interest in the distribution of expression of opioid receptors in the NAc as opioid-associated overdose deaths continue to increase (Hedegaard et al., 2021;Ciccarone, 2021). Previous research has demonstrated that 25 of cells containing the delta opioid receptor (Oprd1) in the NAc also contained Met 5 -Enkaphalin (Svingos et al., 1998), a peptide encoded by the gene Penk. Penk is a marker gene for Drd2-expressing MSNs, suggesting that the delta opioid receptor is expressed in this population of neurons. Our data confirms this observation, as Oprd1 is highly expressed in the Drd2-MSN-1 population (Supp. Fig. 5a-c).",
+      "entities": [
+        {
+          "entity": "psychedelic drugs",
+          "start": 131,
+          "end": 148,
+          "label": "SUBSTANCE"
+        },
+        {
+          "entity": "serotonin receptors",
+          "start": 155,
+          "end": 176,
+          "label": "RECEPTOR"
+        },
+        {
+          "entity": "Htr2a",
+          "start": 178,
+          "end": 183,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 256,
+          "end": 261,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 265,
+          "end": 270,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 279,
+          "end": 283,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Sst-interneurons",
+          "start": 289,
+          "end": 306,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "opioid receptors",
+          "start": 379,
+          "end": 396,
+          "label": "RECEPTOR"
+        },
+        {
+          "entity": "NAc",
+          "start": 410,
+          "end": 413,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "delta opioid receptor",
+          "start": 467,
+          "end": 487,
+          "label": "RECEPTOR"
+        },
+        {
+          "entity": "Oprd1",
+          "start": 491,
+          "end": 496,
+          "label": "GENE"
+        },
+        {
+          "entity": "Met 5 -Enkaphalin",
+          "start": 522,
+          "end": 539,
+          "label": "PEPTIDE"
+        },
+        {
+          "entity": "Penk",
+          "start": 569,
+          "end": 573,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 590,
+          "end": 595,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 596,
+          "end": 600,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Oprd1",
+          "start": 673,
+          "end": 678,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 697,
+          "end": 707,
+          "label": "CELL_POPULATION"
+        }
+      ]
+    },
+    {
+      "text": "A major focus of this study was to characterize cell type-specific gene programs induced by cocaine experience. Prior work has revealed distinct differences in transcriptomic changes between volitional cocaine paradigms, such has self-administration, and experimenter-administered injections. For example, after a prolonged withdrawal period, animals that underwent cocaine self-administration exhibit increased surface expression of calcium permeable AMPA receptors, while animals that underwent experimenter-administered injections do not (McCutcheon et al., 2011). Additionally, a recent study systematically tested transcriptomic changes occurring in the VTA across several cocaine paradigms and identified several IEGs that are upregulated by experimenter-administered cocaine injections (Campbell et al., 2021). Like this study, we also identified several IEGs (Fosl2, Tiparp, Fosb), that are upregulated by experimenter-administered cocaine injections. Notably, we did not observe significant locomotor sensitization to repeated doses of cocaine in the present study (Supp. Fig. 1b). While sensitization is commonly (but not always (Gulley et al., 2003; Mayfield et al., 1992; Cass et al., 1993)) observed with repeated cocaine injections, it is possible that distinct gene expression patterns may be observed in animals that exhibit sensitized responses to cocaine as compared to those that do not. This will be an interesting consideration for future studies that are able to obtain single-nuclei transcriptional profiles while preserving individual animal variability in the data structure. Ultimately, the results presented in the current study shed light on cocaine-induced, cell-type specific transcriptomic changes occurring in the NAc, expanding our understanding of how drug experience shapes the brain. Further research investigating paradigmspecific transcriptional changes may identify molecular correlates of more complex behaviors, such as cocaine seeking or craving.",
+      "entities": [
+        {
+          "entity": "cocaine experience",
+          "start": 83,
+          "end": 101,
+          "label": "EXPERIENCE"
+        },
+        {
+          "entity": "self-administration",
+          "start": 165,
+          "end": 186,
+          "label": "PARADIGM"
+        },
+        {
+          "entity": "experimenter-administered injections",
+          "start": 206,
+          "end": 239,
+          "label": "PARADIGM"
+        },
+        {
+          "entity": "calcium permeable AMPA receptors",
+          "start": 271,
+          "end": 306,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "VTA",
+          "start": 356,
+          "end": 359,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "IEGs",
+          "start": 401,
+          "end": 405,
+          "label": "GENE"
+        },
+        {
+          "entity": "experimenter-administered cocaine injections",
+          "start": 440,
+          "end": 477,
+          "label": "PARADIGM"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 510,
+          "end": 515,
+          "label": "GENE"
+        },
+        {
+          "entity": "Tiparp",
+          "start": 517,
+          "end": 523,
+          "label": "GENE"
+        },
+        {
+          "entity": "Fosb",
+          "start": 525,
+          "end": 529,
+          "label": "GENE"
+        },
+        {
+          "entity": "NAc",
+          "start": 734,
+          "end": 737,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "cocaine seeking",
+          "start": 804,
+          "end": 818,
+          "label": "BEHAVIOR"
+        },
+        {
+          "entity": "craving",
+          "start": 820,
+          "end": 827,
+          "label": "BEHAVIOR"
+        }
+      ]
+    },
+    {
+      "text": "The largest transcriptional response to cocaine experience occurred in the Drd1-MSN-1 population (Fig. 4a,b). These changes included IEGs such as Fosl2. IEGs and other cocaine-regulated genes in the Drd1-MSN-1 population are induced by both acute and repeated cocaine, but to a lesser extent with repeated cocaine. This data is in agreement with previous research that demonstrated induction of FOSB protein by repeated cocaine was weaker as compared to acute cocaine (Zhang et al., 2005). The second population of Drd1-expressing MSNs within the NAc, Drd1-MSN-2, did not have a robust transcriptional response to cocaine experience. A multitude of previous research has demonstrated that Drd1-expressing cells within the NAc exhibit transcriptional and epigenetic responses to drugs of abuse (Savell et al., 2020;Bertran-Gonzalez et al., 2008;Zhang et al., 2006;Zhang et al., 2005;Zipperly et al., 2021). Thus, the identification of a population of Drd1-expressing MSNs in the NAc with a significantly attenuated transcriptional response to cocaine is intriguing because it highlights a previously underappreciated level of molecular heterogeneity within this population of cells. Notably, further analysis of population-specific DEGs also revealed an enrichment of calcium transport-related terms for Drd1-MSN-1 and potassium transport-related terms for Drd1-MSN-2. The differential enrichment for calcium-related terms and genes may explain the transcriptional response to cocaine in the Drd1-MSN-1 population, as many IEGs rely on calcium-dependent signaling cascades for induction.",
+      "entities": [
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 74,
+          "end": 84,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 115,
+          "end": 120,
+          "label": "GENE"
+        },
+        {
+          "entity": "FOSB",
+          "start": 177,
+          "end": 181,
+          "label": "PROTEIN"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 296,
+          "end": 306,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "NAc",
+          "start": 311,
+          "end": 314,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1",
+          "start": 338,
+          "end": 342,
+          "label": "GENE"
+        },
+        {
+          "entity": "DEGs",
+          "start": 596,
+          "end": 600,
+          "label": "GENE"
+        },
+        {
+          "entity": "calcium transport",
+          "start": 633,
+          "end": 652,
+          "label": "BIOLOGICAL_PROCESS"
+        },
+        {
+          "entity": "potassium transport",
+          "start": 657,
+          "end": 675,
+          "label": "BIOLOGICAL_PROCESS"
+        }
+      ]
+    },
+    {
+      "text": "Our dataset also provided the opportunity to identify marker genes for these two populations. We identified Ebf1 as a marker gene for the Drd1-MSN-1 population and Htr4 as a marker gene for the Drd1-MSN-2 population. In situ experiments validated the presence of two distinct populations of Drd1-expressing MSNs based on the presence of Htr4 and Ebf1. These in situ experiments also revealed a spatial separation of these MSNs, as Drd1Ebf1 cells were primarily found in the NAc core and Drd1Htr4 cells were primarily found in the NAc shell. Transcriptional similarity based on spatial location may also explain why the Drd1-MSN-1 population is more closely related to the Drd2-MSN-1 population than the Drd1-MSN-2 population (Supp. Fig. 4a). In fact, analysis of the relationship between cell types within the NHP identifies that Drd1-and Drd2-expressing MSNs from the same striatal subregions are more closely related than Drd1-expressing MSNs found in distinct striatal compartments (Supp. Fig. 4b). Similarly, the MSN.D1_A and MSN.D2_A human populations are more closely related to each other than other Drd1-or Drd2-expressing MSNs, although no spatial information is available in that dataset (Supp. Fig. 4c). Together, these results suggest that at least some component of transcriptional diversity in the NAc reflects the spatial organization of this structure.",
+      "entities": [
+        {
+          "entity": "Ebf1",
+          "start": 106,
+          "end": 110,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 132,
+          "end": 143,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Htr4",
+          "start": 158,
+          "end": 162,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 179,
+          "end": 190,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Drd1",
+          "start": 257,
+          "end": 261,
+          "label": "GENE"
+        },
+        {
+          "entity": "Htr4",
+          "start": 276,
+          "end": 280,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 284,
+          "end": 288,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd1Ebf1",
+          "start": 328,
+          "end": 336,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc core",
+          "start": 346,
+          "end": 355,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1Htr4",
+          "start": 373,
+          "end": 381,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "NAc shell",
+          "start": 392,
+          "end": 401,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 493,
+          "end": 504,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 529,
+          "end": 540,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 590,
+          "end": 601,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "NHP",
+          "start": 654,
+          "end": 657,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "Drd1",
+          "start": 691,
+          "end": 695,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 698,
+          "end": 702,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 720,
+          "end": 724,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "MSN.D1_A",
+          "start": 775,
+          "end": 784,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "MSN.D2_A",
+          "start": 790,
+          "end": 798,
+          "label": "CELL_POPULATION"
+        },
+        {
+          "entity": "Drd1",
+          "start": 818,
+          "end": 822,
+          "label": "GENE"
+        },
+        {
+          "entity": "Drd2",
+          "start": 826,
+          "end": 830,
+          "label": "GENE"
+        },
+        {
+          "entity": "NAc",
+          "start": 845,
+          "end": 848,
+          "label": "BRAIN_REGION"
+        }
+      ]
+    },
+    {
+      "text": "Although sex differences in drug-induced behavioral adaptations have long been appreciated (Hu et al., 2004; Bobzean et al., 2014; Becker and Chartoff, 2019; Evans, 2007), more recent research has also demonstrated sex-specific drug-induced molecular adaptations (L\u00f3pez et al., 2021). Our dataset includes nuclei from both male and female rats, and thus we examined sex-specific transcriptional responses to cocaine across cell populations within the NAc, again using the collapsed acute and repeated dataset to enable pseudobulk treatment comparisons between male and females. In general, the direction of cocaine-induced mRNA changes was largely concordant between males and females across most cell populations (Supp. Fig. 6a-d), however significance criteria were often only met for one sex (Supp. Table 3). Overall, the Drd1-MSN-1 population was the most transcriptionally responsive to cocaine for both sexes in terms of total number of genes altered. Consistent with the sex-combined identification of cocaine DEGs, immediate early gene Nr4a3, transcription elongation factor Ell2, and cytoskeletal regulator Elmo2 were all significantly elevated in the Drd1-MSN-1 population in both sexes (Supp. Fig. 6e). Interestingly, sex-specific cocaine DEG comparisons revealed that while some genes, like Nr4a3 and Ell2, display relatively consistent patterns of expression between males and females across populations (Supp. Fig. 6e-f), other genes like Hs6st3 exhibit more dynamic patterns of expression (Supp. Fig. 6g).",
+      "entities": [
+        {
+          "entity": "sex differences",
+          "start": 8,
+          "end": 22,
+          "label": "PHENOMENON"
+        },
+        {
+          "entity": "drug-induced behavioral adaptations",
+          "start": 26,
+          "end": 39,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "Hu et al.",
+          "start": 70,
+          "end": 77,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2004",
+          "start": 78,
+          "end": 82,
+          "label": "YEAR"
+        },
+        {
+          "entity": "Bobzean et al.",
+          "start": 84,
+          "end": 96,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2014",
+          "start": 97,
+          "end": 101,
+          "label": "YEAR"
+        },
+        {
+          "entity": "Becker and Chartoff",
+          "start": 103,
+          "end": 122,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2019",
+          "start": 123,
+          "end": 127,
+          "label": "YEAR"
+        },
+        {
+          "entity": "Evans",
+          "start": 129,
+          "end": 135,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2007",
+          "start": 136,
+          "end": 140,
+          "label": "YEAR"
+        },
+        {
+          "entity": "sex-specific drug-induced molecular adaptations",
+          "start": 166,
+          "end": 199,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "L\u00f3pez et al.",
+          "start": 204,
+          "end": 212,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2021",
+          "start": 213,
+          "end": 217,
+          "label": "YEAR"
+        },
+        {
+          "entity": "male and female rats",
+          "start": 235,
+          "end": 256,
+          "label": "ANIMAL"
+        },
+        {
+          "entity": "sex-specific transcriptional responses",
+          "start": 261,
+          "end": 293,
+          "label": "PHENOMENON"
+        },
+        {
+          "entity": "cocaine",
+          "start": 318,
+          "end": 325,
+          "label": "DRUG"
+        },
+        {
+          "entity": "NAc",
+          "start": 353,
+          "end": 356,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "cocaine-induced mRNA changes",
+          "start": 408,
+          "end": 436,
+          "label": "BIOLOGICAL_PROCESS"
+        },
+        {
+          "entity": "Drd1-MSN-1 population",
+          "start": 519,
+          "end": 539,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine DEGs",
+          "start": 607,
+          "end": 621,
+          "label": "GENE_EXPRESSION"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 636,
+          "end": 641,
+          "label": "GENE"
+        },
+        {
+          "entity": "Ell2",
+          "start": 644,
+          "end": 648,
+          "label": "GENE"
+        },
+        {
+          "entity": "Elmo2",
+          "start": 653,
+          "end": 658,
+          "label": "GENE"
+        },
+        {
+          "entity": "Hs6st3",
+          "start": 759,
+          "end": 765,
+          "label": "GENE"
+        }
+      ]
+    },
+    {
+      "text": "In conclusion, we have generated a comprehensive transcriptional atlas of the rat NAc that also provides information regarding cocainedependent gene expression changes. The use of snRNA-seq provided the ability to understand cell types that potentially mediate cellular and behavioral responses to drugs of abuse. Analysis of this dataset resulted in the identification of transcriptionally distinct populations of Drd1expressing MSNs that differ by their spatial location and transcriptional response to cocaine. This dataset will be a resource for future research into transcriptionally distinct populations of NAc cells and their responses to drugs of abuse.",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 59,
+          "end": 62,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "cocainedependent",
+          "start": 102,
+          "end": 118,
+          "label": "DISORDER"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 144,
+          "end": 152,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "Drd1",
+          "start": 280,
+          "end": 284,
+          "label": "GENE"
+        },
+        {
+          "entity": "MSNs",
+          "start": 289,
+          "end": 293,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "cocaine",
+          "start": 372,
+          "end": 379,
+          "label": "DRUG"
+        },
+        {
+          "entity": "NAc",
+          "start": 490,
+          "end": 493,
+          "label": "BRAIN_REGION"
+        }
+      ]
+    },
+    {
+      "text": "All experiments were performed in accordance with the University of Alabama at Birmingham Institutional Animal Care and Use Committee. Male or female adult rats were intraperitoneally injected with Cocaine hydrocholoride at a dose of 20 mgkg or saline. Locomotor testing was performed as previously described (Savell et al., 2020). Animals undergoing acute cocaine exposure received a single dose, while those undergoing repeated cocaine exposure received one injection per day for 7 days.",
+      "entities": [
+        {
+          "entity": "University of Alabama at Birmingham",
+          "start": 77,
+          "end": 108,
+          "label": "INSTITUTION"
+        },
+        {
+          "entity": "Male",
+          "start": 133,
+          "end": 137,
+          "label": "GENDER"
+        },
+        {
+          "entity": "female",
+          "start": 141,
+          "end": 147,
+          "label": "GENDER"
+        },
+        {
+          "entity": "adult rats",
+          "start": 149,
+          "end": 159,
+          "label": "ANIMAL"
+        },
+        {
+          "entity": "Cocaine hydrocholoride",
+          "start": 183,
+          "end": 206,
+          "label": "DRUG"
+        },
+        {
+          "entity": "20 mgkg",
+          "start": 215,
+          "end": 222,
+          "label": "DOSAGE"
+        },
+        {
+          "entity": "saline",
+          "start": 228,
+          "end": 234,
+          "label": "DRUG"
+        },
+        {
+          "entity": "Locomotor testing",
+          "start": 241,
+          "end": 260,
+          "label": "PROCEDURE"
+        },
+        {
+          "entity": "acute cocaine exposure",
+          "start": 284,
+          "end": 308,
+          "label": "EXPOSURE"
+        },
+        {
+          "entity": "repeated cocaine exposure",
+          "start": 347,
+          "end": 374,
+          "label": "EXPOSURE"
+        },
+        {
+          "entity": "7 days",
+          "start": 410,
+          "end": 416,
+          "label": "DURATION"
+        }
+      ]
+    },
+    {
+      "text": "Nuclei dissociation for snRNA-seq was performed as previously described (Savell et al., 2020). Nuclei from 4 animals of the same sex, treatment group, and exposure length were pooled for tissue preparation and loaded into a single GEM (gel beads in emulsion) well.",
+      "entities": [
+        {
+          "entity": "snRNA-seq",
+          "start": 35,
+          "end": 43,
+          "label": "TECHNIQUE"
+        },
+        {
+          "entity": "Savell et al.",
+          "start": 65,
+          "end": 78,
+          "label": "AUTHOR"
+        },
+        {
+          "entity": "2020",
+          "start": 80,
+          "end": 84,
+          "label": "YEAR"
+        },
+        {
+          "entity": "4 animals",
+          "start": 92,
+          "end": 103,
+          "label": "ANIMAL"
+        },
+        {
+          "entity": "GEM",
+          "start": 198,
+          "end": 201,
+          "label": "TECHNOLOGY"
+        },
+        {
+          "entity": "gel beads in emulsion",
+          "start": 205,
+          "end": 228,
+          "label": "MATERIAL"
+        }
+      ]
+    },
+    {
+      "text": "Libraries were constructed according to manufacturers instructions using the Chromium Single Cell 3 Library Construction Kit (10 Genomics, catalog no. 1000092), which uses version 3 chemistry for gene expression. Nuclei (15,655) from adult rat NAc after acute cocaine and nuclei (23,599) from adult rat NAc after repeated cocaine were sequenced on the Illumina NextSeq 500 at the UAB Heflin Genomics core to a depth of 39,000 reads per nuclei and 22,000 reads per nuclei, respectively. All raw fastq files were aligned to the Ensembl mRatBn7.2 (Rn7) genome using CellRanger (v6.1.2) with the associated Ensembl gene transfer format (gtf) file (version 105). Cell Ranger filtered outputs were analyzed with Seurat v4.0.4 (Hao et al., 2021) using R v4.0.2. Nuclei containing 200 features and 5 of reads mapping to the mitochondrial genome were removed from further analysis. Molecular count data from each GEM (gel beads in emulsion) well were then log-normalized with a scaling factor of 10,000. Following normalization, and before dimensionality reduction, all GEM wells were then integrated with FindIntegrationAnchors() and IntegrateData using 17 principal components (PCs) and a resolution value of 0.1 for both the acute and repeated datasets. Local Inverse Simpsons Index was calculated to ensure successful integration of all 8 GEM wells using lisi v1.0 with default parameters. Recent research has demonstrated that ambient RNA can be captured with single cells or nuclei with dropletbased single-cellsingle-nucleus technologies. To avoid interpreting any signal associated with ambient RNA, we used SoupX v1.5.2 (Young and Behjati, 2020) to remove any signal associated with ambient RNA. Droplet based single-cellsingle-nucleus technologies are also susceptible to the capture of doublets, or two cellsnuclei being captured within a single droplet. Homotypic doublets, or doublets containing two cells of the same cell-type, are difficult to identify and remove. However, heterotypic doublets, or doublets containing two cells of different cell types, can be identified as cells that have a combination of cell typespecific transcriptional signatures. Heterotypic doublets were not identified in our acute dataset. However, heterotypic doublets were identified and removed from the repeated dataset using DoubletFinder v2.0.3 (McGinnis et al., 2019). For differential expression testing, gene counts were first summed across GEM wells within each cell type to create a pseudobulked gene expression matrix. Any genes with counts 5 were removed from further analysis. Differential expression testing was then completed using pseudobulked gene expression matrices with DESeq2 v1.28.1 (Love et al., 2014) using the Likelihood Ratio Test (LRT). The data sets utilized in this paper are from two separate experiments and therefore represent two separate batches. Batch effects can substantially alter transcriptional profiles and to control for this data set was included as a covariate in all differential expression testing. In addition to data set, treatment was used as a covariate for differential expression testing across genetic sex and cell types. Including these variables as covariates allows us to ensure that all DEGs are due to treatment, cell type, or sex and not another confounding variable. Gini coefficients were calculated using the gini() function that is available in the reldist v1.6-6 package (Gini, 1921;Handcock and Morris, 1999). Rank-rank hypergeometric overlap (RRHO) was calculated using the log2 (Fold Change) of all genes regardless of adjusted p-value. RRHO heatmaps were generated using RRHO2 v1.0 (Cahill et al., 2018;Plaisier et al., 2010). Molecular function gene ontology terms were generated with DEGs expressed in 10 of the cluster using g:GOSt made available by gProfiler (Raudvere et al., 2019). For this tool, the statistical domain scope set to Only annotated genes and significance threshold set to Benjamini-Hochberg FDR. All R code for this analysis is available at https:github.comJeremy-Day-LabPhillips_2023_NAc.",
+      "entities": [
+        {
+          "entity": "Chromium Single Cell 3 Library Construction Kit",
+          "start": 86,
+          "end": 134,
+          "label": "KITS"
+        },
+        {
+          "entity": "NAc",
+          "start": 252,
+          "end": 255,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "cocaine",
+          "start": 266,
+          "end": 273,
+          "label": "DRUG"
+        },
+        {
+          "entity": "Illumina NextSeq 500",
+          "start": 283,
+          "end": 304,
+          "label": "TECHNOLOGY"
+        },
+        {
+          "entity": "Ensembl mRatBn7.2 (Rn7)",
+          "start": 364,
+          "end": 387,
+          "label": "GENOME"
+        },
+        {
+          "entity": "CellRanger",
+          "start": 397,
+          "end": 409,
+          "label": "SOFTWARE"
+        },
+        {
+          "entity": "Seurat v4.0.4",
+          "start": 500,
+          "end": 517,
+          "label": "SOFTWARE"
+        },
+        {
+          "entity": "R v4.0.2",
+          "start": 529,
+          "end": 538,
+          "label": "SOFTWARE"
+        },
+        {
+          "entity": "GEM",
+          "start": 683,
+          "end": 686,
+          "label": "TECHNOLOGY"
+        },
+        {
+          "entity": "DoubletFinder v2.0.3",
+          "start": 783,
+          "end": 805,
+          "label": "SOFTWARE"
+        },
+        {
+          "entity": "DESeq2 v1.28.1",
+          "start": 895,
+          "end": 911,
+          "label": "SOFTWARE"
+        },
+        {
+          "entity": "Gini coefficients",
+          "start": 1086,
+          "end": 1104,
+          "label": "METRIC"
+        },
+        {
+          "entity": "RRHO",
+          "start": 1133,
+          "end": 1137,
+          "label": "ANALYSIS_METHOD"
+        },
+        {
+          "entity": "g:GOSt",
+          "start": 1226,
+          "end": 1232,
+          "label": "TOOL"
+        },
+        {
+          "entity": "Benjamini-Hochberg FDR",
+          "start": 1260,
+          "end": 1283,
+          "label": "STATISTICAL_METHOD"
+        },
+        {
+          "entity": "Jeremy-Day-LabPhillips_2023_NAc",
+          "start": 1313,
+          "end": 1341,
+          "label": "CODE_REPOSITORY"
+        }
+      ]
+    },
+    {
+      "text": "To correlate gene expression signatures across mammalian species, DEGs for rat cell types were first calculated using a pseudobulk approach. DEGs were then concatenated and t-statistics for every gene in every MSN subtype were calculated. The t-statistic was calculated with the following formula: Following calculation of t-statistics, the Pearson correlation coefficient was calculated using the cor() function in R. All R code for this analysis is available at https://github.com/Jeremy-Day-Lab/Phillips_2023_NAc.",
+      "entities": [
+        {
+          "entity": "gene expression signatures",
+          "start": 28,
+          "end": 55,
+          "label": "BIO_MARKER"
+        },
+        {
+          "entity": "DEGs",
+          "start": 74,
+          "end": 78,
+          "label": "GENE"
+        },
+        {
+          "entity": "rat",
+          "start": 82,
+          "end": 85,
+          "label": "SPECIES"
+        },
+        {
+          "entity": "pseudobulk approach",
+          "start": 103,
+          "end": 122,
+          "label": "METHODOLOGY"
+        },
+        {
+          "entity": "t-statistics",
+          "start": 139,
+          "end": 151,
+          "label": "STATISTIC"
+        },
+        {
+          "entity": "MSN subtype",
+          "start": 164,
+          "end": 176,
+          "label": "CELL_TYPE"
+        },
+        {
+          "entity": "Pearson correlation coefficient",
+          "start": 220,
+          "end": 255,
+          "label": "STATISTIC"
+        },
+        {
+          "entity": "R",
+          "start": 271,
+          "end": 272,
+          "label": "PROGRAMMING_LANGUAGE"
+        },
+        {
+          "entity": "github.com/Jeremy-Day-Lab/Phillips_2023_NAc",
+          "start": 295,
+          "end": 337,
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "text": "Upon sacrifice, brains from 6 drug-na\u00efve Sprague-Dawley rats (3F 3M) were extracted and immediately placed in isopentane at -40 C for 30 s. Tissue was stored at -80 C until day of sectioning. On day of sectioning, tissue was allowed to equilibrate at -20 C for 40 min and 10 \u03bcm coronal sections containing the NAc (1.92 mm to 1.44 mm from bregma) were collected using Leica cryostat and mounted on room temperature slides. Sections were air dried on dry ice for 60 min, then stored at -80 C. Sections were prepared for RNAscope Multiplex Fluorescent v2 Assay according to manufacturers protocol (Advanced Cell Diagnostics, 323110) (Wang et al., 2012). Probes included Htr4-C2 (544081-C2), and Drd1a-C3 (317031-C3) diluted 1:50 in Ebf1-C1 (891561-C1) and DAPI (320858). Associated Opal dyes were 690 (FP1497001KT) for Ebf1-C1, 570 (FP1488001KT) for Htr4-C2, and 520 (FP1487001KT) for Drd1a-C3 diluted 1:500 in TSA buffer. Sections were imaged using Keyence BZ-X800 microscope with OP-87767 filter cubes for GFP, Texas Red PE, DAPI, and Cy5 at 20 (PlanFluor NA 0.75)",
+      "entities": [
+        {
+          "entity": "drug-na\u00efve Sprague-Dawley rats",
+          "start": 31,
+          "end": 61,
+          "label": "ANIMAL"
+        },
+        {
+          "entity": "isopentane",
+          "start": 81,
+          "end": 90,
+          "label": "CHEMICAL"
+        },
+        {
+          "entity": "-40 C",
+          "start": 95,
+          "end": 100,
+          "label": "TEMPERATURE"
+        },
+        {
+          "entity": "-80 C",
+          "start": 124,
+          "end": 129,
+          "label": "TEMPERATURE"
+        },
+        {
+          "entity": "NAc",
+          "start": 229,
+          "end": 232,
+          "label": "BRAIN_REGION"
+        },
+        {
+          "entity": "Leica cryostat",
+          "start": 267,
+          "end": 282,
+          "label": "EQUIPMENT"
+        },
+        {
+          "entity": "RNAscope Multiplex Fluorescent v2 Assay",
+          "start": 326,
+          "end": 363,
+          "label": "ASSAY"
+        },
+        {
+          "entity": "Advanced Cell Diagnostics",
+          "start": 377,
+          "end": 401,
+          "label": "COMPANY"
+        },
+        {
+          "entity": "Htr4-C2",
+          "start": 441,
+          "end": 448,
+          "label": "PROBE"
+        },
+        {
+          "entity": "Drd1a-C3",
+          "start": 451,
+          "end": 458,
+          "label": "PROBE"
+        },
+        {
+          "entity": "Ebf1-C1",
+          "start": 487,
+          "end": 493,
+          "label": "PROBE"
+        },
+        {
+          "entity": "DAPI",
+          "start": 502,
+          "end": 506,
+          "label": "DYE"
+        },
+        {
+          "entity": "Keyence BZ-X800",
+          "start": 569,
+          "end": 586,
+          "label": "EQUIPMENT"
+        }
+      ]
+    }
+  ]
+}
