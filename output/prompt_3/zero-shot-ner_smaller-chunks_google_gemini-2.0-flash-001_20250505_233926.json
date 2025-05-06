@@ -1,0 +1,6299 @@
+{
+  "model_name": "google/gemini-2.0-flash-001",
+  "prompt": {
+    "template": "**Background**\nYou are a highly skilled neuroscience expert with extensive experience in named entity recognition, research publication entity annotation, and ontology mapping.\n\n**Task**\nYour task is to meticulously extract and classify all relevant entities from the provided neuroscience text.\nIdentify and classify entities relevant to neuroscience research, some examples include (but are NOT limited to):\nGENE, PROTEIN, CELL_TYPE, BRAIN_REGION, NEUROTRANSMITTER, DISORDER, DRUG, TREATMENT, MEASUREMENT, METHOD, BEHAVIOR, CHEMICAL, EQUIPMENT, ORGANIZATION, PUBLICATION, TIME, and QUANTITY.                                        \nPerform the following tasks for the given input:\n1. Extract all named entities.\n2. For each entity, return:\n  - the exact entity text\n  - start and end character positions\n  - label \n  - the best-matching ontology label (e.g., MONDO, CHEBI, CL, NCBITaxon, DOID, UMLS)\n\nPlease ensure that all entities are accurately identified and classified according to their role within the neuroscience domain. Be precise with the start and end character positions.\nIf you are unable to map the label to an existing ontology term, write 'None'. \n\n**Output Format**\nThe final output should be formatted as a training-ready JSON object suitable for spaCy's Named Entity Recognition (NER) training.\nEach object in the 'entities' list should contain the 'entity', 'start', 'end', 'label', and 'ontology mapping' keys.\nReturn the result in the following JSON format:\n```json\n{{\n  \"text\": \"...\",\n  \"entities\": [\n    {{\n      \"entity\": \"...\",\n      \"start\": ...,\n      \"end\": ...,\n      \"label\": \"...\",\n      \"ontology mapping\": \"...\"\n    }},\n    ...\n  ]\n}}\n```\n\n **Input Text:** {neuroscience_text}\n",
+    "input_variables": [
+      "neuroscience_text"
+    ]
+  },
+  "output": [
+    {
+      "text": "Drug addiction is a chronic, complex neuropsychiatric disorder characterized by a loss of control of drug-taking behaviors. The current drug addiction and overdose epidemic in the United States has been worsened by the COVID-19 pandemic as people struggle with social isolation and economic distress (Cisneros and Cunningham, 2021). Much of the current addiction epidemic and surge in overdose deaths has been attributed to the use of opioids and, in particular, synthetic opioids such as fentanyl. However, drug overdose deaths associated with psychostimulants rose 50  between 2019 and 2020 (Hedegaard et al., 2021). Furthermore, drug overdose deaths associated with cocaine have increased 3-fold since 1999 (Hedegaard et al., 2021;Ciccarone, 2021). While pharmacological treatments exist for opioid use disorder, no such treatments are available for stimulant use disorder. Thus, continued research on the molecular adaptations that occur following exposure to cocaine, and the cell types that may be susceptible to these adaptations, is important for development of future therapeutics.",
+      "entities": [
+        {
+          "entity": "Drug addiction",
+          "start": 0,
+          "end": 14,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0005300"
+        },
+        {
+          "entity": "neuropsychiatric disorder",
+          "start": 32,
+          "end": 56,
+          "label": "DISORDER",
+          "ontology mapping": "DOID:0050156"
+        },
+        {
+          "entity": "drug addiction",
+          "start": 90,
+          "end": 104,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0005300"
+        },
+        {
+          "entity": "overdose",
+          "start": 108,
+          "end": 116,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "United States",
+          "start": 129,
+          "end": 142,
+          "label": "ORGANIZATION",
+          "ontology mapping": "NCBITaxon:6252"
+        },
+        {
+          "entity": "COVID-19",
+          "start": 159,
+          "end": 167,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0100096"
+        },
+        {
+          "entity": "Cisneros and Cunningham, 2021",
+          "start": 227,
+          "end": 256,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "addiction",
+          "start": 273,
+          "end": 282,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0005300"
+        },
+        {
+          "entity": "overdose",
+          "start": 299,
+          "end": 307,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "opioids",
+          "start": 345,
+          "end": 352,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:35617"
+        },
+        {
+          "entity": "synthetic opioids",
+          "start": 369,
+          "end": 386,
+          "label": "DRUG",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "fentanyl",
+          "start": 392,
+          "end": 400,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:5327"
+        },
+        {
+          "entity": "drug overdose",
+          "start": 410,
+          "end": 423,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "psychostimulants",
+          "start": 439,
+          "end": 455,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:35464"
+        },
+        {
+          "entity": "2019",
+          "start": 462,
+          "end": 466,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2020",
+          "start": 471,
+          "end": 475,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hedegaard et al., 2021",
+          "start": 477,
+          "end": 498,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drug overdose",
+          "start": 512,
+          "end": 525,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 539,
+          "end": 546,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:38885"
+        },
+        {
+          "entity": "1999",
+          "start": 572,
+          "end": 576,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hedegaard et al., 2021",
+          "start": 578,
+          "end": 599,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ciccarone, 2021",
+          "start": 600,
+          "end": 615,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "pharmacological treatments",
+          "start": 623,
+          "end": 648,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "opioid use disorder",
+          "start": 656,
+          "end": 676,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "stimulant use disorder",
+          "start": 713,
+          "end": 735,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 795,
+          "end": 802,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:38885"
+        },
+        {
+          "entity": "cell types",
+          "start": 812,
+          "end": 822,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "therapeutics",
+          "start": 881,
+          "end": 893,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "The mesolimbic dopamine pathway is heavily implicated in molecular, cellular, and behavioral responses to drugs of abuse. This pathway consists of dopaminergic neurons in the ventral tegmental area (VTA) that project to the nucleus accumbens (NAc). Dopaminergic neurotransmission in the NAc is important for adaptive behavior, as dopamine (DA) release tracks reward-predictive cues as a function of learning (Day et al., 2007). Exposure to drugs of abuse, such as cocaine, increases extracellular concentrations of DA within the NAc. Cocaine extends DA transmission by blocking the DA transporter present on VTA dopaminergic neurons, and this mechanism is required for behavioral and physiological responses to cocaine (Giros et al., 1996). Drug-induced elevations in DA promote transcriptional and epigenetic reorganization that ultimately gives rise to the cellular and behavioral adaptations that drive addiction-linked behaviors. Within the NAc, DA engages the type-1 DA receptor (DRD1, encoded by the Drd1 gene) that is present on a subset of medium spiny neurons (MSNs), called D1-MSNs. DRD1 activation stimulates signal transduction cascades that results in CREB phosphorylation and activation of immediate early gene (IEG) expression programs. These IEG programs are comprised largely of activitydependent transcription factors such as Fos, FosB, and Nr4a1 (Savell et al., 2020;Nishi et al., 2011;Bertran-Gonzalez et al., 2008), each of which are critical mediators for cellular and behavioral adaptations to drugs of abuse (Zhang et al., 2006;Nestler et al., 2001;Carpenter et al., 2020).",
+      "entities": [
+        {
+          "entity": "mesolimbic dopamine pathway",
+          "start": 4,
+          "end": 32,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1291774"
+        },
+        {
+          "entity": "behavioral responses",
+          "start": 63,
+          "end": 82,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 86,
+          "end": 101,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:61630"
+        },
+        {
+          "entity": "dopaminergic neurons",
+          "start": 130,
+          "end": 150,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000641"
+        },
+        {
+          "entity": "ventral tegmental area",
+          "start": 154,
+          "end": 176,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0728988"
+        },
+        {
+          "entity": "VTA",
+          "start": 178,
+          "end": 181,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0728988"
+        },
+        {
+          "entity": "nucleus accumbens",
+          "start": 200,
+          "end": 218,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0029440"
+        },
+        {
+          "entity": "NAc",
+          "start": 220,
+          "end": 223,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0029440"
+        },
+        {
+          "entity": "NAc",
+          "start": 252,
+          "end": 255,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0029440"
+        },
+        {
+          "entity": "dopamine",
+          "start": 285,
+          "end": 293,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "DA",
+          "start": 295,
+          "end": 297,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "Day et al., 2007",
+          "start": 362,
+          "end": 377,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 390,
+          "end": 405,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:61630"
+        },
+        {
+          "entity": "cocaine",
+          "start": 412,
+          "end": 419,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "DA",
+          "start": 463,
+          "end": 465,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "NAc",
+          "start": 475,
+          "end": 478,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0029440"
+        },
+        {
+          "entity": "Cocaine",
+          "start": 480,
+          "end": 487,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "DA",
+          "start": 496,
+          "end": 498,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "DA transporter",
+          "start": 523,
+          "end": 537,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C0152795"
+        },
+        {
+          "entity": "VTA dopaminergic neurons",
+          "start": 548,
+          "end": 572,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000641"
+        },
+        {
+          "entity": "cocaine",
+          "start": 644,
+          "end": 651,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "DA",
+          "start": 678,
+          "end": 680,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "NAc",
+          "start": 754,
+          "end": 757,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0029440"
+        },
+        {
+          "entity": "DA",
+          "start": 759,
+          "end": 761,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16025"
+        },
+        {
+          "entity": "type-1 DA receptor",
+          "start": 770,
+          "end": 788,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C1425888"
+        },
+        {
+          "entity": "DRD1",
+          "start": 790,
+          "end": 794,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1812"
+        },
+        {
+          "entity": "Drd1 gene",
+          "start": 807,
+          "end": 816,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1812"
+        },
+        {
+          "entity": "medium spiny neurons",
+          "start": 838,
+          "end": 859,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000674"
+        },
+        {
+          "entity": "MSNs",
+          "start": 862,
+          "end": 866,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000674"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 874,
+          "end": 881,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DRD1",
+          "start": 883,
+          "end": 887,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1812"
+        },
+        {
+          "entity": "CREB phosphorylation",
+          "start": 942,
+          "end": 962,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "immediate early gene",
+          "start": 979,
+          "end": 999,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEG",
+          "start": 1002,
+          "end": 1005,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Fos",
+          "start": 1096,
+          "end": 1099,
+          "label": "PROTEIN",
+          "ontology mapping": "NCBIGene:2353"
+        },
+        {
+          "entity": "FosB",
+          "start": 1101,
+          "end": 1105,
+          "label": "PROTEIN",
+          "ontology mapping": "NCBIGene:9915"
+        },
+        {
+          "entity": "Nr4a1",
+          "start": 1111,
+          "end": 1116,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:3159"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 1118,
+          "end": 1136,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nishi et al., 2011",
+          "start": 1137,
+          "end": 1155,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Bertran-Gonzalez et al., 2008",
+          "start": 1156,
+          "end": 1186,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 1278,
+          "end": 1293,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:61630"
+        },
+        {
+          "entity": "Zhang et al., 2006",
+          "start": 1295,
+          "end": 1311,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nestler et al., 2001",
+          "start": 1312,
+          "end": 1329,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Carpenter et al., 2020",
+          "start": 1330,
+          "end": 1349,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "The NAc is a heterogeneous brain region consisting of many transcriptionally defined cell types. While a significant amount of research has focused on the role of DA receptor-expressing MSNs in adaptations to drugs of abuse, recent reports have also demonstrated significant roles for other cell types. For example, optogenetic inhibition of NAc somatostatin expressing interneurons (Sst-interneurons) attenuates cocaine-induced conditioned place preference (Ribeiro et al., 2018), suggesting that these cells are important for behavioral adaptations to drugs of abuse. Similarly, photoinhibition of cholinergic interneurons (Chat-interneurons) also blocks cocaine-induced conditioned place preference (Witten et al., 2010). Interestingly, recent research has also demonstrated an important role for astrocytes in mediating cocaineinduced synaptic and behavioral adaptations (Wang et al., 2021;Corkrum et al., 2020). These results demonstrate that diverse cell types within the NAc contribute to the molecular, cellular, and behavioral effects of cocaine.",
+      "entities": [
+        {
+          "entity": "NAc",
+          "start": 4,
+          "end": 7,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295899"
+        },
+        {
+          "entity": "brain region",
+          "start": 26,
+          "end": 38,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0001507"
+        },
+        {
+          "entity": "cell types",
+          "start": 72,
+          "end": 82,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "DA receptor",
+          "start": 131,
+          "end": 142,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSNs",
+          "start": 159,
+          "end": 163,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 179,
+          "end": 193,
+          "label": "DRUG",
+          "ontology mapping": "MESH:D004338"
+        },
+        {
+          "entity": "cell types",
+          "start": 251,
+          "end": 261,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "optogenetic inhibition",
+          "start": 272,
+          "end": 294,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 298,
+          "end": 301,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295899"
+        },
+        {
+          "entity": "somatostatin",
+          "start": 302,
+          "end": 314,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:8909"
+        },
+        {
+          "entity": "interneurons",
+          "start": 324,
+          "end": 336,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000125"
+        },
+        {
+          "entity": "Sst-interneurons",
+          "start": 338,
+          "end": 354,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 365,
+          "end": 372,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "conditioned place preference",
+          "start": 373,
+          "end": 400,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ribeiro et al., 2018",
+          "start": 402,
+          "end": 420,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "behavioral adaptations",
+          "start": 464,
+          "end": 485,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 489,
+          "end": 503,
+          "label": "DRUG",
+          "ontology mapping": "MESH:D004338"
+        },
+        {
+          "entity": "photoinhibition",
+          "start": 515,
+          "end": 530,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cholinergic interneurons",
+          "start": 534,
+          "end": 556,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Chat-interneurons",
+          "start": 558,
+          "end": 574,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 588,
+          "end": 595,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "conditioned place preference",
+          "start": 596,
+          "end": 623,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Witten et al., 2010",
+          "start": 625,
+          "end": 642,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "astrocytes",
+          "start": 675,
+          "end": 685,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "cocaine",
+          "start": 699,
+          "end": 706,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "behavioral adaptations",
+          "start": 725,
+          "end": 746,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Wang et al., 2021",
+          "start": 748,
+          "end": 764,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Corkrum et al., 2020",
+          "start": 765,
+          "end": 783,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 812,
+          "end": 822,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "NAc",
+          "start": 830,
+          "end": 833,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295899"
+        },
+        {
+          "entity": "cocaine",
+          "start": 891,
+          "end": 898,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        }
+      ]
+    },
+    {
+      "text": "Despite established cell type heterogeneity in the NAc, many studies rely on transgenic animal models that allow for the investigation of these changes only in individual cell populations. Unlike many techniques focused on a defined class of cells, single nucleus RNA-sequencing (snRNA-seq) provides unprecedented resolution that allows for the investigation of thousands of genes in thousands of cells with a single assay. This resolution not only permits detection of cocaine-induced transcriptional changes in many cell types, but also allows for better understanding of the molecular heterogeneity within the NAc. Recently, snRNA-seq approaches have been used to generate cellular atlases of the mouse (Chen et al., 2021), non-human primate (He et al., 2021), and human (Tran et al., 2021) NAc. However, snRNA-seq has only been used to define early gene expression changes to acute cocaine, while the transcriptional effects of repeated cocaine in various NAc cell types is less well studied. Here, we used snRNA-seq to transcriptionally profile 39,254 nuclei from male and female Sprague-Dawley rats. Rats were further subdivided by treatment (cocaine or saline) and exposure paradigm (acute or repeated). This study confirms both the presence of many previously defined cell types within the rat NAc, and reveals that D1-MSNs exhibit the most robust transcriptional response to cocaine across all cell populations. Additionally, snRNA-seq of the rat NAc allowed for the investigation of cluster-specific expression of different neurotransmitter receptor systems and identified novel marker genes for two populations of transcriptionally distinct D1-MSNs.",
+      "entities": [
+        {
+          "entity": "cell type",
+          "start": 21,
+          "end": 30,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "NAc",
+          "start": 50,
+          "end": 53,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "single nucleus RNA-sequencing",
+          "start": 170,
+          "end": 200,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 202,
+          "end": 212,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 297,
+          "end": 302,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cells",
+          "start": 306,
+          "end": 311,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "cocaine",
+          "start": 363,
+          "end": 369,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "cell types",
+          "start": 397,
+          "end": 407,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "NAc",
+          "start": 462,
+          "end": 465,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 475,
+          "end": 485,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "mouse",
+          "start": 520,
+          "end": 525,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10090"
+        },
+        {
+          "entity": "Chen et al., 2021",
+          "start": 527,
+          "end": 543,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "non-human primate",
+          "start": 546,
+          "end": 564,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:314693"
+        },
+        {
+          "entity": "He et al., 2021",
+          "start": 566,
+          "end": 579,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 585,
+          "end": 590,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        },
+        {
+          "entity": "Tran et al., 2021",
+          "start": 592,
+          "end": 607,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 608,
+          "end": 611,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 620,
+          "end": 630,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 683,
+          "end": 689,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "cocaine",
+          "start": 733,
+          "end": 739,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "NAc",
+          "start": 743,
+          "end": 746,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "cell types",
+          "start": 747,
+          "end": 757,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 770,
+          "end": 780,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "39,254",
+          "start": 801,
+          "end": 807,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 808,
+          "end": 814,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000230"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 829,
+          "end": 848,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "Rats",
+          "start": 850,
+          "end": 854,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "cocaine",
+          "start": 887,
+          "end": 893,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "saline",
+          "start": 897,
+          "end": 903,
+          "label": "TREATMENT",
+          "ontology mapping": "CHEBI:91111"
+        },
+        {
+          "entity": "cell types",
+          "start": 976,
+          "end": 986,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "rat",
+          "start": 993,
+          "end": 996,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 997,
+          "end": 1000,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 1013,
+          "end": 1020,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1064,
+          "end": 1070,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "cell populations",
+          "start": 1079,
+          "end": 1095,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 1109,
+          "end": 1119,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 1123,
+          "end": 1126,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 1127,
+          "end": 1130,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599427"
+        },
+        {
+          "entity": "neurotransmitter receptor",
+          "start": 1191,
+          "end": 1215,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 1296,
+          "end": 1303,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "To begin understanding cell-type heterogeneity within the rat NAc, we first integrated 15,655 nuclei from a previously published dataset (Savell et al., 2020) consisting of male and female adult Sprague-Dawley rats that received a single (acute) injection of cocaine with 23,599 nuclei from a new dataset following seven daily (repeated) injections of cocaine (Fig. 1a, Supp. Fig. 1). Following integration and dimensionality reduction, we identified 11 transcriptionally distinct neuronal populations and 5 glial populations that were not specific to a single dataset and did not differ by sex (Fig. 1b,c,Supp. Figs. 2,3). Furthermore, calculation of Local Inverse Simpsons Index (LISI) demonstrated that all clusters were well mixed, indicating successful integration (Supp. Fig. 2). A significant portion of neurons within the NAc are GABAergic MSNs that express high levels of Gad1, Ppp1r1b,Foxp2,and Bcl11b (Fig. 1d,e). A large majority of MSNs can be further classified by the expression of Drd1, the gene encoding the type-1 dopamine receptor, or Drd2, the gene encoding the type-2 dopamine receptor (Fig. 1d). While we have previously reported the presence of two transcriptionally distinct Drd2-expressing MSN populations (Drd2-MSN-1 and Drd2-MSN-2) (Savell et al., 2020), this analysis also identified two transcriptionally distinct Drd1-expressing MSN populations as well (Drd1-MSN-1 and Drd1-MSN-2; Fig. 1b,d). In addition to Drd1-and Drd2-MSNs, this analysis also identified previously reported Drd3-and Grm8-expressing MSNs (Drd3-MSN and Grm8-MSN), which have also been identified within the striatum of non-human primates (He et al., 2021). While most of the GABAergic neurons in the NAc are MSNs, distinct populations of GABAergic interneurons are also known to play critical yet distinct roles in striatal function (Kawaguchi, 1993). While we have previously characterized parvalbumin and somatostatin interneurons within the NAc (Savell et al., 2020), this analysis also identified a cholinergic interneuron population marked by the expression of Chat (Chat-Interneuron). Previous research has demonstrated that Chat-Interneurons are critical regulators of drug-induced behavioral adaptations (Witten et al., 2010), and this dataset now provides comprehensive transcriptional profiling of these cells within the rat NAc. In addition to transcriptionally distinct neuronal populations, we also identified 5 glial clusters that are almost entirely devoid of Gad1 and Syt1 mRNA, and expressed canonical markers of their respective populations (Fig. 1d,e). For example, Astrocytes exhibit high expression of both Aqp4 and Gja1, while Oligodendrocytes exhibit high expression of Mbp, the gene encoding myelin basic protein (Fig. 1d,e).",
+      "entities": [
+        {
+          "entity": "cell-type heterogeneity",
+          "start": 25,
+          "end": 47,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat NAc",
+          "start": 55,
+          "end": 62,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1706259"
+        },
+        {
+          "entity": "nuclei",
+          "start": 87,
+          "end": 93,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000130"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 122,
+          "end": 140,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 170,
+          "end": 190,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10071"
+        },
+        {
+          "entity": "cocaine",
+          "start": 228,
+          "end": 235,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27924"
+        },
+        {
+          "entity": "nuclei",
+          "start": 241,
+          "end": 247,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000130"
+        },
+        {
+          "entity": "cocaine",
+          "start": 298,
+          "end": 305,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27924"
+        },
+        {
+          "entity": "neuronal populations",
+          "start": 403,
+          "end": 423,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "glial populations",
+          "start": 431,
+          "end": 449,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "neurons",
+          "start": 570,
+          "end": 577,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "NAc",
+          "start": 582,
+          "end": 585,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1706259"
+        },
+        {
+          "entity": "GABAergic MSNs",
+          "start": 590,
+          "end": 604,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Gad1",
+          "start": 622,
+          "end": 626,
+          "label": "GENE",
+          "ontology mapping": "NCBI:2575"
+        },
+        {
+          "entity": "Ppp1r1b",
+          "start": 628,
+          "end": 635,
+          "label": "GENE",
+          "ontology mapping": "NCBI:5534"
+        },
+        {
+          "entity": "Foxp2",
+          "start": 636,
+          "end": 641,
+          "label": "GENE",
+          "ontology mapping": "NCBI:93698"
+        },
+        {
+          "entity": "Bcl11b",
+          "start": 645,
+          "end": 651,
+          "label": "GENE",
+          "ontology mapping": "NCBI:64798"
+        },
+        {
+          "entity": "MSNs",
+          "start": 679,
+          "end": 683,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 723,
+          "end": 727,
+          "label": "GENE",
+          "ontology mapping": "NCBI:1812"
+        },
+        {
+          "entity": "dopamine receptor",
+          "start": 753,
+          "end": 770,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2",
+          "start": 774,
+          "end": 778,
+          "label": "GENE",
+          "ontology mapping": "NCBI:1813"
+        },
+        {
+          "entity": "dopamine receptor",
+          "start": 804,
+          "end": 821,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-expressing MSN populations",
+          "start": 884,
+          "end": 915,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 917,
+          "end": 927,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSN-2",
+          "start": 932,
+          "end": 942,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 944,
+          "end": 962,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-expressing MSN populations",
+          "start": 1014,
+          "end": 1045,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 1047,
+          "end": 1057,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 1062,
+          "end": 1072,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 1082,
+          "end": 1086,
+          "label": "GENE",
+          "ontology mapping": "NCBI:1812"
+        },
+        {
+          "entity": "Drd2-MSNs",
+          "start": 1091,
+          "end": 1100,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd3-and Grm8-expressing MSNs",
+          "start": 1142,
+          "end": 1170,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd3-MSN",
+          "start": 1172,
+          "end": 1180,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Grm8-MSN",
+          "start": 1185,
+          "end": 1193,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "striatum",
+          "start": 1245,
+          "end": 1253,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0599775"
+        },
+        {
+          "entity": "He et al., 2021",
+          "start": 1269,
+          "end": 1283,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GABAergic neurons",
+          "start": 1298,
+          "end": 1315,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 1319,
+          "end": 1322,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1706259"
+        },
+        {
+          "entity": "MSNs",
+          "start": 1326,
+          "end": 1330,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GABAergic interneurons",
+          "start": 1351,
+          "end": 1373,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "striatal function",
+          "start": 1420,
+          "end": 1437,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Kawaguchi, 1993",
+          "start": 1439,
+          "end": 1455,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "parvalbumin",
+          "start": 1483,
+          "end": 1494,
+          "label": "GENE",
+          "ontology mapping": "NCBI:5077"
+        },
+        {
+          "entity": "somatostatin interneurons",
+          "start": 1499,
+          "end": 1524,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 1533,
+          "end": 1536,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1706259"
+        },
+        {
+          "entity": "cholinergic interneuron",
+          "start": 1583,
+          "end": 1604,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Chat",
+          "start": 1634,
+          "end": 1638,
+          "label": "GENE",
+          "ontology mapping": "NCBI:1115"
+        },
+        {
+          "entity": "Chat-Interneuron",
+          "start": 1640,
+          "end": 1656,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Chat-Interneurons",
+          "start": 1680,
+          "end": 1697,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drug-induced behavioral adaptations",
+          "start": 1721,
+          "end": 1754,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Witten et al., 2010",
+          "start": 1756,
+          "end": 1774,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat NAc",
+          "start": 1841,
+          "end": 1848,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1706259"
+        },
+        {
+          "entity": "neuronal populations",
+          "start": 1881,
+          "end": 1901,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "glial clusters",
+          "start": 1939,
+          "end": 1953,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Gad1",
+          "start": 1978,
+          "end": 1982,
+          "label": "GENE",
+          "ontology mapping": "NCBI:2575"
+        },
+        {
+          "entity": "Syt1 mRNA",
+          "start": 1987,
+          "end": 1996,
+          "label": "GENE",
+          "ontology mapping": "NCBI:6857"
+        },
+        {
+          "entity": "Astrocytes",
+          "start": 2051,
+          "end": 2061,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000140"
+        },
+        {
+          "entity": "Aqp4",
+          "start": 2079,
+          "end": 2083,
+          "label": "GENE",
+          "ontology mapping": "NCBI:362"
+        },
+        {
+          "entity": "Gja1",
+          "start": 2088,
+          "end": 2092,
+          "label": "GENE",
+          "ontology mapping": "NCBI:2697"
+        },
+        {
+          "entity": "Oligodendrocytes",
+          "start": 2099,
+          "end": 2114,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000128"
+        },
+        {
+          "entity": "Mbp",
+          "start": 2138,
+          "end": 2141,
+          "label": "GENE",
+          "ontology mapping": "NCBI:4159"
+        },
+        {
+          "entity": "myelin basic protein",
+          "start": 2154,
+          "end": 2174,
+          "label": "PROTEIN",
+          "ontology mapping": "CHEBI:133684"
+        }
+      ]
+    },
+    {
+      "text": "The integration of over 39,000 nuclei from rats that underwent different cocaine exposure paradigms identified two populations of Drd1-expressing MSNs (Drd1-MSN-1 and Drd1-MSN-2; Fig. 2a). To begin understanding the distinct gene expression signatures of these Drd1-MSN populations, we conducted a differential expression analysis using pseudobulked gene expression matrices. This analysis identified 506 genes enriched in the Drd1-MSN-1 cluster and 665 genes enriched in the Drd1-MSN-2 cluster. Interestingly, Ebf1 is the most highly enriched differentially expressed gene in the Drd1-MSN-1 population (Fig. 2b). Ebf1 is a known marker of D1-MSNs and is implicated in MSN early development (Lobo et al., 2008). Calb1, the gene encoding the calcium binding protein Calbindin 1, is another gene that is enriched in the Drd1-MSN-1 population (Fig. 2b). Calb1 is a spatial marker within the NAc and is highly enriched in the NAc core (Jongen-R\u00ealo et al., 1994). Included in the top 10 differentially expressed genes in the Drd1-MSN-2 population was Htr4, the gene that codes for the serotonin receptor 4 (Fig. 2b). HTR4 autoradiography suggests that this receptor is located in the ventral portion of the NAc shell (Jean et al., 2012). The differential enrichment of Htr4 and Calb1 suggests that the two populations of Drd1expressing MSNs identified by snRNA-seq are both transcriptionally and spatially distinct.",
+      "entities": [
+        {
+          "entity": "39,000",
+          "start": 25,
+          "end": 31,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 32,
+          "end": 38,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "rats",
+          "start": 44,
+          "end": 48,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "cocaine",
+          "start": 67,
+          "end": 74,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 106,
+          "end": 126,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 128,
+          "end": 138,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 143,
+          "end": 153,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene expression",
+          "start": 202,
+          "end": 217,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN",
+          "start": 239,
+          "end": 247,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 301,
+          "end": 306,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 318,
+          "end": 328,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 338,
+          "end": 343,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 356,
+          "end": 366,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 381,
+          "end": 385,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3220"
+        },
+        {
+          "entity": "gene",
+          "start": 430,
+          "end": 434,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "the Drd1-MSN-1 population",
+          "start": 438,
+          "end": 462,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 472,
+          "end": 476,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3220"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 493,
+          "end": 500,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSN early development",
+          "start": 519,
+          "end": 539,
+          "label": "PROCESS",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Calb1",
+          "start": 549,
+          "end": 554,
+          "label": "GENE",
+          "ontology mapping": "HGNC:1463"
+        },
+        {
+          "entity": "calcium binding protein",
+          "start": 574,
+          "end": 596,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Calbindin 1",
+          "start": 597,
+          "end": 608,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene",
+          "start": 620,
+          "end": 624,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "the Drd1-MSN-1 population",
+          "start": 629,
+          "end": 653,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Calb1",
+          "start": 663,
+          "end": 668,
+          "label": "GENE",
+          "ontology mapping": "HGNC:1463"
+        },
+        {
+          "entity": "NAc",
+          "start": 693,
+          "end": 696,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C0728936"
+        },
+        {
+          "entity": "NAc core",
+          "start": 719,
+          "end": 727,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "10",
+          "start": 750,
+          "end": 752,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 791,
+          "end": 796,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 800,
+          "end": 810,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 822,
+          "end": 826,
+          "label": "GENE",
+          "ontology mapping": "HGNC:5303"
+        },
+        {
+          "entity": "serotonin receptor 4",
+          "start": 854,
+          "end": 874,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "HTR4",
+          "start": 880,
+          "end": 884,
+          "label": "PROTEIN",
+          "ontology mapping": "HGNC:5303"
+        },
+        {
+          "entity": "autoradiography",
+          "start": 885,
+          "end": 900,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc shell",
+          "start": 965,
+          "end": 974,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 1003,
+          "end": 1007,
+          "label": "GENE",
+          "ontology mapping": "HGNC:5303"
+        },
+        {
+          "entity": "Calb1",
+          "start": 1012,
+          "end": 1017,
+          "label": "GENE",
+          "ontology mapping": "HGNC:1463"
+        },
+        {
+          "entity": "Drd1expressing MSNs",
+          "start": 1062,
+          "end": 1082,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Next, we set out to understand the specific gene networks and pathways that may be enriched in these two D1-MSN populations. Molecular function pathway analysis revealed an enrichment of genes involved in calcium transport and signaling in the Drd1-MSN-1 population, but enrichment of genes involved in potassium transport in the Drd1-MSN-2 population (Fig. 2c). For example, Trpc3, a gene encoding a calcium permeable channel, and Cacng3, a gene encoding an L-type calcium channel, are both highly enriched in the Drd1-MSN-1 population (Fig. 2d). Conversely, several genes encoding potassium channels, such as Kcnc1, Kcnc2, and Kcng3, are enriched in the Drd1-MSN-2 population, further highlighting the enrichment of genes involved in potassium transport in this population. While these genes are differentially enriched, both calcium-and potassium-related genes are expressed to some extent in both clusters (Fig. 2d).",
+      "entities": [
+        {
+          "entity": "gene networks",
+          "start": 45,
+          "end": 58,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "D1-MSN populations",
+          "start": 107,
+          "end": 126,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 171,
+          "end": 176,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "calcium transport",
+          "start": 186,
+          "end": 202,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:29108"
+        },
+        {
+          "entity": "signaling",
+          "start": 207,
+          "end": 216,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 224,
+          "end": 234,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 265,
+          "end": 270,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "potassium transport",
+          "start": 281,
+          "end": 299,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:26708"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 304,
+          "end": 314,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Trpc3",
+          "start": 334,
+          "end": 339,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene",
+          "start": 342,
+          "end": 346,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "calcium",
+          "start": 359,
+          "end": 366,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:29108"
+        },
+        {
+          "entity": "Cacng3",
+          "start": 379,
+          "end": 385,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene",
+          "start": 388,
+          "end": 392,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "L-type calcium channel",
+          "start": 404,
+          "end": 425,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 450,
+          "end": 460,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 490,
+          "end": 495,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "potassium channels",
+          "start": 504,
+          "end": 521,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Kcnc1",
+          "start": 532,
+          "end": 537,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Kcnc2",
+          "start": 539,
+          "end": 544,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Kcng3",
+          "start": 549,
+          "end": 554,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 568,
+          "end": 578,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 618,
+          "end": 623,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "potassium transport",
+          "start": 634,
+          "end": 652,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:26708"
+        },
+        {
+          "entity": "calcium",
+          "start": 696,
+          "end": 703,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:29108"
+        },
+        {
+          "entity": "potassium",
+          "start": 708,
+          "end": 717,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:26708"
+        }
+      ]
+    },
+    {
+      "text": "Functional investigation of transcriptionally distinct populations of neurons in the mammalian brain requires the use of cell type-specific promoters. To facilitate the future investigation of the two populations of transcriptionally distinct Drd1-expressing MSNs, we next identified potential marker genes that are both differentially and highly expressed within a population. This analysis identified Ebf1 as a potential marker gene for the Drd1-MSN-1 population (Fig. 2e) and Htr4 as a potential marker gene for the Drd1-MSN-2 population (Fig. 2f). An additional characteristic of marker genes is that they are expressed in a large proportion of cells within the cluster. Plotting the expression of these genes on a UMAP shows differential enrichment of Ebf1 and Htr4 between the Drd1-expressing MSN populations (Fig. 2g). However, Ebf1 is also expressed in endothelial cells, while Htr4 is also expressed in Drd2and Drd3-MSNs. Thus, these genes may act as marker genes in combination with Drd1 but cannot act as marker genes alone.",
+      "entities": [
+        {
+          "entity": "neurons",
+          "start": 69,
+          "end": 76,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "mammalian brain",
+          "start": 80,
+          "end": 95,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0000026"
+        },
+        {
+          "entity": "Drd1",
+          "start": 162,
+          "end": 166,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3059"
+        },
+        {
+          "entity": "MSNs",
+          "start": 179,
+          "end": 183,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "marker genes",
+          "start": 209,
+          "end": 221,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 282,
+          "end": 286,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3191"
+        },
+        {
+          "entity": "Drd1",
+          "start": 314,
+          "end": 318,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3059"
+        },
+        {
+          "entity": "MSN",
+          "start": 318,
+          "end": 321,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 348,
+          "end": 352,
+          "label": "GENE",
+          "ontology mapping": "HGNC:5308"
+        },
+        {
+          "entity": "Drd1",
+          "start": 380,
+          "end": 384,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3059"
+        },
+        {
+          "entity": "MSN",
+          "start": 384,
+          "end": 387,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cells",
+          "start": 473,
+          "end": 478,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 548,
+          "end": 552,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3191"
+        },
+        {
+          "entity": "Htr4",
+          "start": 557,
+          "end": 561,
+          "label": "GENE",
+          "ontology mapping": "HGNC:5308"
+        },
+        {
+          "entity": "Drd1",
+          "start": 569,
+          "end": 573,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3059"
+        },
+        {
+          "entity": "MSN",
+          "start": 589,
+          "end": 592,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 612,
+          "end": 616,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3191"
+        },
+        {
+          "entity": "endothelial cells",
+          "start": 633,
+          "end": 649,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000115"
+        },
+        {
+          "entity": "Htr4",
+          "start": 657,
+          "end": 661,
+          "label": "GENE",
+          "ontology mapping": "HGNC:5308"
+        },
+        {
+          "entity": "Drd2",
+          "start": 679,
+          "end": 683,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3060"
+        },
+        {
+          "entity": "Drd3",
+          "start": 687,
+          "end": 691,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3061"
+        },
+        {
+          "entity": "MSNs",
+          "start": 691,
+          "end": 695,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 744,
+          "end": 748,
+          "label": "GENE",
+          "ontology mapping": "HGNC:3059"
+        }
+      ]
+    },
+    {
+      "text": "To validate snRNA-seq findings demonstrating that Htr4 and Ebf1 are in largely distinct populations of Drd1-expressing MSNs in the NAc, we used RNAscope (Wang et al., 2012), a previously established fluorescence in situ hybridization (FISH) protocol. To enable visualization of distinct puncta representing cells expressing a combination of Drd1, Htr4, and Ebf1, we performed multiplexed analysis with probe sets specific to each transcript (Fig. 3a-c). Consistent with our computational analysis, we identify unique subpopulations of Drd1 cells that are either Ebf1 or Htr4, with significantly fewer cells that are positive for both Ebf1 and Htr4 (Fig. 3b-c). Furthermore, our in situ experiments revealed unique spatial distributions for these subpopulations with a significantly higher proportion of Drd1Htr4 cells in the NAc shell and Drd1Ebf1 cells in the NAc core (Fig. 3d-e). There was no significant spatial distribution difference in the proportion of Drd1 Ebf1Htr4 cells. Overall, these results are consistent with snRNA-seq analysis, and confirm largely non-overlapping expression of Ebf1 and Htr4 within Drd1 cells (Fig. 3f).",
+      "entities": [
+        {
+          "entity": "Htr4",
+          "start": 53,
+          "end": 57,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 62,
+          "end": 66,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 94,
+          "end": 98,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSNs",
+          "start": 99,
+          "end": 103,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000669"
+        },
+        {
+          "entity": "NAc",
+          "start": 107,
+          "end": 110,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0271939"
+        },
+        {
+          "entity": "RNAscope",
+          "start": 119,
+          "end": 128,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Wang et al., 2012",
+          "start": 130,
+          "end": 146,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "fluorescence in situ hybridization",
+          "start": 173,
+          "end": 204,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "FISH",
+          "start": 206,
+          "end": 210,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 283,
+          "end": 287,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 289,
+          "end": 293,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 299,
+          "end": 303,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 400,
+          "end": 404,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 411,
+          "end": 415,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 419,
+          "end": 423,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 483,
+          "end": 487,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 491,
+          "end": 495,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 525,
+          "end": 528,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0271939"
+        },
+        {
+          "entity": "Drd1Htr4",
+          "start": 528,
+          "end": 536,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc shell",
+          "start": 543,
+          "end": 552,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1Ebf1",
+          "start": 557,
+          "end": 565,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc core",
+          "start": 572,
+          "end": 580,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1Htr4",
+          "start": 636,
+          "end": 644,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 730,
+          "end": 734,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 739,
+          "end": 743,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 750,
+          "end": 754,
+          "label": "GENE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "We previously demonstrated that a single acute cocaine exposure differentially alters the transcriptome of molecularly defined cell types within the NAc (Savell et al., 2020). To begin understanding how repeated cocaine exposure alters the transcriptome of distinct NAc populations, we injected male and female Sprague-Dawley rats with 20 mgkg cocaine for 7 consecutive days (Fig. 1a, Supp. Fig. 1). Before directly comparing acute and repeated exposures, we first investigated cell type-specific transcriptional responses to cocaine exposure, regardless of type or duration. To do this, we collapsed both datasets and used a pseudobulk approach to identify cocaine-dependent, cell typespecific differentially expressed genes (DEGs; Supp. Table 2). This approach increased the number of replicates used for statistical comparisons and circumvented previously identified issues with deprecated differential expression methods previously used for snRNA-seq (Squair et al., 2021). Strikingly, the Drd1-MSN-1 population exhibited the most robust transcriptional response to cocaine, with 236 total DEGs following cocaine experience (184 upregulated, 52 downregulated; Fig. 4a,b). These upregulated DEGs include immediate early genes (IEGs) such as Nr4a3, Tiparp, and Fosl2 (Fig. 4b). Recent evidence has demonstrated that astrocytes within the NAc also play a key role in the neuronal and behavioral response to dopamine and drugs of abuse (Wang et al., 2021;Corkrum et al., 2020;Shelkar et al., 2022). Disruption of glutamatergic transport, release, and signaling is implicated in substance use disorders (Reissner and Kalivas, 2010;Kalivas, 2009), and astrocytes are heavily involved in the regulation of this process across the brain (Mahmoud et al., 2019). Interestingly, Gria1, an ionotropic AMPA receptor, is significantly decreased in Astrocytes following cocaine exposure (Fig. 4c). Unlike the Drd1-MSN-1 population, Astrocytes exhibited more genes with cocaine-dependent decreases in expression (Fig. 4c,g). While most DEGs in the Astrocyte population are downregulated with cocaine, Pde10a, the gene encoding the cAMPregulated phosphodiesterase 10A, is upregulated by cocaine in both the Astrocyte and Sst-Interneuron cluster (Fig. 4c,d).",
+      "entities": [
+        {
+          "entity": "cocaine",
+          "start": 40,
+          "end": 47,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "transcriptome",
+          "start": 57,
+          "end": 69,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 87,
+          "end": 97,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "NAc",
+          "start": 106,
+          "end": 109,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1279511"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 111,
+          "end": 128,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 153,
+          "end": 160,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "transcriptome",
+          "start": 170,
+          "end": 182,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 194,
+          "end": 197,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1279511"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 220,
+          "end": 239,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "20 mgkg cocaine",
+          "start": 245,
+          "end": 260,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "7 consecutive days",
+          "start": 265,
+          "end": 283,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 396,
+          "end": 403,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "genes",
+          "start": 453,
+          "end": 458,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DEGs",
+          "start": 460,
+          "end": 464,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 608,
+          "end": 618,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Squair et al., 2021",
+          "start": 620,
+          "end": 638,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 651,
+          "end": 661,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 693,
+          "end": 700,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "DEGs",
+          "start": 712,
+          "end": 716,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "immediate early genes",
+          "start": 786,
+          "end": 806,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEGs",
+          "start": 808,
+          "end": 812,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 823,
+          "end": 828,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Tiparp",
+          "start": 830,
+          "end": 836,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 842,
+          "end": 847,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "astrocytes",
+          "start": 868,
+          "end": 878,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "NAc",
+          "start": 888,
+          "end": 891,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1279511"
+        },
+        {
+          "entity": "dopamine",
+          "start": 951,
+          "end": 959,
+          "label": "NEUROTRANSMITTER",
+          "ontology mapping": "CHEBI:16026"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 964,
+          "end": 978,
+          "label": "DRUG",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Wang et al., 2021",
+          "start": 980,
+          "end": 996,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Corkrum et al., 2020",
+          "start": 997,
+          "end": 1016,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Shelkar et al., 2022",
+          "start": 1017,
+          "end": 1036,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "glutamatergic transport",
+          "start": 1049,
+          "end": 1071,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "substance use disorders",
+          "start": 1106,
+          "end": 1130,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0002539"
+        },
+        {
+          "entity": "Reissner and Kalivas, 2010",
+          "start": 1132,
+          "end": 1159,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Kalivas, 2009",
+          "start": 1160,
+          "end": 1173,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "astrocytes",
+          "start": 1179,
+          "end": 1189,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "brain",
+          "start": 1241,
+          "end": 1246,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0000955"
+        },
+        {
+          "entity": "Mahmoud et al., 2019",
+          "start": 1248,
+          "end": 1268,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Gria1",
+          "start": 1282,
+          "end": 1287,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "ionotropic AMPA receptor",
+          "start": 1292,
+          "end": 1316,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Astrocytes",
+          "start": 1342,
+          "end": 1352,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1361,
+          "end": 1368,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 1381,
+          "end": 1391,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Astrocytes",
+          "start": 1402,
+          "end": 1412,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "genes",
+          "start": 1426,
+          "end": 1431,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1443,
+          "end": 1450,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "DEGs",
+          "start": 1490,
+          "end": 1494,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Astrocyte",
+          "start": 1499,
+          "end": 1508,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1530,
+          "end": 1537,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Pde10a",
+          "start": 1539,
+          "end": 1545,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cAMP",
+          "start": 1568,
+          "end": 1572,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:17560"
+        },
+        {
+          "entity": "phosphodiesterase 10A",
+          "start": 1583,
+          "end": 1603,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1623,
+          "end": 1630,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Astrocyte",
+          "start": 1634,
+          "end": 1643,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "Sst-Interneuron",
+          "start": 1648,
+          "end": 1663,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Previous research has demonstrated that Drd1-expressing MSNs exhibit robust transcriptional changes in response to cocaine (Savell et al., 2020;Bertran-Gonzalez et al., 2008;Zhang et al., 2006;Zhang et al., 2005). More specifically, snRNA-seq from the rat NAc following acute cocaine exposure demonstrated that D1-MSNs have the most robust transcriptional response to cocaine when compared to other transcriptionally distinct NAc cell types (Savell et al., 2020). In this dataset, only one of the Drd1-expressing MSN populations (Drd1-MSN-1) had a robust transcriptional response to cocaine. For example, Nr4a3, Fosb, Fosl2, and Tiparp are all significantly increased following cocaine exposure only in the Drd1-MSN-1 population (Fig. 4e).",
+      "entities": [
+        {
+          "entity": "Drd1",
+          "start": 41,
+          "end": 45,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        },
+        {
+          "entity": "MSNs",
+          "start": 58,
+          "end": 62,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000669"
+        },
+        {
+          "entity": "cocaine",
+          "start": 113,
+          "end": 120,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 122,
+          "end": 140,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Bertran-Gonzalez et al., 2008",
+          "start": 141,
+          "end": 170,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Zhang et al., 2006",
+          "start": 171,
+          "end": 189,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Zhang et al., 2005",
+          "start": 190,
+          "end": 208,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 221,
+          "end": 231,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 237,
+          "end": 240,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 241,
+          "end": 244,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0001874"
+        },
+        {
+          "entity": "cocaine",
+          "start": 258,
+          "end": 265,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "D1-MSNs",
+          "start": 279,
+          "end": 286,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000669"
+        },
+        {
+          "entity": "cocaine",
+          "start": 344,
+          "end": 351,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "NAc",
+          "start": 389,
+          "end": 392,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0001874"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 404,
+          "end": 422,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 458,
+          "end": 462,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        },
+        {
+          "entity": "MSN",
+          "start": 476,
+          "end": 479,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000669"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 489,
+          "end": 499,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 553,
+          "end": 560,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 585,
+          "end": 595,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 562,
+          "end": 567,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        },
+        {
+          "entity": "Fosb",
+          "start": 569,
+          "end": 573,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 575,
+          "end": 579,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        },
+        {
+          "entity": "Tiparp",
+          "start": 585,
+          "end": 591,
+          "label": "GENE",
+          "ontology mapping": "NCBI gene"
+        }
+      ]
+    },
+    {
+      "text": "Next, we set out to investigate the relationship of cocaine dependent DEGs across cocaine exposure paradigms. To do this, we first conducted DEG analyses comparing cocaine and saline samples with exposure type ignored (i.e., all cocaine samples vs all saline samples), acute exposure only, and repeated exposure samples only. The log2 (Fold Change) values for all DEGs were then concatenated and subject to hierarchical clustering. Overall, this analysis identified that many of the genes altered by acute cocaine are also altered by repeated cocaine in the same direction (Fig. 4f-h). However, for the Drd1-MSN-1 population some genes altered by acute cocaine are not altered by repeated cocaine. Furthermore, while the overall pattern shows concordant gene expression patterns, some cocaine-regulated genes within the Astrocyte cluster demonstrate opposite changes with an acute or repeated exposure. To estimate the degree of concordance between gene expression programs altered by acute and repeated cocaine exposure in a thresholdfree manner, we next used the rank-rank hypergeometric overlap (RRHO) algorithm (Cahill et al., 2018). To complete this analysis, we ranked gene lists by the log2 (Fold Change), which was calculated by dividing the log-normalized expression values of cocaine cells by the log-normalized expression values of saline cells. This analysis identified that, on a cell type-specific basis, acute and repeated cocaine gene expression signatures are primarily concordant. For example, the acute and repeated cocaine changes for the Drd1-MSN-1, Astrocyte, and Sst-Interneuron populations are significantly concordant for both upregulated and downregulated genes (Fig. 4i-l). However, the strength of this overlap and concordance is substantially different for these populations.",
+      "entities": [
+        {
+          "entity": "cocaine",
+          "start": 51,
+          "end": 58,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "DEGs",
+          "start": 68,
+          "end": 72,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 80,
+          "end": 87,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "DEG",
+          "start": 112,
+          "end": 115,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 129,
+          "end": 136,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "saline",
+          "start": 139,
+          "end": 145,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:32567"
+        },
+        {
+          "entity": "cocaine",
+          "start": 172,
+          "end": 179,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "saline",
+          "start": 183,
+          "end": 189,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:32567"
+        },
+        {
+          "entity": "DEGs",
+          "start": 223,
+          "end": 227,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 278,
+          "end": 283,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 290,
+          "end": 297,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "cocaine",
+          "start": 319,
+          "end": 326,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 341,
+          "end": 351,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 364,
+          "end": 369,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 377,
+          "end": 384,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "cocaine",
+          "start": 408,
+          "end": 415,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "genes",
+          "start": 461,
+          "end": 466,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Astrocyte",
+          "start": 474,
+          "end": 483,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "cocaine",
+          "start": 541,
+          "end": 548,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "gene",
+          "start": 597,
+          "end": 601,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 642,
+          "end": 649,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "saline",
+          "start": 710,
+          "end": 716,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:32567"
+        },
+        {
+          "entity": "cocaine",
+          "start": 723,
+          "end": 730,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "gene",
+          "start": 731,
+          "end": 735,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 799,
+          "end": 809,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Astrocyte",
+          "start": 811,
+          "end": 820,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000127"
+        },
+        {
+          "entity": "Sst-Interneuron",
+          "start": 826,
+          "end": 841,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 899,
+          "end": 904,
+          "label": "GENE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Recently, transcriptional atlases of the non-human primate (NHP) striatum (He et al., 2021) and human NAc (Tran et al., 2021) have demonstrated similar gene expression profiles of specific marker genes that we identify within the rat NAc. To quantify this overlap and perform cross-species comparisons, we focused on conservation of MSNs given that both NHP and human datasets identified and validated the presence of several transcriptionally distinct MSN subtypes. Direct comparison of our rat snRNA-seq dataset to monkey or human datasets revealed potential conservation of many NHP and human cell types (Fig. 5a-c). For example, the rat Drd1-MSN-1 population is correlated with the human D1.MSN_A and NHP D1.Matrix populations, and the rat Drd2-MSN-1 population is correlated with the human D2.MSN_A and the NHP D2. Matrix population (Fig. 5a-d).",
+      "entities": [
+        {
+          "entity": "non-human primate",
+          "start": 43,
+          "end": 60,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "NHP",
+          "start": 62,
+          "end": 65,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "striatum",
+          "start": 66,
+          "end": 74,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "He et al., 2021",
+          "start": 76,
+          "end": 91,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 96,
+          "end": 101,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "NAc",
+          "start": 102,
+          "end": 105,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "Tran et al., 2021",
+          "start": 107,
+          "end": 122,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene expression profiles",
+          "start": 138,
+          "end": 161,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "marker genes",
+          "start": 169,
+          "end": 181,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 206,
+          "end": 209,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "NAc",
+          "start": 210,
+          "end": 213,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "MSNs",
+          "start": 298,
+          "end": 302,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL"
+        },
+        {
+          "entity": "NHP",
+          "start": 317,
+          "end": 320,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 325,
+          "end": 330,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "MSN",
+          "start": 392,
+          "end": 395,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL"
+        },
+        {
+          "entity": "rat",
+          "start": 417,
+          "end": 420,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 421,
+          "end": 431,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "monkey",
+          "start": 439,
+          "end": 445,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "human",
+          "start": 449,
+          "end": 454,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "NHP",
+          "start": 497,
+          "end": 500,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 504,
+          "end": 509,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "rat",
+          "start": 523,
+          "end": 526,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 527,
+          "end": 537,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 561,
+          "end": 566,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "D1.MSN_A",
+          "start": 567,
+          "end": 575,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NHP",
+          "start": 580,
+          "end": 583,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "D1.Matrix",
+          "start": 584,
+          "end": 593,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 609,
+          "end": 612,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 613,
+          "end": 623,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 647,
+          "end": 652,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "D2.MSN_A",
+          "start": 653,
+          "end": 661,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NHP",
+          "start": 667,
+          "end": 670,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "D2. Matrix",
+          "start": 671,
+          "end": 680,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Transcriptionally conserved cell types should exhibit similar expression and enrichment of marker genes. For example, Drd2-MSNs are classically characterized by the enrichment of Drd2 and Penk, while Drd1-MSNs are characterized by the enrichment of Drd1 and Ebf1. Across species, transcriptionally distinct populations of Drd2-MSNs are similarly enriched for Drd2, but differ in their enrichment of Penk (Fig. 5c, Supp. Fig. 4a-c). A similar pattern is observed in Drd1-MSNs across species, as Drd1 is highly enriched in Drd1-MSNs, but Ebf1 enrichment differs (Fig. 5c, Supp. Fig. 4a-c). While the differential expression of Htr4 or Ebf1 distinguishes Drd1-MSNs in the rat NAc, this pattern is not observed in higher order mammals as Htr4 is ubiquitously expressed across cell types (Supp. Fig. 4a-c). Furthermore, Htr4 is enriched in the MSN.D1_A human population (Fig. 5c) along with Ebf1. Thus, Htr4 and Ebf1 may not be suitable markers for distinguishing between transcriptionally distinct populations of Drd1-MSNs in higher order mammals.",
+      "entities": [
+        {
+          "entity": "cell types",
+          "start": 28,
+          "end": 38,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "marker genes",
+          "start": 83,
+          "end": 95,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSNs",
+          "start": 108,
+          "end": 117,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2",
+          "start": 161,
+          "end": 165,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Penk",
+          "start": 170,
+          "end": 174,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 181,
+          "end": 190,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 234,
+          "end": 238,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 243,
+          "end": 247,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSNs",
+          "start": 297,
+          "end": 306,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2",
+          "start": 339,
+          "end": 343,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Penk",
+          "start": 380,
+          "end": 384,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 431,
+          "end": 440,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 460,
+          "end": 464,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 478,
+          "end": 487,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 493,
+          "end": 497,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 545,
+          "end": 549,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 553,
+          "end": 557,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 569,
+          "end": 578,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat NAc",
+          "start": 582,
+          "end": 589,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1613783"
+        },
+        {
+          "entity": "Htr4",
+          "start": 651,
+          "end": 655,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 699,
+          "end": 709,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "Htr4",
+          "start": 730,
+          "end": 734,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSN.D1_A human population",
+          "start": 750,
+          "end": 776,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 790,
+          "end": 794,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 801,
+          "end": 805,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 810,
+          "end": 814,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSNs",
+          "start": 880,
+          "end": 889,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Within the past few decades, a major focus of drug addiction research has been on the transcriptional and epigenetic changes occurring in the NAc following drug exposure. While these studies have been integral in our understanding of how drug experience shapes the brain, they have Fig. 5. Identification of conserved neuronal cell types across higher order mammals. a-b, Heatmap colored by the Pearsons correlation coefficient between rat, nonhuman primate, and human cell types. Correlation coefficients were calculated using t-statistic for rat MSN DEGs and their orthologs. c, Heatmaps colored by tstatistic for specific MSN marker genes in rat, non-human primate, and human. d, Estimated conservation of NAc neuronal cell types across rat, non-human primate, and human.",
+      "entities": [
+        {
+          "entity": "drug addiction",
+          "start": 47,
+          "end": 61,
+          "label": "DISORDER",
+          "ontology mapping": "MONDO:0005309"
+        },
+        {
+          "entity": "transcriptional and epigenetic changes",
+          "start": 85,
+          "end": 121,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 134,
+          "end": 137,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0977986"
+        },
+        {
+          "entity": "drug exposure",
+          "start": 149,
+          "end": 162,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drug experience",
+          "start": 205,
+          "end": 221,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "brain",
+          "start": 229,
+          "end": 234,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0963403"
+        },
+        {
+          "entity": "neuronal cell types",
+          "start": 291,
+          "end": 309,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000003"
+        },
+        {
+          "entity": "mammals",
+          "start": 321,
+          "end": 328,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:40674"
+        },
+        {
+          "entity": "rat",
+          "start": 379,
+          "end": 382,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "nonhuman primate",
+          "start": 384,
+          "end": 400,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:34249"
+        },
+        {
+          "entity": "human",
+          "start": 406,
+          "end": 411,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        },
+        {
+          "entity": "cell types",
+          "start": 412,
+          "end": 422,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000003"
+        },
+        {
+          "entity": "rat",
+          "start": 494,
+          "end": 497,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "MSN",
+          "start": 498,
+          "end": 501,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DEGs",
+          "start": 502,
+          "end": 506,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 557,
+          "end": 560,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "non-human primate",
+          "start": 562,
+          "end": 579,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:34249"
+        },
+        {
+          "entity": "human",
+          "start": 585,
+          "end": 590,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        },
+        {
+          "entity": "MSN",
+          "start": 615,
+          "end": 618,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "marker genes",
+          "start": 619,
+          "end": 630,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 635,
+          "end": 638,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "non-human primate",
+          "start": 640,
+          "end": 657,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:34249"
+        },
+        {
+          "entity": "human",
+          "start": 663,
+          "end": 668,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        },
+        {
+          "entity": "NAc",
+          "start": 708,
+          "end": 711,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0977986"
+        },
+        {
+          "entity": "neuronal cell types",
+          "start": 712,
+          "end": 730,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000003"
+        },
+        {
+          "entity": "rat",
+          "start": 736,
+          "end": 739,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "non-human primate",
+          "start": 741,
+          "end": 758,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:34249"
+        },
+        {
+          "entity": "human",
+          "start": 764,
+          "end": 769,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        }
+      ]
+    },
+    {
+      "text": "primarily used techniques that ignore cell-type heterogeneity. Furthermore, although the NAc is fundamental in reward processing and the rat is a primary model organism used for reward-related research, few studies have comprehensively profiled the rat NAc at the transcriptional level. snRNA-seq provides the unique opportunity to study both the cell type-specific transcriptional responses to drugs of abuse, as well as the cell-type heterogeneity that exists within the NAc. In the present study, we report the integration of a previously published NAc snRNA-seq dataset collected following acute cocaine exposure (Savell et al., 2020) with a new dataset collected following repeated cocaine exposure. The resulting dataset contains 39,254 nuclei across 16 transcriptionally distinct populations (11 neuronal and 5 non-neuronal), which more than doubles the size of our previously published work. The addition of both biological and technical replicates, along with the addition of over 24,000 nuclei, allowed us to generate a comprehensive transcriptional atlas of the rat NAc and investigate cell type-specific transcriptional responses to cocaine.",
+      "entities": [
+        {
+          "entity": "cell-type heterogeneity",
+          "start": 41,
+          "end": 63,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 79,
+          "end": 82,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0951084"
+        },
+        {
+          "entity": "reward processing",
+          "start": 100,
+          "end": 117,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 122,
+          "end": 125,
+          "label": "ORGANISM",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "reward-related research",
+          "start": 147,
+          "end": 169,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 224,
+          "end": 227,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0951084"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 228,
+          "end": 238,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 293,
+          "end": 307,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:50079"
+        },
+        {
+          "entity": "cell-type heterogeneity",
+          "start": 322,
+          "end": 344,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 364,
+          "end": 367,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0951084"
+        },
+        {
+          "entity": "NAc",
+          "start": 424,
+          "end": 427,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0951084"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 428,
+          "end": 438,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 476,
+          "end": 483,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 485,
+          "end": 503,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 542,
+          "end": 549,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "39,254",
+          "start": 574,
+          "end": 580,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 581,
+          "end": 587,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "16",
+          "start": 595,
+          "end": 597,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "11 neuronal",
+          "start": 633,
+          "end": 644,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "5 non-neuronal",
+          "start": 649,
+          "end": 664,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "24,000",
+          "start": 732,
+          "end": 738,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 739,
+          "end": 745,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "rat",
+          "start": 795,
+          "end": 798,
+          "label": "ORGANISM",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 799,
+          "end": 802,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A0951084"
+        },
+        {
+          "entity": "cocaine",
+          "start": 875,
+          "end": 882,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        }
+      ]
+    },
+    {
+      "text": "We were also interested in understanding the distribution of expression of genes encoding different receptor systems, which provides additional information regarding which cell types may respond to diverse classes of drugs. For example, there is significant renewed interest in the action of psychedelic drugs, many of which act on serotonin receptors. Htr2a, the gene encoding serotonin receptor type 2A and the expected target of many psychedelics, is expressed in a small proportion of Drd1-and Drd2-expressing MSNs, as well as Sst-interneurons (Supp. Fig. 5a). Thus, these populations of cells will most likely respond to classic psychedelics. There is also considerable interest in the distribution of expression of opioid receptors in the NAc as opioid-associated overdose deaths continue to increase (Hedegaard et al., 2021;Ciccarone, 2021). Previous research has demonstrated that 25  of cells containing the delta opioid receptor (Oprd1) in the NAc also contained Met 5 -Enkaphalin (Svingos et al., 1998), a peptide encoded by the gene Penk. Penk is a marker gene for Drd2-expressing MSNs, suggesting that the delta opioid receptor is expressed in this population of neurons. Our data confirms this observation, as Oprd1 is highly expressed in the Drd2-MSN-1 population (Supp. Fig. 5a-c).",
+      "entities": [
+        {
+          "entity": "genes",
+          "start": 69,
+          "end": 74,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "receptor systems",
+          "start": 83,
+          "end": 99,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 152,
+          "end": 162,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "drugs",
+          "start": 187,
+          "end": 192,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:23888"
+        },
+        {
+          "entity": "psychedelic drugs",
+          "start": 244,
+          "end": 261,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:35526"
+        },
+        {
+          "entity": "serotonin receptors",
+          "start": 279,
+          "end": 298,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C0036488"
+        },
+        {
+          "entity": "Htr2a",
+          "start": 300,
+          "end": 305,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene",
+          "start": 311,
+          "end": 315,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "serotonin receptor type 2A",
+          "start": 324,
+          "end": 350,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "psychedelics",
+          "start": 378,
+          "end": 390,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:35526"
+        },
+        {
+          "entity": "Drd1",
+          "start": 422,
+          "end": 426,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2",
+          "start": 431,
+          "end": 435,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSNs",
+          "start": 447,
+          "end": 451,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Sst-interneurons",
+          "start": 462,
+          "end": 478,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000603"
+        },
+        {
+          "entity": "psychedelics",
+          "start": 533,
+          "end": 545,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:35526"
+        },
+        {
+          "entity": "opioid receptors",
+          "start": 594,
+          "end": 610,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C0079968"
+        },
+        {
+          "entity": "NAc",
+          "start": 614,
+          "end": 617,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0001874"
+        },
+        {
+          "entity": "opioid-associated overdose deaths",
+          "start": 620,
+          "end": 652,
+          "label": "DISORDER",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hedegaard et al., 2021",
+          "start": 664,
+          "end": 685,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ciccarone, 2021",
+          "start": 686,
+          "end": 702,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "delta opioid receptor",
+          "start": 755,
+          "end": 775,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C0029401"
+        },
+        {
+          "entity": "Oprd1",
+          "start": 777,
+          "end": 782,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 789,
+          "end": 792,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0001874"
+        },
+        {
+          "entity": "Met 5 -Enkaphalin",
+          "start": 798,
+          "end": 815,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:75073"
+        },
+        {
+          "entity": "Svingos et al., 1998",
+          "start": 817,
+          "end": 837,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "peptide",
+          "start": 839,
+          "end": 846,
+          "label": "PROTEIN",
+          "ontology mapping": "CHEBI:16060"
+        },
+        {
+          "entity": "gene Penk",
+          "start": 858,
+          "end": 867,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Penk",
+          "start": 858,
+          "end": 862,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2",
+          "start": 886,
+          "end": 890,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSNs",
+          "start": 891,
+          "end": 895,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "delta opioid receptor",
+          "start": 908,
+          "end": 928,
+          "label": "PROTEIN",
+          "ontology mapping": "UMLS:C0029401"
+        },
+        {
+          "entity": "neurons",
+          "start": 968,
+          "end": 975,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000540"
+        },
+        {
+          "entity": "Oprd1",
+          "start": 999,
+          "end": 1004,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 1028,
+          "end": 1038,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "A major focus of this study was to characterize cell type-specific gene programs induced by cocaine experience. Prior work has revealed distinct differences in transcriptomic changes between volitional cocaine paradigms, such has self-administration, and experimenteradministered injections. For example, after a prolonged withdrawal period, animals that underwent cocaine self-administration exhibit increased surface expression of calcium permeable AMPA receptors, while animals that underwent experimenter-administered injections do not (McCutcheon et al., 2011). Additionally, a recent study systematically tested transcriptomic changes occurring in the VTA across several cocaine paradigms and identified several IEGs that are upregulated by experimenter-administered cocaine injections (Campbell et al., 2021). Like this study, we also identified several IEGs (Fosl2, Tiparp, Fosb), that are upregulated by experimenter-administered cocaine injections. Notably, we did not observe significant locomotor sensitization to repeated doses of cocaine in the present study (Supp. Fig. 1b). While sensitization is commonly (but not always (Gulley et al., 2003;Mayfield et al., 1992;Cass et al., 1993)) observed with repeated cocaine injections, it is possible that distinct gene expression patterns may be observed in animals that exhibit sensitized responses to cocaine as compared to those that do not. This will be an interesting consideration for future studies that are able to obtain single-nuclei transcriptional profiles while preserving individual animal variability in the data structure. Ultimately, the results presented in the current study shed light on cocaine-induced, cell-type specific transcriptomic changes occurring in the NAc, expanding our understanding of how drug experience shapes the brain. Further research investigating paradigmspecific transcriptional changes may identify molecular correlates of more complex behaviors, such as cocaine seeking or craving.",
+      "entities": [
+        {
+          "entity": "cell type-specific gene programs",
+          "start": 47,
+          "end": 78,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 88,
+          "end": 95,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "transcriptomic changes",
+          "start": 153,
+          "end": 174,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "self-administration",
+          "start": 187,
+          "end": 206,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "experimenteradministered injections",
+          "start": 212,
+          "end": 244,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine self-administration",
+          "start": 299,
+          "end": 325,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "calcium permeable AMPA receptors",
+          "start": 352,
+          "end": 384,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "experimenter-administered injections",
+          "start": 413,
+          "end": 445,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "McCutcheon et al., 2011",
+          "start": 452,
+          "end": 474,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "transcriptomic changes",
+          "start": 510,
+          "end": 531,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "VTA",
+          "start": 544,
+          "end": 547,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A000101"
+        },
+        {
+          "entity": "cocaine paradigms",
+          "start": 555,
+          "end": 572,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEGs",
+          "start": 590,
+          "end": 594,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "experimenter-administered cocaine injections",
+          "start": 610,
+          "end": 648,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Campbell et al., 2021",
+          "start": 650,
+          "end": 672,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEGs",
+          "start": 700,
+          "end": 704,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 706,
+          "end": 711,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Tiparp",
+          "start": 713,
+          "end": 719,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Fosb",
+          "start": 721,
+          "end": 725,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "experimenter-administered cocaine injections",
+          "start": 743,
+          "end": 781,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "locomotor sensitization",
+          "start": 816,
+          "end": 837,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 856,
+          "end": 863,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "Gulley et al., 2003",
+          "start": 909,
+          "end": 928,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Mayfield et al., 1992",
+          "start": 929,
+          "end": 949,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Cass et al., 1993",
+          "start": 950,
+          "end": 967,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine injections",
+          "start": 995,
+          "end": 1013,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1118,
+          "end": 1125,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "single-nuclei transcriptional profiles",
+          "start": 1213,
+          "end": 1250,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1321,
+          "end": 1328,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27958"
+        },
+        {
+          "entity": "transcriptomic changes",
+          "start": 1351,
+          "end": 1372,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 1387,
+          "end": 1390,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:A000595"
+        },
+        {
+          "entity": "drug",
+          "start": 1428,
+          "end": 1432,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:23888"
+        },
+        {
+          "entity": "brain",
+          "start": 1451,
+          "end": 1456,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0000955"
+        },
+        {
+          "entity": "cocaine seeking",
+          "start": 1523,
+          "end": 1537,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "craving",
+          "start": 1541,
+          "end": 1548,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "The largest transcriptional response to cocaine experience occurred in the Drd1-MSN-1 population (Fig. 4a,b). These changes included IEGs such as Fosl2. IEGs and other cocaine-regulated genes in the Drd1-MSN-1 population are induced by both acute and repeated cocaine, but to a lesser extent with repeated cocaine. This data is in agreement with previous research that demonstrated induction of FOSB protein by repeated cocaine was weaker as compared to acute cocaine (Zhang et al., 2005). The second population of Drd1-expressing MSNs within the NAc, Drd1-MSN-2, did not have a robust transcriptional response to cocaine experience. A multitude of previous research has demonstrated that Drd1-expressing cells within the NAc exhibit transcriptional and epigenetic responses to drugs of abuse (Savell et al., 2020;Bertran-Gonzalez et al., 2008;Zhang et al., 2006;Zhang et al., 2005;Zipperly et al., 2021). Thus, the identification of a population of Drd1-expressing MSNs in the NAc with a significantly attenuated transcriptional response to cocaine is intriguing because it highlights a previously underappreciated level of molecular heterogeneity within this population of cells. Notably, further analysis of population-specific DEGs also revealed an enrichment of calcium transport-related terms for Drd1-MSN-1 and potassium transport-related terms for Drd1-MSN-2. The differential enrichment for calcium-related terms and genes may explain the transcriptional response to cocaine in the Drd1-MSN-1 population, as many IEGs rely on calcium-dependent signaling cascades for induction.",
+      "entities": [
+        {
+          "entity": "cocaine",
+          "start": 41,
+          "end": 48,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-MSN-1 population",
+          "start": 69,
+          "end": 91,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEGs",
+          "start": 113,
+          "end": 117,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Fosl2",
+          "start": 126,
+          "end": 131,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1649"
+        },
+        {
+          "entity": "IEGs",
+          "start": 133,
+          "end": 137,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 146,
+          "end": 153,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-MSN-1 population",
+          "start": 181,
+          "end": 203,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 233,
+          "end": 240,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "cocaine",
+          "start": 267,
+          "end": 274,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "FOSB protein",
+          "start": 299,
+          "end": 311,
+          "label": "PROTEIN",
+          "ontology mapping": "NCBIGene:2354"
+        },
+        {
+          "entity": "cocaine",
+          "start": 315,
+          "end": 322,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "cocaine",
+          "start": 342,
+          "end": 349,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 369,
+          "end": 390,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 400,
+          "end": 403,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1282547"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 405,
+          "end": 415,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 463,
+          "end": 470,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-expressing cells",
+          "start": 521,
+          "end": 542,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 552,
+          "end": 555,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1282547"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 598,
+          "end": 612,
+          "label": "DRUG",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 702,
+          "end": 723,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 727,
+          "end": 730,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1282547"
+        },
+        {
+          "entity": "cocaine",
+          "start": 801,
+          "end": 808,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "DEGs",
+          "start": 881,
+          "end": 885,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 922,
+          "end": 932,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "potassium",
+          "start": 937,
+          "end": 946,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:26708"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 970,
+          "end": 980,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "calcium",
+          "start": 1005,
+          "end": 1012,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:29108"
+        },
+        {
+          "entity": "cocaine",
+          "start": 1061,
+          "end": 1068,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27957"
+        },
+        {
+          "entity": "Drd1-MSN-1 population",
+          "start": 1072,
+          "end": 1094,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IEGs",
+          "start": 1104,
+          "end": 1108,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "calcium",
+          "start": 1117,
+          "end": 1124,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:29108"
+        }
+      ]
+    },
+    {
+      "text": "Our dataset also provided the opportunity to identify marker genes for these two populations. We identified Ebf1 as a marker gene for the Drd1-MSN-1 population and Htr4 as a marker gene for the Drd1-MSN-2 population. In situ experiments validated the presence of two distinct populations of Drd1-expressing MSNs based on the presence of Htr4 and Ebf1. These in situ experiments also revealed a spatial separation of these MSNs, as Drd1Ebf1 cells were primarily found in the NAc core and Drd1Htr4 cells were primarily found in the NAc shell. Transcriptional similarity based on spatial location may also explain why the Drd1-MSN-1 population is more closely related to the Drd2-MSN-1 population than the Drd1-MSN-2 population (Supp. Fig. 4a). In fact, analysis of the relationship between cell types within the NHP identifies that Drd1-and Drd2-expressing MSNs from the same striatal subregions are more closely related than Drd1-expressing MSNs found in distinct striatal compartments (Supp. Fig. 4b). Similarly, the MSN.D1_A and MSN.D2_A human populations are more closely related to each other than other Drd1-or Drd2-expressing MSNs, although no spatial information is available in that dataset (Supp. Fig. 4c). Together, these results suggest that at least some component of transcriptional diversity in the NAc reflects the spatial organization of this structure.",
+      "entities": [
+        {
+          "entity": "Ebf1",
+          "start": 91,
+          "end": 95,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1884"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 120,
+          "end": 130,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 138,
+          "end": 142,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:3353"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 167,
+          "end": 177,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 242,
+          "end": 262,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4",
+          "start": 286,
+          "end": 290,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:3353"
+        },
+        {
+          "entity": "Ebf1",
+          "start": 295,
+          "end": 299,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:1884"
+        },
+        {
+          "entity": "MSNs",
+          "start": 352,
+          "end": 356,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1Ebf1 cells",
+          "start": 361,
+          "end": 375,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc core",
+          "start": 395,
+          "end": 402,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1294680"
+        },
+        {
+          "entity": "Drd1Htr4 cells",
+          "start": 407,
+          "end": 421,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc shell",
+          "start": 441,
+          "end": 449,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1294681"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 495,
+          "end": 505,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd2-MSN-1",
+          "start": 531,
+          "end": 541,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-2",
+          "start": 549,
+          "end": 559,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 609,
+          "end": 619,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000000"
+        },
+        {
+          "entity": "NHP",
+          "start": 627,
+          "end": 630,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 643,
+          "end": 647,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:2134"
+        },
+        {
+          "entity": "Drd2",
+          "start": 652,
+          "end": 656,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:2135"
+        },
+        {
+          "entity": "MSNs",
+          "start": 667,
+          "end": 671,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "striatal subregions",
+          "start": 684,
+          "end": 702,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-expressing MSNs",
+          "start": 722,
+          "end": 742,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "striatal compartments",
+          "start": 763,
+          "end": 784,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSN.D1_A",
+          "start": 809,
+          "end": 817,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSN.D2_A",
+          "start": 822,
+          "end": 830,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "human",
+          "start": 831,
+          "end": 836,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:9606"
+        },
+        {
+          "entity": "Drd1",
+          "start": 876,
+          "end": 880,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:2134"
+        },
+        {
+          "entity": "Drd2",
+          "start": 884,
+          "end": 888,
+          "label": "GENE",
+          "ontology mapping": "NCBIGene:2135"
+        },
+        {
+          "entity": "MSNs",
+          "start": 889,
+          "end": 893,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "NAc",
+          "start": 993,
+          "end": 996,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1294679"
+        }
+      ]
+    },
+    {
+      "text": "Although sex differences in drug-induced behavioral adaptations have long been appreciated (Hu et al., 2004;Bobzean et al., 2014;Becker and Chartoff, 2019;Evans, 2007), more recent research has also demonstrated sex-specific drug-induced molecular adaptations (L\u00f3pez et al., 2021). Our dataset includes nuclei from both male and female rats, and thus we examined sex-specific transcriptional responses to cocaine across cell populations within the NAc, again using the collapsed acute and repeated dataset to enable pseudobulk treatment comparisons between male and females. In general, the direction of cocaine-induced mRNA changes was largely concordant between males and females across most cell populations (Supp. Fig. 6a-d), however significance criteria were often only met for one sex (Supp. Table 3). Overall, the Drd1-MSN-1 population was the most transcriptionally responsive to cocaine for both sexes in terms of total number of genes altered. Consistent with the sex-combined identification of cocaine DEGs, immediate early gene Nr4a3, transcription elongation factor Ell2, and cytoskeletal regulator Elmo2 were all significantly elevated in the Drd1-MSN-1 population in both sexes (Supp. Fig. 6e). Interestingly, sexspecific cocaine DEG comparisons revealed that while some genes, like Nr4a3 and Ell2, display relatively consistent patterns of expression between males and females across populations (Supp. Fig. 6e-f), other genes like Hs6st3 exhibit more dynamic patterns of expression (Supp. Fig. 6g).",
+      "entities": [
+        {
+          "entity": "drug-induced behavioral adaptations",
+          "start": 28,
+          "end": 61,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hu et al., 2004",
+          "start": 81,
+          "end": 96,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Bobzean et al., 2014",
+          "start": 97,
+          "end": 116,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Becker and Chartoff, 2019",
+          "start": 117,
+          "end": 143,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Evans, 2007",
+          "start": 144,
+          "end": 156,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drug-induced molecular adaptations",
+          "start": 190,
+          "end": 224,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "L\u00f3pez et al., 2021",
+          "start": 225,
+          "end": 241,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rats",
+          "start": 275,
+          "end": 279,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "cocaine",
+          "start": 349,
+          "end": 356,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27927"
+        },
+        {
+          "entity": "NAc",
+          "start": 404,
+          "end": 407,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295906"
+        },
+        {
+          "entity": "cocaine-induced mRNA changes",
+          "start": 491,
+          "end": 520,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 598,
+          "end": 608,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 649,
+          "end": 656,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27927"
+        },
+        {
+          "entity": "genes",
+          "start": 695,
+          "end": 700,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine DEGs",
+          "start": 742,
+          "end": 754,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 774,
+          "end": 779,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ell2",
+          "start": 810,
+          "end": 814,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Elmo2",
+          "start": 842,
+          "end": 847,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1-MSN-1",
+          "start": 898,
+          "end": 908,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 941,
+          "end": 948,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27927"
+        },
+        {
+          "entity": "Nr4a3",
+          "start": 983,
+          "end": 988,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ell2",
+          "start": 993,
+          "end": 997,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hs6st3",
+          "start": 1079,
+          "end": 1084,
+          "label": "GENE",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "In conclusion, we have generated a comprehensive transcriptional atlas of the rat NAc that also provides information regarding cocainedependent gene expression changes. The use of snRNA-seq provided the ability to understand cell types that potentially mediate cellular and behavioral responses to drugs of abuse. Analysis of this dataset resulted in the identification of transcriptionally distinct populations of Drd1expressing MSNs that differ by their spatial location and transcriptional response to cocaine. This dataset will be a resource for future research into transcriptionally distinct populations of NAc cells and their responses to drugs of abuse.",
+      "entities": [
+        {
+          "entity": "rat",
+          "start": 76,
+          "end": 79,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "NAc",
+          "start": 80,
+          "end": 83,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "cocaine",
+          "start": 123,
+          "end": 130,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI"
+        },
+        {
+          "entity": "gene expression",
+          "start": 131,
+          "end": 146,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 156,
+          "end": 166,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cell types",
+          "start": 193,
+          "end": 203,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL"
+        },
+        {
+          "entity": "behavioral",
+          "start": 222,
+          "end": 232,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 245,
+          "end": 259,
+          "label": "DRUG",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1",
+          "start": 303,
+          "end": 307,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSNs",
+          "start": 317,
+          "end": 321,
+          "label": "CELL_TYPE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 391,
+          "end": 398,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI"
+        },
+        {
+          "entity": "NAc",
+          "start": 476,
+          "end": 479,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "drugs of abuse",
+          "start": 491,
+          "end": 505,
+          "label": "DRUG",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "All experiments were performed in accordance with the University of Alabama at Birmingham Institutional Animal Care and Use Committee. Male or female adult rats were intraperitoneally injected with Cocaine hydrocholoride at a dose of 20 mgkg or saline. Locomotor testing was performed as previously described (Savell et al., 2020). Animals undergoing acute cocaine exposure received a single dose, while those undergoing repeated cocaine exposure received one injection per day for 7 days.",
+      "entities": [
+        {
+          "entity": "University of Alabama at Birmingham Institutional Animal Care and Use Committee",
+          "start": 55,
+          "end": 140,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rats",
+          "start": 163,
+          "end": 167,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "Cocaine hydrocholoride",
+          "start": 205,
+          "end": 225,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27949"
+        },
+        {
+          "entity": "20 mgkg",
+          "start": 237,
+          "end": 244,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "saline",
+          "start": 248,
+          "end": 254,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:32568"
+        },
+        {
+          "entity": "Locomotor testing",
+          "start": 256,
+          "end": 274,
+          "label": "BEHAVIOR",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 300,
+          "end": 318,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "cocaine",
+          "start": 340,
+          "end": 347,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27949"
+        },
+        {
+          "entity": "cocaine",
+          "start": 398,
+          "end": 405,
+          "label": "DRUG",
+          "ontology mapping": "CHEBI:27949"
+        },
+        {
+          "entity": "7 days",
+          "start": 449,
+          "end": 455,
+          "label": "TIME",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Nuclei dissociation for snRNA-seq was performed as previously described (Savell et al., 2020). Nuclei from 4 animals of the same sex, treatment group, and exposure length were pooled for tissue preparation and loaded into a single GEM (gel beads in emulsion) well.",
+      "entities": [
+        {
+          "entity": "nuclei dissociation",
+          "start": 0,
+          "end": 19,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "snRNA-seq",
+          "start": 24,
+          "end": 34,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Savell et al., 2020",
+          "start": 68,
+          "end": 86,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nuclei",
+          "start": 88,
+          "end": 94,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000138"
+        },
+        {
+          "entity": "4",
+          "start": 100,
+          "end": 101,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "animals",
+          "start": 102,
+          "end": 109,
+          "label": "ORGANISM",
+          "ontology mapping": "NCBITaxon:33208"
+        },
+        {
+          "entity": "sex",
+          "start": 121,
+          "end": 124,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "treatment group",
+          "start": 126,
+          "end": 141,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "exposure length",
+          "start": 147,
+          "end": 162,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "tissue",
+          "start": 182,
+          "end": 188,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UBERON:0000479"
+        },
+        {
+          "entity": "GEM (gel beads in emulsion)",
+          "start": 208,
+          "end": 235,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Libraries were constructed according to manufacturers instructions using the Chromium Single Cell 3  Library Construction Kit (10 Genomics, catalog no. 1000092), which uses version 3 chemistry for gene expression. Nuclei (15,655) from adult rat NAc after acute cocaine and nuclei (23,599) from adult rat NAc after repeated cocaine were sequenced on the Illumina NextSeq 500 at the UAB Heflin Genomics core to a depth of 39,000 reads per nuclei and 22,000 reads per nuclei, respectively. All raw fastq files were aligned to the Ensembl mRatBn7.2 (Rn7) genome using CellRanger (v6.1.2) with the associated Ensembl gene transfer format (gtf) file (version 105). Cell Ranger filtered outputs were analyzed with Seurat v4.0.4 (Hao et al., 2021) using R v4.0.2. Nuclei containing 200 features and 5  of reads mapping to the mitochondrial genome were removed from further analysis. Molecular count data from each GEM (gel beads in emulsion) well were then log-normalized with a scaling factor of 10,000. Following normalization, and before dimensionality reduction, all GEM wells were then integrated with FindIntegrationAnchors() and IntegrateData using 17 principal components (PCs) and a resolution value of 0.1 for both the acute and repeated datasets. Local Inverse Simpsons Index was calculated to ensure successful integration of all 8 GEM wells using lisi v1.0 with default parameters. Recent research has demonstrated that ambient RNA can be captured with single cells or nuclei with dropletbased single-cellsingle-nucleus technologies. To avoid interpreting any signal associated with ambient RNA, we used SoupX v1.5.2 (Young and Behjati, 2020) to remove any signal associated with ambient RNA. Droplet based single-cellsingle-nucleus technologies are also susceptible to the capture of doublets, or two cellsnuclei being captured within a single droplet. Homotypic doublets, or doublets containing two cells of the same cell-type, are difficult to identify and remove. However, heterotypic doublets, or doublets containing two cells of different cell types, can be identified as cells that have a combination of cell typespecific transcriptional signatures. Heterotypic doublets were not identified in our acute dataset. However, heterotypic doublets were identified and removed from the repeated dataset using DoubletFinder v2.0.3 (McGinnis et al., 2019). For differential expression testing, gene counts were first summed across GEM wells within each cell type to create a pseudobulked gene expression matrix. Any genes with counts 5 were removed from further analysis. Differential expression testing was then completed using pseudobulked gene expression matrices with DESeq2 v1.28.1 (Love et al., 2014) using the Likelihood Ratio Test (LRT). The data sets utilized in this paper are from two separate experiments and therefore represent two separate batches. Batch effects can substantially alter transcriptional profiles and to control for this data set was included as a covariate in all differential expression testing. In addition to data set, treatment was used as a covariate for differential expression testing across genetic sex and cell types. Including these variables as covariates allows us to ensure that all DEGs are due to treatment, cell type, or sex and not another confounding variable. Gini coefficients were calculated using the gini() function that is available in the reldist v1.6-6 package (Gini, 1921;Handcock and Morris, 1999). Rank-rank hypergeometric overlap (RRHO) was calculated using the log2 (Fold Change) of all genes regardless of adjusted p-value. RRHO heatmaps were generated using RRHO2 v1.0 (Cahill et al., 2018;Plaisier et al., 2010). Molecular function gene ontology terms were generated with DEGs expressed in 10  of the cluster using g:GOSt made available by gProfiler (Raudvere et al., 2019). For this tool, the statistical domain scope set to Only annotated genes and significance threshold set to Benjamini-Hochberg FDR. All R code for this analysis is available at https:github.comJeremy-Day-LabPhillips_2023_NAc.",
+      "entities": [
+        {
+          "entity": "Chromium Single Cell 3  Library Construction Kit",
+          "start": 85,
+          "end": 133,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "10 Genomics",
+          "start": 135,
+          "end": 147,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "1000092",
+          "start": 162,
+          "end": 169,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene expression",
+          "start": 208,
+          "end": 223,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nuclei",
+          "start": 225,
+          "end": 231,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000159"
+        },
+        {
+          "entity": "15,655",
+          "start": 233,
+          "end": 239,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "adult rat",
+          "start": 245,
+          "end": 254,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 255,
+          "end": 258,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295880"
+        },
+        {
+          "entity": "acute cocaine",
+          "start": 264,
+          "end": 277,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 282,
+          "end": 288,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000159"
+        },
+        {
+          "entity": "23,599",
+          "start": 290,
+          "end": 296,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "adult rat",
+          "start": 302,
+          "end": 311,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "NAc",
+          "start": 312,
+          "end": 315,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS:C1295880"
+        },
+        {
+          "entity": "repeated cocaine",
+          "start": 321,
+          "end": 336,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Illumina NextSeq 500",
+          "start": 352,
+          "end": 373,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "UAB Heflin Genomics",
+          "start": 378,
+          "end": 398,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "39,000",
+          "start": 412,
+          "end": 418,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 435,
+          "end": 441,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000159"
+        },
+        {
+          "entity": "22,000",
+          "start": 446,
+          "end": 452,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "nuclei",
+          "start": 458,
+          "end": 464,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000159"
+        },
+        {
+          "entity": "Ensembl mRatBn7.2",
+          "start": 501,
+          "end": 517,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Rn7",
+          "start": 519,
+          "end": 522,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "CellRanger",
+          "start": 529,
+          "end": 539,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "v6.1.2",
+          "start": 541,
+          "end": 547,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ensembl",
+          "start": 568,
+          "end": 575,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene transfer format",
+          "start": 576,
+          "end": 595,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gtf",
+          "start": 597,
+          "end": 600,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:46768"
+        },
+        {
+          "entity": "version 105",
+          "start": 606,
+          "end": 617,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Cell Ranger",
+          "start": 619,
+          "end": 630,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Seurat v4.0.4",
+          "start": 654,
+          "end": 667,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Hao et al.",
+          "start": 669,
+          "end": 678,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2021",
+          "start": 680,
+          "end": 684,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "R v4.0.2",
+          "start": 691,
+          "end": 699,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Nuclei",
+          "start": 701,
+          "end": 707,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL:0000159"
+        },
+        {
+          "entity": "200",
+          "start": 719,
+          "end": 722,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "5",
+          "start": 735,
+          "end": 736,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "mitochondrial genome",
+          "start": 758,
+          "end": 777,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GEM",
+          "start": 826,
+          "end": 829,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gel beads in emulsion",
+          "start": 831,
+          "end": 852,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "10,000",
+          "start": 897,
+          "end": 903,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GEM",
+          "start": 960,
+          "end": 963,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "FindIntegrationAnchors()",
+          "start": 977,
+          "end": 1001,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "IntegrateData",
+          "start": 1006,
+          "end": 1019,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "17",
+          "start": 1025,
+          "end": 1027,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "principal components",
+          "start": 1028,
+          "end": 1048,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "PCs",
+          "start": 1050,
+          "end": 1053,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "0.1",
+          "start": 1084,
+          "end": 1087,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Local Inverse Simpsons Index",
+          "start": 1107,
+          "end": 1136,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "8",
+          "start": 1176,
+          "end": 1177,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GEM",
+          "start": 1178,
+          "end": 1181,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "lisi v1.0",
+          "start": 1182,
+          "end": 1191,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RNA",
+          "start": 1247,
+          "end": 1250,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "SoupX v1.5.2",
+          "start": 1317,
+          "end": 1330,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Young and Behjati",
+          "start": 1332,
+          "end": 1349,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2020",
+          "start": 1351,
+          "end": 1355,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RNA",
+          "start": 1395,
+          "end": 1398,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene counts",
+          "start": 1596,
+          "end": 1607,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GEM",
+          "start": 1628,
+          "end": 1631,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Any genes",
+          "start": 1686,
+          "end": 1695,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "5",
+          "start": 1709,
+          "end": 1710,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DESeq2 v1.28.1",
+          "start": 1791,
+          "end": 1806,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Love et al.",
+          "start": 1808,
+          "end": 1818,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2014",
+          "start": 1820,
+          "end": 1824,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Likelihood Ratio Test",
+          "start": 1832,
+          "end": 1853,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "LRT",
+          "start": 1855,
+          "end": 1858,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "treatment",
+          "start": 1975,
+          "end": 1984,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genetic sex",
+          "start": 2018,
+          "end": 2029,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "treatment",
+          "start": 2091,
+          "end": 2100,
+          "label": "TREATMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Gini coefficients",
+          "start": 2147,
+          "end": 2164,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gini()",
+          "start": 2177,
+          "end": 2183,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "reldist v1.6-6",
+          "start": 2221,
+          "end": 2235,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Gini",
+          "start": 2237,
+          "end": 2241,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "1921",
+          "start": 2243,
+          "end": 2247,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Handcock and Morris",
+          "start": 2248,
+          "end": 2268,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "1999",
+          "start": 2270,
+          "end": 2274,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Rank-rank hypergeometric overlap",
+          "start": 2276,
+          "end": 2309,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RRHO",
+          "start": 2311,
+          "end": 2315,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "genes",
+          "start": 2355,
+          "end": 2360,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RRHO heatmaps",
+          "start": 2382,
+          "end": 2396,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RRHO2 v1.0",
+          "start": 2402,
+          "end": 2413,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Cahill et al.",
+          "start": 2415,
+          "end": 2426,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2018",
+          "start": 2428,
+          "end": 2432,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Plaisier et al.",
+          "start": 2433,
+          "end": 2447,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2010",
+          "start": 2449,
+          "end": 2453,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Molecular function gene ontology",
+          "start": 2455,
+          "end": 2489,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DEGs",
+          "start": 2512,
+          "end": 2516,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "g:GOSt",
+          "start": 2547,
+          "end": 2553,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gProfiler",
+          "start": 2563,
+          "end": 2572,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Raudvere et al.",
+          "start": 2574,
+          "end": 2589,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "2019",
+          "start": 2591,
+          "end": 2595,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Only annotated genes",
+          "start": 2655,
+          "end": 2675,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Benjamini-Hochberg FDR",
+          "start": 2699,
+          "end": 2721,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "To correlate gene expression signatures across mammalian species, DEGs for rat cell types were first calculated using a pseudobulk approach. DEGs were then concatenated and t-statistics for every gene in every MSN subtype were calculated. The t-statistic was calculated with the following formula:  Following calculation of t-statistics, the Pearson correlation coefficient was calculated using the cor() function in R. All R code for this analysis is available at https:github.comJeremy-Day-LabPhillips_2023_NAc.",
+      "entities": [
+        {
+          "entity": "gene expression signatures",
+          "start": 13,
+          "end": 37,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "mammalian species",
+          "start": 45,
+          "end": 61,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "DEGs",
+          "start": 63,
+          "end": 67,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "rat",
+          "start": 72,
+          "end": 75,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon"
+        },
+        {
+          "entity": "cell types",
+          "start": 76,
+          "end": 86,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL"
+        },
+        {
+          "entity": "pseudobulk approach",
+          "start": 102,
+          "end": 121,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DEGs",
+          "start": 123,
+          "end": 127,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "gene",
+          "start": 170,
+          "end": 174,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "MSN subtype",
+          "start": 183,
+          "end": 194,
+          "label": "CELL_TYPE",
+          "ontology mapping": "CL"
+        },
+        {
+          "entity": "t-statistics",
+          "start": 199,
+          "end": 211,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "t-statistics",
+          "start": 251,
+          "end": 263,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Pearson correlation coefficient",
+          "start": 269,
+          "end": 300,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "R",
+          "start": 331,
+          "end": 332,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "R code",
+          "start": 336,
+          "end": 342,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        }
+      ]
+    },
+    {
+      "text": "Upon sacrifice, brains from 6 drug-na\u00efve Sprague-Dawley rats (3F 3M) were extracted and immediately placed in isopentane at -40  C for 30 s. Tissue was stored at -80  C until day of sectioning. On day of sectioning, tissue was allowed to equilibrate at -20  C for 40 min and 10 \u03bcm coronal sections containing the NAc (1.92 mm to 1.44 mm from bregma) were collected using Leica cryostat and mounted on room temperature slides. Sections were air dried on dry ice for 60 min, then stored at -80  C. Sections were prepared for RNAscope Multiplex Fluorescent v2 Assay according to manufacturers protocol (Advanced Cell Diagnostics, 323110) (Wang et al., 2012). Probes included Htr4-C2 (544081-C2), and Drd1a-C3 (317031-C3) diluted 1:50 in Ebf1-C1 (891561-C1) and DAPI (320858). Associated Opal dyes were 690 (FP1497001KT) for Ebf1-C1, 570 (FP1488001KT) for Htr4-C2, and 520 (FP1487001KT) for Drd1a-C3 diluted 1:500 in TSA buffer. Sections were imaged using Keyence BZ-X800 microscope with OP-87767 filter cubes for GFP, Texas Red PE, DAPI, and Cy5 at 20 (PlanFluor NA 0.75) and",
+      "entities": [
+        {
+          "entity": "brains",
+          "start": 16,
+          "end": 22,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "6",
+          "start": 28,
+          "end": 29,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Sprague-Dawley rats",
+          "start": 30,
+          "end": 49,
+          "label": "NCBITaxon",
+          "ontology mapping": "NCBITaxon:10116"
+        },
+        {
+          "entity": "isopentane",
+          "start": 99,
+          "end": 109,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:17394"
+        },
+        {
+          "entity": "-40  C",
+          "start": 113,
+          "end": 119,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "30 s",
+          "start": 124,
+          "end": 128,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "-80  C",
+          "start": 144,
+          "end": 150,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "-20  C",
+          "start": 198,
+          "end": 204,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "40 min",
+          "start": 209,
+          "end": 215,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "10 \u03bcm",
+          "start": 220,
+          "end": 225,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "coronal sections",
+          "start": 226,
+          "end": 242,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "NAc",
+          "start": 259,
+          "end": 262,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "1.92 mm to 1.44 mm",
+          "start": 264,
+          "end": 283,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "bregma",
+          "start": 289,
+          "end": 295,
+          "label": "BRAIN_REGION",
+          "ontology mapping": "UMLS"
+        },
+        {
+          "entity": "Leica cryostat",
+          "start": 309,
+          "end": 323,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "60 min",
+          "start": 377,
+          "end": 383,
+          "label": "TIME",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "-80  C",
+          "start": 395,
+          "end": 401,
+          "label": "MEASUREMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "RNAscope Multiplex Fluorescent v2 Assay",
+          "start": 419,
+          "end": 458,
+          "label": "METHOD",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Advanced Cell Diagnostics",
+          "start": 489,
+          "end": 514,
+          "label": "ORGANIZATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "323110",
+          "start": 516,
+          "end": 522,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Wang et al., 2012",
+          "start": 525,
+          "end": 541,
+          "label": "PUBLICATION",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4-C2",
+          "start": 556,
+          "end": 563,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "544081-C2",
+          "start": 565,
+          "end": 574,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1a-C3",
+          "start": 581,
+          "end": 589,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "317031-C3",
+          "start": 591,
+          "end": 600,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "1:50",
+          "start": 609,
+          "end": 613,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1-C1",
+          "start": 617,
+          "end": 624,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "891561-C1",
+          "start": 626,
+          "end": 635,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DAPI",
+          "start": 640,
+          "end": 644,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:34560"
+        },
+        {
+          "entity": "320858",
+          "start": 646,
+          "end": 652,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "690",
+          "start": 676,
+          "end": 679,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "FP1497001KT",
+          "start": 681,
+          "end": 692,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Ebf1-C1",
+          "start": 698,
+          "end": 705,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "570",
+          "start": 707,
+          "end": 710,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "FP1488001KT",
+          "start": 712,
+          "end": 723,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Htr4-C2",
+          "start": 729,
+          "end": 736,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "520",
+          "start": 738,
+          "end": 741,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "FP1487001KT",
+          "start": 743,
+          "end": 754,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Drd1a-C3",
+          "start": 760,
+          "end": 768,
+          "label": "GENE",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "1:500",
+          "start": 776,
+          "end": 781,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "TSA buffer",
+          "start": 785,
+          "end": 795,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Keyence BZ-X800 microscope",
+          "start": 817,
+          "end": 844,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "OP-87767 filter cubes",
+          "start": 845,
+          "end": 866,
+          "label": "EQUIPMENT",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "GFP",
+          "start": 871,
+          "end": 874,
+          "label": "PROTEIN",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "Texas Red PE",
+          "start": 876,
+          "end": 888,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "DAPI",
+          "start": 890,
+          "end": 894,
+          "label": "CHEMICAL",
+          "ontology mapping": "CHEBI:34560"
+        },
+        {
+          "entity": "Cy5",
+          "start": 900,
+          "end": 903,
+          "label": "CHEMICAL",
+          "ontology mapping": "None"
+        },
+        {
+          "entity": "20",
+          "start": 907,
+          "end": 909,
+          "label": "QUANTITY",
+          "ontology mapping": "None"
+        }
+      ]
+    }
+  ]
+}
