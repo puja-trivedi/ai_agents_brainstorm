@@ -56,7 +56,7 @@ def compare_ner_jsons(filepaths):
         all_labels.update(stat["unique_labels"])
     print("\n===== 📊 Labels in All Models =====\n")
     print(f"Total number of unique labels across all models: {len(all_labels)}")
-    print(f"Unique labels across all models: {all_labels}")
+    print(f"Unique labels across all models: {sorted(all_labels)}")
 
     print("\n===== 📊 Labels Unique to Each Model =====\n")
     for stat in all_stats:
@@ -66,7 +66,7 @@ def compare_ner_jsons(filepaths):
             if stat["model"] != other_stat["model"]:
                 labels_unique_to_model -= other_stat["unique_labels"]
         print(f"Number of unique labels only contained in {stat['model']}: {len(labels_unique_to_model)}")
-        print(f"Unique labels for {stat['model']}: {labels_unique_to_model}\n")
+        print(f"Unique labels for {stat['model']}: {sorted(labels_unique_to_model)}\n") 
     return summary_df
 
 
