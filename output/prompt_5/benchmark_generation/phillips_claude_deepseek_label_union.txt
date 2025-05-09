@@ -1,0 +1,921 @@
+'drug addiction': {'NEUROLOGICAL_DISORDER', 'DISORDER', 'NEUROPSYCHIATRIC_DISORDER'}
+'neuropsychiatric disorder': {'DISORDER', 'NEUROPSYCHIATRIC_DISORDER'}
+'drug-taking behaviors': {'BEHAVIOR'}
+'overdose': {'CONDITION', 'MEDICAL_CONDITION'}
+'united states': {'LOCATION'}
+'covid-19 pandemic': {'EVENT', 'MEDICAL_CONDITION'}
+'social isolation': {'BEHAVIOR', 'CONDITION'}
+'economic distress': {'BEHAVIOR', 'CONDITION'}
+'cisneros and cunningham, 2021': {'REFERENCE', 'CITATION'}
+'addiction epidemic': {'EVENT'}
+'overdose deaths': {'CONDITION', 'MEDICAL_CONDITION'}
+'opioids': {'DRUG'}
+'synthetic opioids': {'DRUG'}
+'fentanyl': {'DRUG'}
+'drug overdose deaths': {'CONDITION', 'MEDICAL_CONDITION'}
+'psychostimulants': {'DRUG'}
+'between 2019 and 2020': {'TIME'}
+'hedegaard et al., 2021': {'REFERENCE', 'CITATION'}
+'cocaine': {'DRUG', 'SUBSTANCE'}
+'1999': {'TIME'}
+'ciccarone, 2021': {'REFERENCE', 'CITATION'}
+'pharmacological treatments': {'TREATMENT'}
+'opioid use disorder': {'DISORDER', 'NEUROPSYCHIATRIC_DISORDER'}
+'treatments': {'TREATMENT'}
+'stimulant use disorder': {'DISORDER', 'NEUROPSYCHIATRIC_DISORDER'}
+'research': {'PROCESS', 'RESEARCH_ACTIVITY', 'RESEARCH', 'NOUN', 'METHOD'}
+'molecular adaptations': {'BIOLOGICAL_PROCESS'}
+'cell types': {'CELL_ENTITY', 'CELL_GROUP', 'CELLULAR_PHENOMENON', 'CELL_TYPE', 'CELL', 'CELL_COMPONENT', 'BIOLOGICAL_ENTITY'}
+'adaptations': {'BIOLOGICAL_PROCESS'}
+'therapeutics': {'TREATMENT'}
+'the mesolimbic dopamine pathway': {'NEURAL_PATHWAY', 'BRAIN_PATHWAY'}
+'molecular': {'PROCESS', 'CONCEPT', 'ADJECTIVE', 'BIOLOGICAL_PROCESS'}
+'cellular': {'PROCESS', 'CONCEPT', 'BIOLOGICAL_PROCESS', 'BIOLOGICAL_LEVEL'}
+'behavioral responses': {'PHENOTYPE', 'BEHAVIOR'}
+'drugs of abuse': {'DRUG_CATEGORY', 'DRUG', 'DRUG_CLASS', 'SUBSTANCE'}
+'pathway': {'BRAIN_PATHWAY'}
+'dopaminergic neurons': {'NEURON_TYPE'}
+'ventral tegmental area': {'BRAIN_REGION'}
+'nucleus accumbens': {'BRAIN_REGION'}
+'dopaminergic neurotransmission': {'NEUROTRANSMISSION_TYPE', 'PROCESS'}
+'nac': {'BRAIN_REGION', 'BRAIN_REGION_ABBREVIATION'}
+'adaptive behavior': {'BEHAVIORAL_PROCESS', 'BEHAVIOR'}
+'dopamine': {'NEUROTRANSMITTER'}
+'release': {'PROCESS'}
+'reward-predictive cues': {'BEHAVIORAL_PROCESS', 'CONCEPT'}
+'learning': {'PROCESS', 'COGNITIVE_PROCESS'}
+'day et al., 2007': {'REFERENCE', 'CITATION'}
+'exposure': {'PROCESS', 'PROCEDURE'}
+'extracellular concentrations': {'MEASUREMENT', 'BIOCHEMICAL_PROCESS'}
+'da': {'NEUROTRANSMITTER', 'NEUROTRANSMITTER_ABBREVIATION'}
+'transmission': {'PROCESS'}
+'da transporter': {'PROTEIN'}
+'vta': {'BRAIN_REGION', 'BRAIN_REGION_ABBREVIATION'}
+'mechanism': {'PROCESS'}
+'behavioral': {'BIOLOGICAL_PROCESS', 'BEHAVIOR'}
+'physiological responses': {'PROCESS'}
+'giros et al., 1996': {'REFERENCE', 'CITATION'}
+'drug-induced elevations': {'PROCESS'}
+'transcriptional': {'PROCESS', 'BIOLOGICAL_PROCESS', 'MOLECULAR_PROCESS'}
+'epigenetic reorganization': {'PROCESS'}
+'behavioral adaptations': {'PHENOMENON', 'BEHAVIOR', 'BIOLOGICAL_PROCESS'}
+'addiction-linked behaviors': {'BEHAVIORAL_PROCESS', 'BEHAVIOR'}
+'type-1 da receptor': {'RECEPTOR', 'PROTEIN'}
+'drd1': {'RECEPTOR_ABBREVIATION', 'RECEPTOR', 'GENE', 'PROTEIN'}
+'drd1 gene': {'GENE'}
+'medium spiny neurons': {'NEURON_TYPE'}
+'msns': {'ACRONYM', 'NEURON_TYPE', 'NEURON_TYPE_ABBREVIATION', 'CELL_TYPE', 'CELL', 'NEURONAL_POPULATION'}
+'d1-msns': {'NEURON', 'CELL_TYPE', 'NEURON_TYPE', 'NEURONAL_CELL_TYPE'}
+'activation': {'PROCESS'}
+'signal transduction cascades': {'PROCESS', 'BIOCHEMICAL_PATHWAY'}
+'creb': {'PROTEIN'}
+'phosphorylation': {'PROCESS'}
+'immediate early gene': {'GENE_CLASS'}
+'ieg': {'ACRONYM', 'GENE_CLASS_ABBREVIATION', 'GENE_FAMILY', 'GENE'}
+'expression programs': {'PROCESS'}
+'ieg programs': {'GENE_CLASS_ABBREVIATION', 'PROCESS'}
+'activity-dependent transcription factors': {'PROTEIN_CLASS'}
+'fos': {'GENE'}
+'fosb': {'GENE'}
+'nr4a1': {'GENE'}
+'savell et al., 2020': {'REFERENCE', 'CITATION'}
+'nishi et al., 2011': {'REFERENCE', 'CITATION'}
+'bertran-gonzalez et al., 2008': {'REFERENCE', 'CITATION'}
+'mediators': {'CONCEPT'}
+'zhang et al., 2006': {'REFERENCE', 'CITATION'}
+'nestler et al., 2001': {'REFERENCE', 'CITATION'}
+'carpenter et al., 2020': {'REFERENCE', 'CITATION'}
+'brain region': {'BRAIN_REGION'}
+'da receptor': {'RECEPTOR'}
+'optogenetic inhibition': {'TECHNIQUE'}
+'somatostatin': {'NEUROPEPTIDE', 'NEUROTRANSMITTER', 'PROTEIN'}
+'interneurons': {'NEURON_TYPE', 'CELL_TYPE'}
+'conditioned place preference': {'BEHAVIORAL_TEST', 'BEHAVIOR'}
+'cells': {'CELL', 'CELL_COMPONENT', 'CELL_TYPE', 'CELLULAR_COMPONENT'}
+'photoinhibition': {'TECHNIQUE'}
+'cholinergic interneurons': {'CELL_TYPE'}
+'astrocytes': {'CELL_ENTITY', 'CELL_TYPE'}
+'synaptic': {'STRUCTURE', 'BIOLOGICAL_PROCESS'}
+'wang et al., 2021': {'REFERENCE', 'CITATION'}
+'behavioral effects': {'PHENOMENON'}
+'despite': {'EFFECT'}
+'cell type heterogeneity': {'CELLULAR_PHENOMENON', 'BIOLOGICAL_CONCEPT'}
+'studies': {'RESEARCH_METHOD', 'RESEARCH'}
+'transgenic animal models': {'MODEL_ORGANISM', 'ANIMAL_MODEL'}
+'cell populations': {'CELLULAR_PHENOMENON', 'CELL_TYPE'}
+'techniques': {'TECHNIQUE'}
+'single nucleus rna-sequencing': {'TECHNIQUE'}
+'snrna-seq': {'TECHNIQUE', 'RESEARCH_METHOD', 'METHODOLOGY', 'SEQUENCING_TECHNIQUE', 'METHOD', 'TECHNOLOGY'}
+'resolution': {'PROPERTY'}
+'genes': {'MOLECULAR_ENTITY', 'GENETIC_ELEMENT', 'GENE_SET', 'GENE'}
+'assay': {'TECHNIQUE'}
+'transcriptional changes': {'MOLECULAR_PHENOMENON', 'BIOLOGICAL_PROCESS', 'MOLECULAR_PROCESS'}
+'molecular heterogeneity': {'MOLECULAR_PHENOMENON', 'BIOLOGICAL_CONCEPT'}
+'approaches': {'TECHNIQUE'}
+'cellular atlases': {'TECHNIQUE', 'DATASET'}
+'mouse': {'MODEL_ORGANISM', 'ORGANISM'}
+'chen et al., 2021': {'REFERENCE', 'CITATION'}
+'non-human primate': {'MODEL_ORGANISM', 'SPECIES', 'ORGANISM'}
+'he et al., 2021': {'REFERENCE', 'CITATION'}
+'human': {'MODEL_ORGANISM', 'SPECIES', 'ORGANISM'}
+'tran et al., 2021': {'REFERENCE', 'CITATION'}
+'gene expression': {'GENE_EXPRESSION', 'BIOLOGICAL_PROCESS', 'MOLECULAR_PROCESS'}
+'acute cocaine': {'DRUG_TREATMENT', 'DRUG_ADMINISTRATION', 'DRUG', 'EXPOSURE_TYPE'}
+'transcriptional effects': {'BIOLOGICAL_PROCESS', 'MOLECULAR_PHENOMENON'}
+'repeated cocaine': {'DRUG_TREATMENT', 'DRUG_ADMINISTRATION', 'DRUG', 'EXPOSURE_TYPE'}
+'39,254 nuclei': {'SAMPLE', 'CELL_COUNT', 'DATA_POINT'}
+'male': {'BIOLOGICAL_SEX', 'SEX', 'BIOLOGICAL_CHARACTERISTIC'}
+'female': {'BIOLOGICAL_SEX', 'SEX'}
+'sprague-dawley rats': {'MODEL_ORGANISM', 'ANIMAL_MODEL', 'ORGANISM'}
+'rats': {'MODEL_ORGANISM', 'ORGANISM'}
+'treatment': {'EXPERIMENTAL_FACTOR', 'EXPERIMENTAL_CONDITION'}
+'saline': {'DRUG', 'SOLUTION', 'CONTROL'}
+'exposure paradigm': {'EXPERIMENTAL_FACTOR', 'EXPERIMENTAL_CONDITION'}
+'acute': {'EXPOSURE_TYPE', 'TREATMENT_PROTOCOL', 'CONDITION', 'EXPERIMENTAL_CONDITION', 'TREATMENT_CONDITION', 'ADJECTIVE'}
+'repeated': {'ADJECTIVE', 'CONDITION', 'TREATMENT_CONDITION', 'EXPERIMENTAL_CONDITION'}
+'study': {'RESEARCH_WORK', 'RESEARCH'}
+'rat': {'MODEL_ORGANISM', 'SPECIES', 'ORGANISM'}
+'transcriptional response': {'MOLECULAR_ENTITY', 'MOLECULAR_PHENOMENON', 'BIOLOGICAL_PROCESS', 'MOLECULAR_PROCESS'}
+'cluster-specific expression': {'BIOLOGICAL_PROCESS', 'MOLECULAR_PHENOMENON'}
+'neurotransmitter receptor systems': {'RECEPTOR_SYSTEM', 'PROTEIN_FAMILY'}
+'novel marker genes': {'GENE'}
+'populations': {'CELLULAR_PHENOMENON', 'POPULATION', 'CELL_TYPE', 'CELL_POPULATION'}
+'nuclei': {'CELL_COMPONENT', 'CELLULAR_COMPONENT'}
+'dataset': {'RESOURCE', 'DATA', 'DATASET'}
+'adult': {'AGE', 'DEVELOPMENTAL_STAGE'}
+'fig. 1a': {'FIGURE_REFERENCE'}
+'supp. fig. 1': {'FIGURE_REFERENCE'}
+'integration': {'METHOD', 'METHODOLOGY'}
+'dimensionality reduction': {'METHOD', 'DATA_PROCESSING'}
+'transcriptionally distinct neuronal populations': {'CELL_TYPE'}
+'glial populations': {'CELL_TYPE'}
+'sex': {'BIOLOGICAL_ATTRIBUTE', 'BIOLOGICAL_VARIABLE', 'DEMOGRAPHIC', 'BIOLOGICAL_CHARACTERISTIC'}
+'fig. 1b,c': {'FIGURE_REFERENCE'}
+'supp. figs. 2,3': {'FIGURE_REFERENCE'}
+'local inverse simpsons index': {'METHOD', 'STATISTICAL_MEASURE', 'STATISTICAL_METRIC'}
+'clusters': {'METHODOLOGY', 'NEURONAL_POPULATION', 'DATASET_COMPONENT'}
+'supp. fig. 2': {'FIGURE_REFERENCE'}
+'neurons': {'CELL', 'NEURON_TYPE', 'CELL_TYPE'}
+'gabaergic msns': {'CELL_TYPE'}
+'gad1': {'GENE'}
+'ppp1r1b': {'GENE'}
+'foxp2': {'GENE'}
+'bcl11b': {'GENE'}
+'fig. 1d,e': {'FIGURE_REFERENCE'}
+'type-1 dopamine receptor': {'PROTEIN'}
+'drd2': {'GENE'}
+'type-2 dopamine receptor': {'PROTEIN'}
+'fig. 1d': {'FIGURE_REFERENCE'}
+'drd2-expressing msn populations': {'CELL_TYPE'}
+'drd2-msn-1': {'NEURON_TYPE', 'NEURON_SUBTYPE', 'CELL_TYPE', 'NEURONAL_POPULATION', 'CELL_POPULATION'}
+'drd2-msn-2': {'CELL_TYPE'}
+'drd1-expressing msn populations': {'CELL_TYPE', 'CELL_POPULATION'}
+'drd1-msn-1': {'CELL_ENTITY', 'NEURON_TYPE', 'NEURONAL_CELL_TYPE', 'CELL_TYPE', 'CELL', 'NEURONAL_POPULATION', 'CELL_POPULATION'}
+'drd1-msn-2': {'CELL', 'NEURONAL_POPULATION', 'CELL_TYPE', 'CELL_POPULATION'}
+'fig. 1b,d': {'FIGURE_REFERENCE'}
+'drd1-and drd2-msns': {'CELL_TYPE'}
+'drd3-and grm8-expressing msns': {'CELL_TYPE'}
+'drd3-msn': {'CELL_TYPE'}
+'grm8-msn': {'CELL_TYPE'}
+'striatum': {'BRAIN_REGION'}
+'non-human primates': {'ORGANISM'}
+'gabaergic neurons': {'CELL_TYPE'}
+'gabaergic interneurons': {'CELL_TYPE'}
+'striatal': {'BRAIN_REGION'}
+'parvalbumin': {'PROTEIN'}
+'cholinergic interneuron population': {'CELL_TYPE'}
+'chat': {'GENE'}
+'chat-interneuron': {'CELL_TYPE'}
+'chat-interneurons': {'CELL_TYPE'}
+'drug-induced behavioral adaptations': {'NEUROADAPTATION', 'PHENOTYPE'}
+'transcriptional profiling': {'METHOD'}
+'neuronal populations': {'CELL_TYPE'}
+'glial clusters': {'CELL_TYPE'}
+'syt1': {'GENE'}
+'mrna': {'MOLECULE'}
+'markers': {'GENE_FUNCTION', 'GENE', 'PROTEIN'}
+'aqp4': {'GENE'}
+'gja1': {'GENE'}
+'oligodendrocytes': {'CELL_TYPE'}
+'mbp': {'GENE'}
+'myelin basic protein': {'PROTEIN'}
+'paradigms': {'METHODOLOGY'}
+'drd1-expressing msns': {'NEURON', 'CELL_TYPE', 'NEURONAL_CELL_TYPE', 'CELL_POPULATION'}
+'fig. 2a': {'FIGURE', 'FIGURE_REFERENCE'}
+'drd1-msn': {'CELL_TYPE'}
+'differential expression analysis': {'METHODOLOGY'}
+'pseudobulked gene expression matrices': {'DATA_TYPE', 'DATA_FORMAT'}
+'analysis': {'PROCESS', 'RESEARCH_METHOD', 'NOUN', 'ANALYSIS_METHOD', 'METHODOLOGY', 'METHOD'}
+'cluster': {'GROUP', 'POPULATION', 'DATA_REPRESENTATION'}
+'ebf1': {'GENE'}
+'differentially expressed gene': {'GENE_DESCRIPTOR'}
+'population': {'GROUP', 'NEURONAL_POPULATION', 'POPULATION', 'CELL_POPULATION'}
+'fig. 2b': {'FIGURE', 'FIGURE_REFERENCE'}
+'marker': {'BIOMARKER'}
+'msn': {'CELL', 'NEURON_TYPE', 'CELL_TYPE'}
+'development': {'BIOLOGICAL_PROCESS'}
+'lobo et al., 2008': {'REFERENCE', 'CITATION'}
+'calb1': {'GENE'}
+'gene': {'GENE_DESCRIPTOR', 'GENETIC_ENTITY', 'GENE', 'MOLECULAR_ENTITY'}
+'calcium binding protein': {'PROTEIN_DESCRIPTOR', 'PROTEIN'}
+'calbindin 1': {'PROTEIN'}
+'spatial marker': {'BIOMARKER'}
+'nac core': {'BRAIN_REGION_SUB', 'BRAIN_REGION'}
+'jongen-rêlo et al., 1994': {'REFERENCE', 'CITATION'}
+'differentially expressed genes': {'GENE_DESCRIPTOR'}
+'htr4': {'GENE', 'PROTEIN'}
+'serotonin receptor 4': {'PROTEIN'}
+'autoradiography': {'METHODOLOGY'}
+'receptor': {'PROTEIN_DESCRIPTOR', 'PROTEIN'}
+'nac shell': {'BRAIN_REGION_SUB', 'BRAIN_REGION'}
+'jean et al., 2012': {'REFERENCE', 'CITATION'}
+'drd1expressing msns': {'CELL_TYPE'}
+'gene networks': {'METHODOLOGY', 'GENE_NETWORK'}
+'pathways': {'METHODOLOGY', 'BIOLOGICAL_PATHWAY'}
+'d1-msn': {'CELL_TYPE'}
+'molecular function pathway analysis': {'METHODOLOGY', 'ANALYSIS_METHOD'}
+'calcium transport': {'BIOLOGICAL_PROCESS'}
+'signaling': {'BIOLOGICAL_PROCESS'}
+'potassium transport': {'BIOLOGICAL_PROCESS'}
+'trpc3': {'GENE'}
+'calcium permeable channel': {'ION_CHANNEL', 'PROTEIN'}
+'cacng3': {'GENE'}
+'l-type calcium channel': {'ION_CHANNEL', 'PROTEIN'}
+'potassium channels': {'ION_CHANNEL', 'PROTEIN'}
+'kcnc1': {'GENE'}
+'kcnc2': {'GENE'}
+'kcng3': {'GENE'}
+'calcium': {'MOLECULE', 'ION'}
+'potassium': {'MOLECULE', 'ION'}
+'functional investigation': {'RESEARCH_METHOD'}
+'transcriptionally': {'CELLULAR_PROCESS', 'GENE_EXPRESSION', 'PROCESS', 'MOLECULAR_PROCESS'}
+'mammalian brain': {'ANATOMICAL_STRUCTURE'}
+'cell type-specific promoters': {'GENETIC_ELEMENT'}
+'investigation': {'PROCESS', 'RESEARCH_METHOD'}
+'marker genes': {'GENETIC_ELEMENT', 'GENE_GROUP', 'GENE'}
+'marker gene': {'GENE_BIOMARKER', 'GENETIC_ELEMENT', 'GENE_GROUP', 'MOLECULE', 'GENE', 'GENE_TYPE'}
+'drd1-msn-1 population': {'NEURONAL_POPULATION', 'CELL_TYPE', 'CELL_POPULATION'}
+'fig. 2e': {'REFERENCE', 'FIGURE_REFERENCE'}
+'drd1-msn-2 population': {'NEURONAL_POPULATION', 'CELL_TYPE'}
+'fig. 2f': {'REFERENCE', 'FIGURE_REFERENCE'}
+'expression': {'MOLECULAR_ENTITY', 'PROCESS', 'GENE_EXPRESSION', 'BIOLOGICAL_PROCESS', 'CELLULAR_PROCESS', 'MOLECULAR_PROCESS'}
+'umap': {'TECHNIQUE', 'DATA_REPRESENTATION'}
+'fig. 2g': {'REFERENCE', 'FIGURE_REFERENCE'}
+'endothelial cells': {'CELL', 'CELL_TYPE'}
+'drd3-msns': {'CELL_TYPE'}
+'rnascope': {'TECHNIQUE'}
+'fluorescence in situ hybridization': {'TECHNIQUE'}
+'fish': {'TECHNIQUE_ABBREVIATION'}
+'puncta': {'CELLULAR_STRUCTURE'}
+'multiplexed analysis': {'METHOD', 'TECHNIQUE'}
+'probe sets': {'RESEARCH_TOOL'}
+'transcript': {'MOLECULE'}
+'fig. 3a-c': {'FIGURE', 'FIGURE_REFERENCE'}
+'computational analysis': {'METHOD'}
+'subpopulations': {'CELL_POPULATION'}
+'fig. 3b-c': {'FIGURE', 'FIGURE_REFERENCE'}
+'in situ': {'TECHNIQUE'}
+'spatial distributions': {'ANATOMICAL_PROPERTY'}
+'fig. 3d-e': {'FIGURE', 'FIGURE_REFERENCE'}
+'spatial distribution': {'ANATOMICAL_PROPERTY'}
+'fig. 3f': {'FIGURE', 'FIGURE_REFERENCE'}
+'transcriptome': {'MOLECULAR_ENTITY', 'CELLULAR_COMPONENT'}
+'cell type': {'CELL_TYPE'}
+'pseudobulk approach': {'METHODOLOGY', 'METHOD'}
+'degs': {'MOLECULAR_ENTITY', 'MEASUREMENT', 'GENE_EXPRESSION', 'GENE_GROUP', 'ABBREVIATION', 'GENE_SET', 'GENE_EXPRESSION_METRIC', 'GENE_TYPE'}
+'supp. table 2': {'REFERENCE', 'TABLE_REFERENCE'}
+'squair et al., 2021': {'REFERENCE', 'CITATION'}
+'184 upregulated, 52 downregulated; (fig. 4a,b': {'FIGURE_REFERENCE'}
+'immediate early genes': {'GENE_TYPE'}
+'iegs': {'GENE_CLASS', 'ABBREVIATION'}
+'nr4a3': {'GENE'}
+'tiparp': {'GENE'}
+'fosl2': {'GENE'}
+'fig. 4b': {'REFERENCE', 'FIGURE_REFERENCE'}
+'corkrum et al., 2020': {'REFERENCE', 'CITATION'}
+'shelkar et al., 2022': {'CITATION'}
+'glutamatergic': {'NEUROTRANSMITTER_SYSTEM'}
+'substance use disorders': {'DISEASE'}
+'reissner and kalivas, 2010': {'CITATION'}
+'kalivas, 2009': {'CITATION'}
+'brain': {'ORGAN', 'BRAIN_REGION'}
+'mahmoud et al., 2019': {'REFERENCE', 'CITATION'}
+'gria1': {'GENE'}
+'ampa receptor': {'RECEPTOR'}
+'fig. 4c': {'REFERENCE', 'FIGURE_REFERENCE'}
+'fig. 4c,g': {'REFERENCE', 'FIGURE_REFERENCE'}
+'astrocyte': {'CELL_ENTITY', 'CELL_TYPE'}
+'pde10a': {'GENE'}
+'camp': {'SECOND_MESSENGER'}
+'phosphodiesterase 10a': {'PROTEIN'}
+'sst-interneuron': {'NEURONAL_POPULATION', 'CELL_TYPE'}
+'fig. 4c,d': {'REFERENCE', 'FIGURE_REFERENCE'}
+'previous research': {'SCIENTIFIC_CONCEPT'}
+'zhang et al., 2005': {'REFERENCE', 'CITATION'}
+'rat nac': {'BRAIN_REGION'}
+'acute cocaine exposure': {'TREATMENT', 'EXPERIMENTAL_CONDITION'}
+'nac cell types': {'CELL_TYPE'}
+'cocaine exposure': {'EXPERIMENTAL_CONDITION'}
+'fig. 4e': {'FIGURE', 'FIGURE_REFERENCE'}
+'deg': {'GENE_EXPRESSION', 'GENE_FAMILY'}
+'i.e., all (cocaine': {'DRUG'}
+'hierarchical clustering': {'ANALYSIS_METHOD'}
+'transcriptional atlases': {'RESOURCE'}
+'nhp': {'ORGANISM', 'MODEL_ORGANISM', 'SPECIES'}
+'gene expression profiles': {'BIOLOGICAL_PROCESS', 'MOLECULAR_PROCESS'}
+'cross-species comparisons': {'RESEARCH_METHOD', 'ANALYSIS_METHOD'}
+'conservation': {'EVOLUTIONARY_CONCEPT'}
+'datasets': {'RESOURCE', 'DATA_ENTITY'}
+'transcriptionally distinct msn subtypes': {'CELL_TYPE'}
+'snrna-seq dataset': {'RESOURCE'}
+'monkey': {'SPECIES'}
+'fig. 5a-c': {'REFERENCE', 'FIGURE_REFERENCE'}
+'d1.msn_a': {'NEURON_TYPE', 'CELL_TYPE'}
+'d1.matrix': {'NEURON_TYPE', 'CELL_TYPE'}
+'d2.msn_a': {'NEURON_TYPE', 'CELL_TYPE'}
+'d2. matrix': {'NEURON_TYPE', 'CELL_TYPE'}
+'fig. 5a-d': {'REFERENCE', 'FIGURE_REFERENCE'}
+'transcriptionally conserved cell types': {'CELL_TYPE'}
+'drd2-msns': {'NEURON', 'CELL_TYPE'}
+'penk': {'GENE'}
+'drd1-msns': {'NEURON', 'CELL_TYPE'}
+'species': {'ORGANISM'}
+'fig. 5c': {'FIGURE'}
+'supp. fig. 4a-c': {'FIGURE'}
+'mammals': {'ORGANISM'}
+'msn.d1_a': {'NEURON', 'NEURONAL_POPULATION', 'CELL_TYPE', 'CELL_POPULATION'}
+'within the past few decades': {'TIMEFRAME', 'TIME_PERIOD'}
+'drug addiction research': {'RESEARCH_FIELD'}
+'epigenetic changes': {'MOLECULAR_PROCESS'}
+'drug exposure': {'NEUROLOGICAL_PROCESS', 'EXPERIMENTAL_CONDITION'}
+'drug experience': {'NEUROLOGICAL_PROCESS', 'DRUG_EXPERIENCE', 'EXPERIMENTAL_CONDITION'}
+'fig. 5': {'FIGURE_REFERENCE'}
+'identification': {'NOUN', 'RESEARCH_METHOD'}
+'conserved neuronal cell types': {'CELL_TYPE'}
+'higher order mammals': {'TAXONOMIC_GROUP'}
+'heatmap': {'DATA_VISUALIZATION', 'VISUALIZATION_METHOD'}
+'pearsons correlation coefficient': {'STATISTICAL_MEASURE', 'STATISTICAL_METRIC'}
+'nonhuman primate': {'SPECIES', 'ORGANISM'}
+'correlation coefficients': {'STATISTICAL_MEASURE'}
+'t-statistic': {'STATISTICAL_MEASURE', 'STATISTICAL_METRIC'}
+'rat msn degs': {'GENE_EXPRESSION'}
+'orthologs': {'GENE', 'GENE_TYPE'}
+'heatmaps': {'VISUALIZATION_METHOD'}
+'msn marker genes': {'GENE'}
+'neuronal cell types': {'CELL_TYPE'}
+'primarily used techniques': {'METHODOLOGY'}
+'cell-type heterogeneity': {'BIOLOGY_CONCEPT'}
+'reward processing': {'BIOLOGICAL_PROCESS'}
+'model organism': {'METHODOLOGY'}
+'reward-related research': {'RESEARCH_FIELD'}
+'transcriptional level': {'BIOLOGY_CONCEPT'}
+'cell type-specific transcriptional responses': {'BIOLOGY_CONCEPT'}
+'nac snrna-seq dataset': {'DATASET'}
+'repeated cocaine exposure': {'TREATMENT', 'EXPERIMENTAL_CONDITION'}
+'16 transcriptionally distinct populations': {'DATA_POINT'}
+'11 neuronal': {'DATA_POINT'}
+'5 non-neuronal': {'DATA_POINT'}
+'work': {'RESEARCH_WORK'}
+'biological': {'METHODOLOGY'}
+'technical replicates': {'METHODOLOGY'}
+'24,000 nuclei': {'DATA_POINT'}
+'transcriptional atlas': {'DATASET'}
+'receptor systems': {'RECEPTOR_FAMILY', 'PROTEIN_COMPLEX'}
+'drugs': {'DRUG'}
+'psychedelic drugs': {'DRUG', 'DRUG_CLASS'}
+'serotonin receptors': {'RECEPTOR_FAMILY', 'PROTEIN'}
+'htr2a': {'GENE'}
+'serotonin receptor type 2a': {'RECEPTOR', 'PROTEIN'}
+'psychedelics': {'DRUG', 'DRUG_CLASS'}
+'sst-interneurons': {'CELL_TYPE'}
+'opioid receptors': {'RECEPTOR_FAMILY', 'PROTEIN'}
+'opioid': {'DRUG'}
+'delta opioid receptor': {'RECEPTOR', 'PROTEIN'}
+'oprd1': {'GENE'}
+'met 5-enkaphalin': {'PEPTIDE'}
+'svingos et al., 1998': {'REFERENCE', 'CITATION'}
+'peptide': {'PEPTIDE'}
+'a major focus of this study': {'RESEARCH_TOPIC'}
+'cell type-specific gene programs': {'BIOLOGICAL_PROCESS'}
+'transcriptomic changes': {'BIOLOGICAL_PROCESS'}
+'volitional cocaine paradigms': {'EXPERIMENTAL_PARADIGM'}
+'self-administration': {'DRUG_ADMINISTRATION', 'EXPERIMENTAL_PARADIGM'}
+'experimenteradministered injections': {'EXPERIMENTAL_PARADIGM'}
+'withdrawal period': {'WITHDRAWAL', 'EXPERIMENTAL_CONDITION'}
+'animals': {'RESEARCH_SUBJECT', 'ORGANISM'}
+'cocaine self-administration': {'DRUG_ADMINISTRATION', 'EXPERIMENTAL_PARADIGM'}
+'surface expression': {'GENE_EXPRESSION', 'BIOLOGICAL_PROCESS'}
+'calcium permeable ampa receptors': {'RECEPTOR'}
+'experimenter-administered injections': {'EXPERIMENTAL_PARADIGM'}
+'cocaine paradigms': {'EXPERIMENTAL_PARADIGM'}
+'experimenter-administered cocaine injections': {'EXPERIMENTAL_PARADIGM'}
+'locomotor sensitization': {'BEHAVIORAL_RESPONSE', 'BEHAVIOR'}
+'sensitization': {'BEHAVIORAL_RESPONSE', 'BEHAVIOR'}
+'but not always ((gulley et al., 2003': {'REFERENCE', 'CITATION'}
+'mayfield et al., 1992': {'REFERENCE', 'CITATION'}
+'cass et al., 1993': {'REFERENCE', 'CITATION'}
+'cocaine injections': {'EXPERIMENTAL_PARADIGM'}
+'gene expression patterns': {'GENE_EXPRESSION', 'BIOLOGICAL_PROCESS'}
+'sensitized responses': {'BEHAVIORAL_RESPONSE'}
+'single-nuclei transcriptional profiles': {'METHODOLOGY'}
+'animal': {'RESEARCH_SUBJECT', 'SPECIES'}
+'data structure': {'METHODOLOGY', 'DATA_ANALYSIS'}
+'cell-type specific transcriptomic changes': {'BIOLOGICAL_PROCESS'}
+'drug': {'DRUG'}
+'paradigmspecific transcriptional changes': {'BIOLOGICAL_PROCESS'}
+'molecular correlates': {'BIOLOGICAL_PROCESS'}
+'behaviors': {'BEHAVIORAL_RESPONSE'}
+'cocaine seeking': {'BEHAVIORAL_RESPONSE', 'DRUG_BEHAVIOR'}
+'craving': {'BEHAVIORAL_RESPONSE', 'DRUG_BEHAVIOR'}
+'zipperly et al., 2021': {'CITATION'}
+'our dataset': {'RESOURCE'}
+'in situ experiments': {'TECHNIQUE'}
+'spatial separation': {'SPATIAL_ORGANIZATION'}
+'drd1ebf1 cells': {'CELL_POPULATION'}
+'drd1htr4 cells': {'CELL_POPULATION'}
+'transcriptional similarity': {'MOLECULAR_PROPERTY'}
+'spatial location': {'ANATOMICAL_FEATURE', 'SPATIAL_ORGANIZATION'}
+'supp. fig. 4a': {'REFERENCE', 'FIGURE'}
+'drd1-and drd2-expressing msns': {'CELL_POPULATION'}
+'striatal subregions': {'BRAIN_REGION'}
+'striatal compartments': {'BRAIN_REGION'}
+'supp. fig. 4b': {'REFERENCE', 'FIGURE'}
+'msn.d2_a': {'NEURONAL_POPULATION', 'CELL_POPULATION'}
+'drd1-or drd2-expressing msns': {'CELL_POPULATION'}
+'spatial information': {'SPATIAL_ORGANIZATION'}
+'supp. fig. 4c': {'REFERENCE', 'FIGURE'}
+'results': {'FINDING', 'RESEARCH_ACTIVITY'}
+'transcriptional diversity': {'MOLECULAR_PROPERTY'}
+'spatial organization': {'SPATIAL_ORGANIZATION'}
+'structure': {'BRAIN_REGION'}
+'although': {'TRANSITION_WORD'}
+'hu et al., 2004': {'CITATION'}
+'bobzean et al., 2014': {'CITATION'}
+'becker and chartoff, 2019': {'CITATION'}
+'evans, 2007': {'CITATION'}
+'sex-specific': {'BIOLOGICAL_CHARACTERISTIC'}
+'drug-induced molecular adaptations': {'NEUROADAPTATION'}
+'lópez et al., 2021': {'CITATION'}
+'female rats': {'ANIMAL_MODEL'}
+'transcriptional responses': {'MOLECULAR_PROCESS'}
+'repeated dataset': {'DATA_TYPE', 'DATA', 'DATA_SET'}
+'pseudobulk treatment comparisons': {'ANALYSIS_METHOD'}
+'females': {'BIOLOGICAL_CHARACTERISTIC'}
+'cocaine-induced mrna changes': {'MOLECULAR_PROCESS'}
+'males': {'BIOLOGICAL_CHARACTERISTIC'}
+'supp. fig. 6a-d': {'FIGURE_REFERENCE'}
+'significance criteria': {'STATISTICAL_CONCEPT'}
+'supp. table 3': {'TABLE_REFERENCE'}
+'sexes': {'BIOLOGICAL_CHARACTERISTIC'}
+'sex-combined': {'BIOLOGICAL_CHARACTERISTIC'}
+'cocaine degs': {'GENETIC_ELEMENT'}
+'immediate early gene nr4a3': {'GENE'}
+'transcription elongation factor ell2': {'PROTEIN'}
+'cytoskeletal regulator elmo2': {'PROTEIN'}
+'supp. fig. 6e': {'FIGURE_REFERENCE'}
+'sexspecific cocaine deg': {'GENETIC_ELEMENT'}
+'ell2': {'GENE'}
+'supp. fig. 6e-f': {'FIGURE_REFERENCE'}
+'hs6st3': {'GENE'}
+'supp. fig. 6g': {'FIGURE_REFERENCE'}
+'all experiments': {'METHOD'}
+'university of alabama at birmingham institutional animal care and use committee': {'ORGANIZATION'}
+'male or female adult rats': {'ORGANISM'}
+'intraperitoneally': {'ANATOMY', 'ROUTE'}
+'cocaine hydrocholoride': {'DRUG'}
+'20 mgkg': {'DOSE', 'DOSAGE'}
+'locomotor testing': {'METHOD'}
+'single dose': {'DOSAGE'}
+'one injection per day for 7 days': {'DOSAGE'}
+'4 animals': {'SAMPLE_SIZE'}
+'treatment group': {'EXPERIMENTAL_CONDITION'}
+'exposure length': {'EXPERIMENTAL_CONDITION'}
+'tissue preparation': {'PROCEDURE'}
+'gem': {'LABORATORY_EQUIPMENT'}
+'gel beads in emulsion': {'LABORATORY_EQUIPMENT'}
+'libraries': {'EXPERIMENTAL_METHOD', 'LABORATORY_REAGENT'}
+'chromium single cell 3  library construction kit': {'EXPERIMENTAL_KIT'}
+'10 genomics': {'COMPANY'}
+'1000092': {'PRODUCT_ID'}
+'version 3 chemistry': {'EXPERIMENTAL_METHOD', 'TECHNOLOGY'}
+'15,655': {'NUMBER', 'QUANTITY'}
+'adult rat nac': {'ANATOMICAL_STRUCTURE'}
+'23,599': {'NUMBER', 'QUANTITY'}
+'illumina nextseq 500': {'SEQUENCING_PLATFORM', 'EQUIPMENT'}
+'uab heflin genomics core': {'RESEARCH_FACILITY', 'LABORATORY'}
+'39,000 reads per nuclei': {'MEASUREMENT'}
+'22,000 reads per nuclei': {'MEASUREMENT'}
+'raw fastq files': {'DATA_FORMAT'}
+'cellranger': {'SOFTWARE'}
+'cell ranger filtered outputs': {'DATA_TYPE', 'DATA_FORMAT'}
+'seurat': {'SOFTWARE'}
+'v4.0.4': {'VERSION'}
+'r': {'SOFTWARE', 'PROGRAMMING_LANGUAGE'}
+'v4.0.2': {'VERSION'}
+'200 features': {'PARAMETER', 'SEQUENCING_METRIC'}
+'5  of reads': {'PARAMETER'}
+'mitochondrial genome': {'GENOMIC_FEATURE', 'GENOME_COMPONENT'}
+'molecular count data': {'DATA_TYPE', 'DATA_FORMAT'}
+'log-normalized': {'DATA_PROCESSING'}
+'scaling factor of 10,000': {'PARAMETER'}
+'normalization': {'DATA_PROCESSING'}
+'gem wells': {'EXPERIMENTAL_METHOD', 'LABORATORY_REAGENT'}
+'integratedata': {'SOFTWARE_FUNCTION', 'FUNCTION'}
+'resolution value of 0.1': {'PARAMETER'}
+'8 gem wells': {'EXPERIMENTAL_METHOD', 'LABORATORY_REAGENT'}
+'lisi': {'SOFTWARE'}
+'v1.0': {'VERSION'}
+'default parameters': {'PARAMETER'}
+'ambient rna': {'BIOLOGICAL_CONTAMINANT', 'BIOMOLECULE'}
+'single cells': {'CELL_TYPE', 'CELLULAR_COMPONENT'}
+'dropletbased single-cellsingle-nucleus technologies': {'EXPERIMENTAL_METHOD'}
+'soupx': {'SOFTWARE'}
+'v1.5.2': {'VERSION'}
+'droplet based single-cellsingle-nucleus technologies': {'EXPERIMENTAL_METHOD'}
+'doublets': {'TECHNICAL_ARTIFACT', 'CELL_ARTIFACT'}
+'cellsnuclei': {'CELLULAR_COMPONENT'}
+'droplet': {'EXPERIMENTAL_METHOD', 'LABORATORY_REAGENT'}
+'homotypic doublets': {'TECHNICAL_ARTIFACT', 'CELL_ARTIFACT'}
+'cell-type': {'CELL_TYPE'}
+'heterotypic doublets': {'TECHNICAL_ARTIFACT', 'CELL_ARTIFACT'}
+'cell typespecific transcriptional signatures': {'CELLULAR_CHARACTERISTIC'}
+'acute dataset': {'DATA_TYPE', 'DATA_SET'}
+'doubletfinder': {'SOFTWARE'}
+'v2.0.3': {'VERSION'}
+'differential expression testing': {'ANALYSIS_METHOD'}
+'gene counts': {'DATA_TYPE', 'DATA_FORMAT'}
+'pseudobulked gene expression matrix': {'DATA_TYPE', 'DATA_FORMAT'}
+'counts 5': {'PARAMETER'}
+'deseq2': {'SOFTWARE'}
+'v1.28.1': {'VERSION'}
+'data sets': {'DATA_TYPE', 'DATA_SET'}
+'batches': {'EXPERIMENTAL_CONDITION'}
+'batch effects': {'TECHNICAL_ARTIFACT', 'EXPERIMENTAL_ARTIFACT'}
+'transcriptional profiles': {'BIOMOLECULE', 'MOLECULAR_PROCESS'}
+'data set': {'DATA_TYPE', 'DATA_SET'}
+'covariate': {'STATISTICAL_PARAMETER', 'STATISTICAL_TERM'}
+'genetic sex': {'BIOLOGICAL_ATTRIBUTE', 'BIOLOGICAL_VARIABLE'}
+'covariates': {'STATISTICAL_PARAMETER', 'STATISTICAL_TERM'}
+'gini coefficients': {'STATISTICAL_MEASURE', 'STATISTICAL_METRIC'}
+'reldist': {'SOFTWARE'}
+'v1.6-6': {'VERSION'}
+'gini, 1921': {'REFERENCE', 'CITATION'}
+'adjusted p-value': {'STATISTICAL_MEASURE', 'STATISTICAL_METRIC'}
+'rrho heatmaps': {'DATA_VISUALIZATION', 'VISUALIZATION'}
+'rrho2': {'SOFTWARE'}
+'cahill et al., 2018': {'REFERENCE', 'CITATION'}
+'molecular function gene ontology terms': {'FUNCTIONAL_ANNOTATION', 'BIOLOGICAL_TERM'}
+'10  of the cluster': {'PARAMETER'}
+'g:gost': {'SOFTWARE'}
+'gprofiler': {'SOFTWARE'}
+'statistical domain scope': {'PARAMETER', 'STATISTICAL_TERM'}
+'only annotated genes': {'PARAMETER', 'STATISTICAL_TERM'}
+'significance threshold': {'PARAMETER', 'STATISTICAL_TERM'}
+'benjamini-hochberg fdr': {'STATISTICAL_METHOD'}
+'r code': {'SOFTWARE', 'CODE'}
+'https:github.comjeremy-day-labphillips_2023_nac': {'DATABASE_RESOURCE', 'RESOURCE_URL', 'URL'}
+'t-statistics': {'STATISTICAL_METRIC'}
+'msn subtype': {'CELL_TYPE'}
+'pearson correlation coefficient': {'STATISTICAL_METRIC'}
+'drug-naïve': {'STUDY_CONDITION'}
+'3f': {'NUMBER', 'DEMOGRAPHIC'}
+'3m': {'NUMBER', 'DEMOGRAPHIC'}
+'isopentane': {'CHEMICAL'}
+'-40 c': {'PARAMETER'}
+'30 s': {'DURATION'}
+'tissue': {'BIOLOGICAL_SAMPLE', 'BIOLOGICAL_ENTITY'}
+'-80 c': {'PARAMETER'}
+'-20 c': {'PARAMETER'}
+'40 min': {'DURATION'}
+'10 μm': {'PARAMETER'}
+'coronal sections': {'ANATOMICAL_STRUCTURE'}
+'1.92 mm to 1.44 mm from bregma': {'PARAMETER'}
+'leica cryostat': {'INSTRUMENT', 'EQUIPMENT'}
+'sections': {'BIOLOGICAL_SAMPLE'}
+'dry ice': {'CHEMICAL', 'MATERIAL'}
+'60 min': {'DURATION'}
+'rnascope multiplex fluorescent v2 assay': {'PROCEDURE', 'TECHNIQUE'}
+'advanced cell diagnostics, 323110': {'PRODUCT'}
+'wang et al., 2012': {'REFERENCE', 'CITATION'}
+'probes': {'REAGENT'}
+'htr4-c2': {'PROBE', 'GENE'}
+'544081-c2': {'PRODUCT', 'PRODUCT_ID'}
+'drd1a-c3': {'PROBE', 'GENE'}
+'317031-c3': {'PRODUCT', 'PRODUCT_ID'}
+'1:50': {'DILUTION', 'PARAMETER'}
+'ebf1-c1': {'PROBE', 'GENE'}
+'891561-c1': {'PRODUCT', 'PRODUCT_ID'}
+'dapi': {'FLUOROPHORE', 'REAGENT'}
+'320858': {'PRODUCT', 'PRODUCT_ID'}
+'opal dyes': {'REAGENT'}
+'690': {'PARAMETER', 'WAVELENGTH'}
+'fp1497001kt': {'PRODUCT', 'PRODUCT_ID'}
+'570': {'PARAMETER', 'WAVELENGTH'}
+'fp1488001kt': {'PRODUCT', 'PRODUCT_ID'}
+'520': {'PARAMETER', 'WAVELENGTH'}
+'fp1487001kt': {'PRODUCT', 'PRODUCT_ID'}
+'1:500': {'DILUTION', 'PARAMETER'}
+'tsa buffer': {'REAGENT'}
+'keyence bz-x800 microscope': {'INSTRUMENT', 'EQUIPMENT'}
+'op-87767 filter cubes': {'INSTRUMENT_COMPONENT'}
+'gfp': {'FLUOROPHORE', 'REAGENT'}
+'texas red pe': {'FLUOROPHORE', 'REAGENT'}
+'cy5': {'FLUOROPHORE', 'REAGENT'}
+'20': {'NUMBER', 'PARAMETER'}
+'planfluor na 0.75': {'LENS_SPECIFICATION', 'INSTRUMENT_COMPONENT'}
+'addiction': {'NEUROPSYCHIATRIC_DISORDER'}
+'2019': {'TIME'}
+'2020': {'TIME'}
+'da transmission': {'NEUROTRANSMISSION_TYPE'}
+'physiological': {'BIOLOGICAL_PROCESS'}
+'drug-induced': {'DRUG_RELATED_PROCESS'}
+'epigenetic': {'BIOLOGICAL_PROCESS'}
+'drd1 activation': {'RECEPTOR_ACTIVATION'}
+'creb phosphorylation': {'BIOCHEMICAL_PROCESS'}
+'the nac': {'BRAIN_REGION'}
+'heterogeneous': {'DESCRIPTOR'}
+'transcriptionally defined': {'DESCRIPTOR'}
+'da receptor-expressing': {'RECEPTOR'}
+'drug of abuse': {'DRUG'}
+'recent reports': {'RESEARCH_ACTIVITY'}
+'ribeiro et al., 2018': {'REFERENCE'}
+'cholinergic': {'NEUROTRANSMITTER'}
+'witten et al., 2010': {'REFERENCE'}
+'recent research': {'RESEARCH_ACTIVITY'}
+'individual cell populations': {'CELLULAR_PHENOMENON'}
+'gene expression changes': {'MOLECULAR_PHENOMENON'}
+'transcriptionally distinct d1-msns': {'NEURON_TYPE'}
+'39,000': {'NUMBER'}
+'gene expression matrices': {'BIOLOGICAL_PROCESS'}
+'506': {'NUMBER'}
+'665': {'NUMBER'}
+'10': {'NUMBER'}
+'next': {'TEMPORAL', 'TEMPORAL_INDICATOR'}
+'d1-msn populations': {'NEURONAL_POPULATION'}
+'fig. 2c': {'FIGURE_REFERENCE'}
+'fig. 2d': {'FIGURE_REFERENCE'}
+'and': {'CONJUNCTION'}
+'related': {'ADJECTIVE', 'MODIFIER'}
+'functional': {'PROCESS'}
+'distinct': {'GENE_EXPRESSION', 'PROPERTY'}
+'mammalian': {'ORGANISM'}
+'cell type-specific': {'PROPERTY', 'CELL_TYPE'}
+'promoter': {'MOLECULE'}
+'expressing': {'PROCESS', 'BIOLOGICAL_PROCESS'}
+'potential': {'PROPERTY'}
+'differentially': {'PROPERTY'}
+'highly': {'PROPERTY'}
+'expressed': {'GENE_EXPRESSION', 'PROCESS'}
+'additional': {'PROPERTY'}
+'characteristic': {'PROPERTY'}
+'large': {'PROPERTY'}
+'proportion': {'PROPERTY'}
+'plotting': {'PROCESS'}
+'differential': {'ADJECTIVE', 'PROPERTY'}
+'enrichment': {'NOUN', 'GENE_EXPRESSION', 'PROCESS'}
+'drd3': {'GENE'}
+'combination': {'PROCESS'}
+'alone': {'PROPERTY'}
+'drd1htr4': {'NEURONAL_POPULATION', 'GENE_COMBO'}
+'drd1ebf1': {'NEURONAL_POPULATION', 'GENE_COMBO'}
+'drd1 ebf1htr4': {'GENE_COMBO'}
+'we': {'PRONOUN'}
+'male and female': {'SEX'}
+'sprague-dawley rat': {'SPECIES', 'ORGANISM'}
+'7 consecutive days': {'TIME'}
+'fig. 1a, supp. fig. 1': {'REFERENCE'}
+'acute and repeated exposures': {'EXPERIMENTAL_CONDITION'}
+'cell type-specific transcriptional response': {'MOLECULAR_ENTITY'}
+'type or duration': {'EXPERIMENTAL_CONDITION'}
+'approach': {'METHOD'}
+'number of replicates': {'EXPERIMENTAL_DESIGN'}
+'statistical comparisons': {'METHOD'}
+'deprecated differential expression method': {'METHOD'}
+'236 total degs': {'MOLECULAR_ENTITY'}
+'cocaine experience': {'DRUG_EXPERIENCE', 'EXPERIMENTAL_CONDITION'}
+'184 upregulated, 52 downregulated': {'MOLECULAR_ENTITY'}
+'fig. 4a,b': {'REFERENCE'}
+'upregulated degs': {'MOLECULAR_ENTITY'}
+'neuronal and behavioral response': {'BIOLOGICAL_PROCESS'}
+'wang et al., 2021; corkrum et al., 2020; shelkar et al., 2022': {'REFERENCE'}
+'disruption of glutamatergic transport, release, and signaling': {'BIOLOGICAL_PROCESS'}
+'substance use disorder': {'DISEASE'}
+'reissner and kalivas, 2010; kalivas, 2009': {'REFERENCE'}
+'regulation of this process': {'BIOLOGICAL_PROCESS'}
+'ionotropic ampa receptor': {'MOLECULAR_ENTITY'}
+'downregulated': {'MOLECULAR_ENTITY', 'GENE_EXPRESSION'}
+'camp-regulated phosphodiesterase 10a': {'MOLECULAR_ENTITY'}
+'upregulated': {'MOLECULAR_ENTITY', 'GENE_EXPRESSION'}
+'sst-interneuron cluster': {'CELL_ENTITY'}
+'drd1-expressing msn': {'NEURON', 'NEURONAL_CELL_TYPE'}
+'deg analyses': {'ANALYSIS_METHOD'}
+'acute exposure': {'EXPOSURE_TYPE'}
+'repeated exposure': {'EXPOSURE_TYPE'}
+'fig. 4f-h': {'FIGURE_REFERENCE'}
+'cocaine-regulated genes': {'GENE_SET'}
+'gene expression programs': {'GENE_EXPRESSION'}
+'gene lists': {'GENE_SET'}
+'log-normalized expression values': {'STATISTICAL_METRIC'}
+'gene expression signatures': {'GENE_EXPRESSION'}
+'fig. 4i-l': {'FIGURE_REFERENCE'}
+'atlases': {'RESEARCH_RESOURCE'}
+'msn subtypes': {'NEURON_TYPE'}
+'conserved': {'GENE_EXPRESSION'}
+'enriched': {'GENE_EXPRESSION'}
+'differential expression': {'GENE_EXPRESSION'}
+'higher order mammal': {'SPECIES'}
+'identification of conserved neuronal cell types across higher order mammals': {'RESEARCH_TOPIC'}
+'a-b': {'FIGURE_PART'}
+'correlation coefficient': {'STATISTICAL_METRIC'}
+'c': {'UNIT', 'FIGURE_PART'}
+'d': {'FIGURE_PART'}
+'estimated conservation': {'BIOLOGICAL_PROCESS'}
+'sst': {'GENE'}
+'supp. fig. 5a': {'FIGURE'}
+'opioid-associated overdose deaths': {'PHENOMENON'}
+'met 5 -enkaphalin': {'PEPTIDE'}
+'supp. fig. 5a-c': {'FIGURE'}
+'cell type-specific gene program': {'GENE_PROGRAM'}
+'transcriptomic change': {'GENE_EXPRESSION'}
+'volitional cocaine paradigm': {'DRUG_PARADIGM'}
+'experimenter-administered injection': {'DRUG_ADMINISTRATION'}
+'calcium permeable ampa receptor': {'RECEPTOR'}
+'mccutcheon et al., 2011': {'REFERENCE'}
+'cocaine paradigm': {'DRUG_PARADIGM'}
+'experimenter-administered cocaine injection': {'DRUG_ADMINISTRATION'}
+'campbell et al., 2021': {'REFERENCE'}
+'dose of cocaine': {'DRUG_DOSE'}
+'supp. fig. 1b': {'REFERENCE'}
+'cocaine injection': {'DRUG_ADMINISTRATION'}
+'sensitized response': {'BEHAVIOR'}
+'single-nuclei transcriptional profile': {'GENE_EXPRESSION'}
+'animal variability': {'EXPERIMENTAL_VARIABLE'}
+'cocaine-induced': {'DRUG_EFFECT'}
+'cell type-specific transcriptomic change': {'GENE_EXPRESSION'}
+'paradigm-specific transcriptional change': {'GENE_EXPRESSION'}
+'molecular correlate': {'MOLECULAR_FEATURE'}
+'behavior': {'BEHAVIOR'}
+'the': {'ARTICLE'}
+'largest': {'ADJECTIVE'}
+'response': {'BIOLOGICAL_PROCESS'}
+'to': {'PREPOSITION'}
+'experience': {'BIOLOGICAL_PROCESS'}
+'occurred': {'VERB'}
+'in': {'PREPOSITION'}
+'these': {'PRONOUN'}
+'changes': {'BIOLOGICAL_PROCESS'}
+'included': {'VERB'}
+'such': {'ADVERB'}
+'as': {'CONJUNCTION', 'PREPOSITION', 'ADVERB'}
+'other': {'ADJECTIVE'}
+'regulated': {'BIOLOGICAL_PROCESS'}
+'are': {'VERB'}
+'induced': {'BIOLOGICAL_PROCESS'}
+'by': {'PREPOSITION'}
+'both': {'ADJECTIVE'}
+'but': {'CONJUNCTION'}
+'a': {'ARTICLE'}
+'lesser': {'ADJECTIVE'}
+'extent': {'NOUN'}
+'with': {'PREPOSITION'}
+'this': {'PRONOUN'}
+'data': {'NOUN'}
+'is': {'VERB'}
+'agreement': {'NOUN'}
+'previous': {'ADJECTIVE'}
+'that': {'PRONOUN'}
+'demonstrated': {'VERB'}
+'induction': {'BIOLOGICAL_PROCESS'}
+'of': {'PREPOSITION'}
+'protein': {'PROTEIN'}
+'was': {'VERB'}
+'weaker': {'ADJECTIVE'}
+'compared': {'VERB'}
+'second': {'ADJECTIVE'}
+'within': {'PREPOSITION'}
+'did': {'VERB'}
+'not': {'ADVERB'}
+'have': {'VERB'}
+'robust': {'ADJECTIVE'}
+'multitude': {'NOUN'}
+'has': {'VERB'}
+'cell': {'CELL_TYPE'}
+'exhibit': {'VERB'}
+'abuse': {'NOUN'}
+'thus': {'ADVERB'}
+'significantly': {'ADVERB'}
+'attenuated': {'ADJECTIVE'}
+'intriguing': {'ADJECTIVE'}
+'because': {'CONJUNCTION'}
+'it': {'PRONOUN'}
+'highlights': {'VERB'}
+'previously': {'TIME', 'ADVERB'}
+'underappreciated': {'ADJECTIVE'}
+'level': {'NOUN'}
+'heterogeneity': {'NOUN'}
+'notably': {'ADVERB'}
+'further': {'ADJECTIVE'}
+'specific': {'ADJECTIVE'}
+'also': {'ADVERB'}
+'revealed': {'VERB'}
+'an': {'ARTICLE'}
+'transport': {'BIOLOGICAL_PROCESS'}
+'term': {'NOUN'}
+'for': {'PREPOSITION'}
+'may': {'VERB'}
+'explain': {'VERB'}
+'many': {'ADJECTIVE'}
+'rely': {'VERB'}
+'on': {'PREPOSITION'}
+'dependent': {'ADJECTIVE'}
+'cascade': {'BIOLOGICAL_PROCESS'}
+'in conclusion': {'PHRASE'}
+'the use': {'PHRASE'}
+'transcriptionally distinct population': {'CELL_POPULATION'}
+'this dataset': {'DATASET'}
+'resource': {'RESOURCE'}
+'all': {'QUANTIFIER'}
+'experiment': {'PROCEDURE'}
+'were performed': {'ACTION'}
+'in accordance with': {'RELATION'}
+'the university of alabama at birmingham': {'INSTITUTION'}
+'institutional animal care and use committee': {'ORGANIZATION'}
+'or': {'CONJUNCTION'}
+'were': {'AUXILIARY'}
+'injected': {'ACTION'}
+'at': {'PREPOSITION'}
+'dose': {'QUANTITY'}
+'locomotor': {'BEHAVIOR'}
+'testing': {'PROCEDURE'}
+'was performed': {'ACTION'}
+'described': {'ACTION'}
+'undergoing': {'ACTION'}
+'received': {'ACTION'}
+'single': {'QUANTIFIER'}
+'while': {'CONJUNCTION'}
+'those': {'PRONOUN'}
+'one': {'QUANTIFIER'}
+'injection': {'PROCEDURE'}
+'per': {'PREPOSITION'}
+'day': {'TIME'}
+'7 days': {'TIME'}
+'manufacturers instructions': {'PROTOCOL'}
+'chromium single cell 3 library construction kit': {'LABORATORY_REAGENT'}
+'catalog no. 1000092': {'PRODUCT_ID'}
+'adult rat': {'ORGANISM'}
+'39,000 reads': {'SEQUENCING_METRIC'}
+'22,000 reads': {'SEQUENCING_METRIC'}
+'version 105': {'VERSION'}
+'seurat v4.0.4': {'SOFTWARE'}
+'hao et al., 2021': {'REFERENCE'}
+'r v4.0.2': {'SOFTWARE'}
+'5% of reads': {'SEQUENCING_METRIC'}
+'lisi v1.0': {'SOFTWARE'}
+'droplet-based single-cell single-nucleus technologies': {'TECHNOLOGY'}
+'soupx v1.5.2': {'SOFTWARE'}
+'young and behjati, 2020': {'REFERENCE'}
+'cell type-specific transcriptional signatures': {'BIOMOLECULE'}
+'doubletfinder v2.0.3': {'SOFTWARE'}
+'mcginnis et al., 2019': {'REFERENCE'}
+'counts < 5': {'SEQUENCING_METRIC'}
+'deseq2 v1.28.1': {'SOFTWARE'}
+'love et al., 2014': {'REFERENCE'}
+'experiments': {'EXPERIMENT'}
+'variables': {'STATISTICAL_TERM'}
+'confounding variable': {'STATISTICAL_TERM'}
+'reldist v1.6-6 package': {'SOFTWARE'}
+'handcock and morris, 1999': {'REFERENCE'}
+'rrho2 v1.0': {'SOFTWARE'}
+'plaisier et al., 2010': {'REFERENCE'}
+'10% of the cluster': {'STATISTICAL_METRIC'}
+'raudvere et al., 2019': {'REFERENCE'}
+'tool': {'SOFTWARE'}
+'to correlate gene expression signatures across mammalian species': {'PROCESS'}
+'upon sacrifice': {'PROCEDURE'}
+'6': {'NUMBER'}
+'drug-naive': {'CONDITION'}
+'-40': {'TEMPERATURE'}
+'30': {'TIME'}
+'s': {'UNIT'}
+'-80': {'TEMPERATURE'}
+'sectioning': {'PROCEDURE'}
+'-20': {'TEMPERATURE'}
+'40': {'TIME'}
+'min': {'UNIT'}
+'um': {'UNIT'}
+'coronal section': {'BIOLOGICAL_ENTITY'}
+'1.92': {'NUMBER'}
+'mm': {'UNIT'}
+'1.46': {'NUMBER'}
+'bregma': {'ANATOMICAL_LANDMARK'}
+'room temperature': {'TEMPERATURE'}
+'slide': {'EQUIPMENT'}
+'section': {'BIOLOGICAL_ENTITY'}
+'60': {'TIME'}
+"manufacturer's protocol": {'PROCEDURE'}
+'advanced cell diagnostics': {'COMPANY'}
+'323110': {'PRODUCT_ID'}
+'probe': {'REAGENT'}
+'associated opal dye': {'REAGENT'}
+'op-87767': {'PRODUCT_ID'}
+'filter cube': {'EQUIPMENT'}
