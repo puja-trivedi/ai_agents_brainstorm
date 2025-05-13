@@ -1,84 +1,23 @@
 {
-  "-20": [
-    "TEMPERATURE"
-  ],
-  "-20  C": [
-    "TEMPERATURE"
-  ],
-  "-20 C": [
-    "PARAMETER"
-  ],
-  "-40": [
-    "TEMPERATURE"
-  ],
-  "-40  C": [
-    "TEMPERATURE"
-  ],
-  "-40 C": [
-    "PARAMETER"
-  ],
-  "-80": [
-    "TEMPERATURE"
-  ],
-  "-80  C": [
-    "TEMPERATURE"
-  ],
-  "-80 C": [
-    "PARAMETER"
-  ],
-  "0.1": [
-    "NUMBER",
-    "VALUE"
-  ],
-  "1.46": [
-    "NUMBER"
-  ],
-  "1.92": [
-    "NUMBER"
-  ],
   "1.92 mm to 1.44 mm from bregma": [
-    "COORDINATES",
-    "PARAMETER",
-    "DIMENSION"
-  ],
-  "10": [
-    "COUNT",
-    "NUMBER"
-  ],
-  "10  of the cluster": [
-    "PARAMETER"
+    "COORDINATES"
   ],
   "10 Genomics": [
     "COMPANY"
   ],
-  "10 \u03bcm": [
-    "PARAMETER"
-  ],
-  "10 \u03bcm coronal sections": [
-    "DIMENSION"
-  ],
   "10% of the cluster": [
     "STATISTICAL_METRIC"
   ],
-  "10,000": [
-    "COUNT",
-    "NUMBER"
-  ],
   "1000092": [
-    "CATALOG",
     "CATALOG_NUMBER",
-    "PRODUCT_ID"
+    "CATALOG"
   ],
   "11 neuronal": [
-    "DATA_POINT",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "DATA_POINT"
   ],
   "11 transcriptionally distinct neuronal populations": [
     "POPULATION"
-  ],
-  "15,655": [
-    "QUANTITY",
-    "NUMBER"
   ],
   "15,655 nuclei": [
     "CELL_COUNT"
@@ -86,27 +25,16 @@
   "16 transcriptionally distinct populations": [
     "DATA_POINT"
   ],
-  "17": [
-    "COUNT",
-    "NUMBER"
-  ],
   "184 upregulated, 52 downregulated": [
     "MOLECULAR_ENTITY"
   ],
-  "1999": [
-    "TIME"
-  ],
   "1:50": [
-    "PARAMETER",
     "DILUTION"
   ],
   "1:500": [
-    "PARAMETER",
     "DILUTION"
   ],
   "20": [
-    "NUMBER",
-    "PARAMETER",
     "MAGNIFICATION"
   ],
   "20 mgkg": [
@@ -116,23 +44,8 @@
   "20 mgkg cocaine": [
     "DOSAGE"
   ],
-  "200": [
-    "COUNT",
-    "NUMBER"
-  ],
   "200 features": [
-    "PARAMETER",
     "SEQUENCING_METRIC"
-  ],
-  "2019": [
-    "TIME"
-  ],
-  "2020": [
-    "TIME"
-  ],
-  "22,000": [
-    "COUNT",
-    "NUMBER"
   ],
   "22,000 reads": [
     "SEQUENCING_METRIC"
@@ -140,15 +53,8 @@
   "22,000 reads per nuclei": [
     "MEASUREMENT"
   ],
-  "23,599": [
-    "QUANTITY",
-    "NUMBER"
-  ],
   "23,599 nuclei": [
     "CELL_COUNT"
-  ],
-  "236": [
-    "NUMBER"
   ],
   "236 total DEGs": [
     "MOLECULAR_ENTITY"
@@ -159,29 +65,11 @@
   "3": [
     "VERSION"
   ],
-  "30": [
-    "TIME"
-  ],
-  "30 s": [
-    "DURATION"
-  ],
   "317031-C3": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "320858": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
-  ],
-  "323110": [
-    "IDENTIFIER",
-    "PRODUCT_ID"
-  ],
-  "39,000": [
-    "COUNT",
-    "NUMBER"
+    "PRODUCT"
   ],
   "39,000 reads": [
     "SEQUENCING_METRIC"
@@ -190,41 +78,22 @@
     "MEASUREMENT"
   ],
   "39,254 nuclei": [
-    "CELL_COUNT",
     "CELLULAR_COMPONENT",
-    "DATA_POINT",
-    "SAMPLE"
+    "CELL_COUNT",
+    "SAMPLE",
+    "DATA_POINT"
   ],
   "3F": [
-    "NUMBER",
     "DEMOGRAPHIC"
   ],
   "3F 3M": [
-    "GENDER",
-    "QUANTITY"
+    "GENDER"
   ],
   "3M": [
-    "NUMBER",
     "DEMOGRAPHIC"
-  ],
-  "4": [
-    "NUMBER"
   ],
   "4 animals": [
     "SAMPLE_SIZE"
-  ],
-  "40": [
-    "TIME"
-  ],
-  "40 min": [
-    "DURATION"
-  ],
-  "5": [
-    "COUNT",
-    "NUMBER"
-  ],
-  "5  of reads": [
-    "PARAMETER"
   ],
   "5 glial clusters": [
     "POPULATION"
@@ -233,71 +102,33 @@
     "POPULATION"
   ],
   "5 non-neuronal": [
-    "DATA_POINT",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "DATA_POINT"
   ],
   "5% of reads": [
     "SEQUENCING_METRIC"
   ],
-  "506": [
-    "NUMBER"
-  ],
   "520": [
-    "DYE",
-    "IDENTIFIER",
-    "PARAMETER",
-    "WAVELENGTH"
+    "WAVELENGTH",
+    "DYE"
   ],
   "544081-C2": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "570": [
-    "DYE",
-    "IDENTIFIER",
-    "PARAMETER",
-    "WAVELENGTH"
-  ],
-  "6": [
-    "QUANTITY",
-    "NUMBER"
-  ],
-  "60": [
-    "TIME"
-  ],
-  "60 min": [
-    "DURATION"
-  ],
-  "665": [
-    "NUMBER"
+    "WAVELENGTH",
+    "DYE"
   ],
   "690": [
-    "DYE",
-    "IDENTIFIER",
-    "PARAMETER",
-    "WAVELENGTH"
-  ],
-  "7 consecutive days": [
-    "TIME",
-    "TIME_POINT"
-  ],
-  "7 days": [
-    "TIME",
-    "TIME_DURATION"
-  ],
-  "8": [
-    "COUNT",
-    "NUMBER"
+    "WAVELENGTH",
+    "DYE"
   ],
   "8 GEM wells": [
-    "LABORATORY_REAGENT",
-    "EXPERIMENTAL_METHOD"
+    "EXPERIMENTAL_METHOD",
+    "LABORATORY_REAGENT"
   ],
   "891561-C1": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "A major focus of this study": [
     "RESEARCH_TOPIC"
@@ -311,9 +142,6 @@
   ],
   "Advanced Cell Diagnostics, 323110": [
     "PRODUCT"
-  ],
-  "All": [
-    "QUANTIFIER"
   ],
   "All experiments": [
     "METHOD"
@@ -329,8 +157,8 @@
   ],
   "Batch effects": [
     "EXPERIMENTAL_ARTIFACT",
-    "BIAS",
     "PHENOMENON",
+    "BIAS",
     "TECHNICAL_ARTIFACT"
   ],
   "Bcl11b": [
@@ -338,7 +166,6 @@
   ],
   "Benjamini-Hochberg FDR": [
     "STATISTICAL_TEST",
-    "VALUE",
     "STATISTICAL_METHOD"
   ],
   "Bertran-Gonzalez et al., 2008": [
@@ -350,15 +177,15 @@
   ],
   "COVID-19 pandemic": [
     "EVENT",
-    "MEDICAL_CONDITION",
-    "DISEASE"
+    "DISEASE",
+    "MEDICAL_CONDITION"
   ],
   "CREB": [
     "PROTEIN"
   ],
   "CREB phosphorylation": [
-    "MOLECULAR_PROCESS",
-    "BIOCHEMICAL_PROCESS"
+    "BIOCHEMICAL_PROCESS",
+    "MOLECULAR_PROCESS"
   ],
   "Cacng3": [
     "GENE"
@@ -373,8 +200,8 @@
     "SOFTWARE"
   ],
   "Cell Ranger filtered outputs": [
-    "DATA_TYPE",
-    "DATA_FORMAT"
+    "DATA_FORMAT",
+    "DATA_TYPE"
   ],
   "CellRanger": [
     "SOFTWARE"
@@ -393,8 +220,8 @@
     "KIT"
   ],
   "Chromium Single Cell 3 Library Construction Kit": [
-    "KIT",
-    "LABORATORY_REAGENT"
+    "LABORATORY_REAGENT",
+    "KIT"
   ],
   "Cisneros and Cunningham, 2021": [
     "AUTHOR_AND_DATE"
@@ -413,10 +240,10 @@
     "STATISTIC"
   ],
   "Cy5": [
+    "FLUOROPHORE",
     "REAGENT",
-    "DYE",
     "FLUORESCENT_DYE",
-    "FLUOROPHORE"
+    "DYE"
   ],
   "D1-MSN": [
     "NEURON_GROUP",
@@ -426,10 +253,10 @@
     "NEURONAL_POPULATION"
   ],
   "D1-MSNs": [
-    "NEURON_TYPE",
-    "NEURON",
     "NEURONAL_CELL_TYPE",
     "CELL",
+    "NEURON_TYPE",
+    "NEURON",
     "CELL_TYPE"
   ],
   "D1.MSN_A": [
@@ -471,29 +298,29 @@
     "PROTEIN"
   ],
   "DAPI": [
+    "FLUOROPHORE",
     "REAGENT",
-    "DYE",
-    "FLUOROPHORE"
+    "DYE"
   ],
   "DEG": [
+    "GENE_FAMILY",
     "GENE_EXPRESSION",
-    "GENE",
-    "GENE_FAMILY"
+    "GENE"
   ],
   "DEG analyses": [
     "ANALYSIS_METHOD"
   ],
   "DEGs": [
-    "GENE_GROUP",
-    "MEASUREMENT",
-    "DIFFERENTIALLY_EXPRESSED_GENES",
-    "GENE_EXPRESSION",
     "GENE",
     "GENE_SET",
-    "MOLECULAR_ENTITY",
+    "GENE_TYPE",
+    "GENE_EXPRESSION",
+    "DIFFERENTIALLY_EXPRESSED_GENES",
     "GENE_EXPRESSION_METRIC",
     "ABBREVIATION",
-    "GENE_TYPE"
+    "MEASUREMENT",
+    "GENE_GROUP",
+    "MOLECULAR_ENTITY"
   ],
   "DEGs; Supp. Table 2": [
     "TABLE"
@@ -505,16 +332,16 @@
     "SOFTWARE"
   ],
   "DRD1 activation": [
-    "RECEPTOR",
-    "RECEPTOR_ACTIVATION"
+    "RECEPTOR_ACTIVATION",
+    "RECEPTOR"
   ],
   "Disruption of glutamatergic transport, release, and signaling": [
     "BIOLOGICAL_PROCESS"
   ],
   "Dopaminergic neurotransmission": [
+    "NEUROTRANSMISSION_TYPE",
     "NEUROTRANSMISSION",
-    "PROCESS",
-    "NEUROTRANSMISSION_TYPE"
+    "PROCESS"
   ],
   "DoubletFinder": [
     "SOFTWARE"
@@ -533,14 +360,14 @@
     "CELL_TYPE"
   ],
   "Drd1-MSN-1": [
+    "CELL_ENTITY",
+    "NEURONAL_CELL_TYPE",
+    "NEURONAL_POPULATION",
     "CELL",
     "NEURON_TYPE",
-    "NEURONAL_CELL_TYPE",
     "NEURON",
-    "CELL_ENTITY",
-    "NEURONAL_POPULATION",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "Drd1-MSN-1 population": [
     "NEURONAL_POPULATION",
@@ -548,11 +375,11 @@
     "CELL_POPULATION"
   ],
   "Drd1-MSN-2": [
+    "NEURONAL_POPULATION",
     "CELL",
     "NEURON",
-    "NEURONAL_POPULATION",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "Drd1-MSN-2 population": [
     "NEURONAL_POPULATION",
@@ -560,8 +387,8 @@
     "CELL_POPULATION"
   ],
   "Drd1-MSNs": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "Drd1-and Drd2-MSNs": [
     "CELL_TYPE"
@@ -574,20 +401,20 @@
     "GENE"
   ],
   "Drd1-expressing MSN": [
+    "NEURONAL_CELL_TYPE",
     "CELL_TYPE",
-    "NEURON",
-    "NEURONAL_CELL_TYPE"
+    "NEURON"
   ],
   "Drd1-expressing MSN populations": [
-    "POPULATION",
     "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_POPULATION",
+    "POPULATION"
   ],
   "Drd1-expressing MSNs": [
-    "NEURON",
-    "CELL_TYPE",
     "NEURONAL_CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_TYPE",
+    "CELL_POPULATION",
+    "NEURON"
   ],
   "Drd1-expressing cells": [
     "CELL_POPULATION"
@@ -597,20 +424,20 @@
     "CELL_POPULATION"
   ],
   "Drd1Ebf1": [
-    "GENE",
-    "GENE_COMBO",
     "NEURONAL_POPULATION",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "GENE_COMBO",
+    "GENE"
   ],
   "Drd1Ebf1 cells": [
     "CELL_TYPE",
     "CELL_POPULATION"
   ],
   "Drd1Htr4": [
-    "GENE",
-    "GENE_COMBO",
     "NEURONAL_POPULATION",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "GENE_COMBO",
+    "GENE"
   ],
   "Drd1Htr4 cells": [
     "CELL_TYPE",
@@ -628,12 +455,12 @@
     "GENE"
   ],
   "Drd2-MSN-1": [
-    "NEURON_TYPE",
-    "NEURON",
-    "NEURON_SUBTYPE",
     "NEURONAL_POPULATION",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "NEURON_TYPE",
+    "NEURON_SUBTYPE",
+    "NEURON",
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "Drd2-MSN-1 population": [
     "CELL_TYPE",
@@ -643,15 +470,15 @@
     "CELL_TYPE"
   ],
   "Drd2-MSNs": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "Drd2-expressing MSN": [
     "NEURON"
   ],
   "Drd2-expressing MSN populations": [
-    "POPULATION",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "POPULATION"
   ],
   "Drd2-expressing MSNs": [
     "CELL_TYPE"
@@ -663,23 +490,23 @@
     "GENE"
   ],
   "Drd3-MSN": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "Drd3-MSNs": [
     "CELL_TYPE"
   ],
   "Drd3-and Grm8-expressing MSNs": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "Droplet based single-cellsingle-nucleus technologies": [
     "EXPERIMENTAL_METHOD",
     "TECHNOLOGY"
   ],
   "Drug-induced": [
-    "DRUG_RELATED_PROCESS",
-    "DRUG"
+    "DRUG",
+    "DRUG_RELATED_PROCESS"
   ],
   "Drug-induced elevations": [
     "PROCESS"
@@ -709,27 +536,21 @@
     "TECHNIQUE_ABBREVIATION"
   ],
   "FP1487001KT": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "FP1488001KT": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "FP1497001KT": [
-    "PRODUCT",
-    "IDENTIFIER",
-    "PRODUCT_ID"
+    "PRODUCT"
   ],
   "Fold Change": [
     "METRIC"
   ],
   "Fos": [
-    "GENE",
     "MOL_PROTEIN",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "Fosl2": [
     "GENE"
@@ -747,16 +568,16 @@
     "NEUROTRANSmitter_TYPE"
   ],
   "GABAergic MSNs": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "GABAergic interneurons": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "GABAergic neurons": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "GEM": [
     "MATERIAL",
@@ -764,23 +585,23 @@
     "LABORATORY_EQUIPMENT"
   ],
   "GEM wells": [
-    "LABORATORY_REAGENT",
     "EXPERIMENTAL_METHOD",
-    "WELL"
+    "WELL",
+    "LABORATORY_REAGENT"
   ],
   "GFP": [
+    "FLUOROPHORE",
     "REAGENT",
-    "DYE",
     "FLUORESCENT_PROTEIN",
-    "FLUOROPHORE"
+    "DYE"
   ],
   "Gad1": [
     "GENE"
   ],
   "Gini coefficients": [
-    "METRIC",
+    "STATISTICAL_MEASURE",
     "STATISTICAL_METRIC",
-    "STATISTICAL_MEASURE"
+    "METRIC"
   ],
   "Gja1": [
     "GENE"
@@ -806,9 +627,9 @@
     "AUTHOR_AND_DATE"
   ],
   "Homotypic doublets": [
+    "PHENOMENON",
     "CELL_ARTIFACT",
     "CELL_TYPE",
-    "PHENOMENON",
     "TECHNICAL_ARTIFACT"
   ],
   "Hs6st3": [
@@ -823,9 +644,9 @@
     "GENE"
   ],
   "IEG": [
-    "GENE",
     "ACRONYM",
     "GENE_FAMILY",
+    "GENE",
     "GENE_CLASS_ABBREVIATION"
   ],
   "IEG programs": [
@@ -846,8 +667,8 @@
     "RESEARCH_TOPIC"
   ],
   "Illumina NextSeq 500": [
-    "SEQUENCING_PLATFORM",
     "SEQUENCER",
+    "SEQUENCING_PLATFORM",
     "EQUIPMENT"
   ],
   "Institutional Animal Care and Use Committee": [
@@ -870,9 +691,9 @@
     "EQUIPMENT"
   ],
   "Keyence BZ-X800 microscope": [
-    "EQUIPMENT",
     "MICROSCOPE",
-    "INSTRUMENT"
+    "INSTRUMENT",
+    "EQUIPMENT"
   ],
   "L-type calcium channel": [
     "ION_CHANNEL",
@@ -884,33 +705,33 @@
   ],
   "Leica cryostat": [
     "LAB_EQUIPMENT",
-    "EQUIPMENT",
-    "INSTRUMENT"
+    "INSTRUMENT",
+    "EQUIPMENT"
   ],
   "Libraries": [
-    "LABORATORY_REAGENT",
     "EXPERIMENTAL_METHOD",
+    "LIBRARY",
     "MATERIAL",
-    "LIBRARY"
+    "LABORATORY_REAGENT"
   ],
   "Likelihood Ratio Test": [
     "METHOD"
   ],
   "Local Inverse Simpsons Index": [
-    "INDEX",
-    "STATISTICAL_METRIC",
     "STATISTICAL_MEASURE",
     "MATH",
-    "METHOD",
-    "STATISTICAL_METHOD"
+    "INDEX",
+    "STATISTICAL_METRIC",
+    "STATISTICAL_METHOD",
+    "METHOD"
   ],
   "Locomotor": [
     "BEHAVIOR"
   ],
   "Locomotor testing": [
     "MEASUREMENT",
-    "METHOD",
-    "TEST"
+    "TEST",
+    "METHOD"
   ],
   "MSN": [
     "NEURON_TYPE",
@@ -925,19 +746,19 @@
     "CELL_TYPE"
   ],
   "MSN subtype": [
-    "NEURON",
     "SUBTYPE",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "MSN subtypes": [
     "NEURON_TYPE"
   ],
   "MSN.D1_A": [
     "POPULATION",
-    "NEURON",
     "NEURONAL_POPULATION",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "NEURON",
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "MSN.D2_A": [
     "NEURONAL_POPULATION",
@@ -945,12 +766,12 @@
     "CELL_POPULATION"
   ],
   "MSNs": [
-    "NEURON_TYPE",
+    "ACRONYM",
     "NEURON_TYPE_ABBREVIATION",
+    "NEURONAL_POPULATION",
+    "NEURON_TYPE",
     "CELL",
     "NEURON",
-    "NEURONAL_POPULATION",
-    "ACRONYM",
     "CELL_TYPE"
   ],
   "Male or female adult rats": [
@@ -960,34 +781,34 @@
     "GENE"
   ],
   "Met 5 -Enkaphalin": [
-    "NEUROPEPTIDE",
-    "PEPTIDE"
+    "PEPTIDE",
+    "NEUROPEPTIDE"
   ],
   "Met 5-Enkaphalin": [
     "PEPTIDE"
   ],
   "Molecular count data": [
-    "DATA_TYPE",
-    "DATA_FORMAT"
+    "DATA_FORMAT",
+    "DATA_TYPE"
   ],
   "Molecular function gene ontology terms": [
-    "TERM",
     "BIOLOGICAL_TERM",
-    "GENE_ONTOLOGY",
-    "FUNCTIONAL_ANNOTATION"
+    "FUNCTIONAL_ANNOTATION",
+    "TERM",
+    "GENE_ONTOLOGY"
   ],
   "Molecular function pathway analysis": [
-    "ANALYSIS",
-    "METHODOLOGY",
+    "LAB_TECHNIQUE",
     "ANALYSIS_METHOD",
-    "LAB_TECHNIQUE"
+    "ANALYSIS",
+    "METHODOLOGY"
   ],
   "NAc": [
-    "BRAIN_REGION_ABBREVIATION",
+    "REGION",
     "ANATOMICAL_STRUCTURE",
-    "BRAIN_REGIONS",
     "BRAIN_REGION",
-    "REGION"
+    "BRAIN_REGION_ABBREVIATION",
+    "BRAIN_REGIONS"
   ],
   "NAc cell types": [
     "CELL_TYPE"
@@ -1014,25 +835,24 @@
     "CELL_TYPE"
   ],
   "NHP": [
-    "MODEL_ORGANISM",
-    "ANIMAL",
+    "SPECIES",
     "ORGANISM",
-    "SPECIES"
+    "MODEL_ORGANISM",
+    "ANIMAL"
   ],
   "Next": [
-    "TEMPORAL",
-    "TEMPORAL_INDICATOR"
+    "TEMPORAL_INDICATOR",
+    "TEMPORAL"
   ],
   "Nr4a1": [
-    "GENE",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "Nr4a3": [
     "GENE"
   ],
   "OP-87767": [
-    "FILTER",
-    "PRODUCT_ID"
+    "FILTER"
   ],
   "OP-87767 filter cubes": [
     "INSTRUMENT_COMPONENT",
@@ -1043,10 +863,9 @@
     "CELL_TYPE"
   ],
   "Only annotated genes": [
-    "GENE",
-    "PARAMETER",
+    "VARIABLE",
     "STATISTICAL_TERM",
-    "VARIABLE"
+    "GENE"
   ],
   "Opal dyes": [
     "REAGENT",
@@ -1065,22 +884,22 @@
     "GENE"
   ],
   "Pearson correlation coefficient": [
-    "STATISTICAL_METRIC",
-    "STATISTIC"
+    "STATISTIC",
+    "STATISTICAL_METRIC"
   ],
   "Pearsons correlation coefficient": [
-    "STATISTICAL_METRIC",
     "STATISTICAL_MEASURE",
+    "STATISTICAL_METRIC",
     "STATISTIC"
   ],
   "Penk": [
     "GENE"
   ],
   "PlanFluor NA 0.75": [
-    "INSTRUMENT_COMPONENT",
-    "LENS_SPECIFICATION",
+    "LENS",
     "MICROSCOPE",
-    "LENS"
+    "INSTRUMENT_COMPONENT",
+    "LENS_SPECIFICATION"
   ],
   "Plotting": [
     "PROCESS"
@@ -1093,23 +912,23 @@
   ],
   "Probes": [
     "REAGENT",
-    "MOLECULE",
-    "SUBSTANCE"
+    "SUBSTANCE",
+    "MOLECULE"
   ],
   "R": [
-    "PROGRAMMING_LANGUAGE",
-    "SOFTWARE"
+    "SOFTWARE",
+    "PROGRAMMING_LANGUAGE"
   ],
   "R code": [
-    "SOFTWARE",
-    "CODE"
+    "CODE",
+    "SOFTWARE"
   ],
   "R v4.0.2": [
     "SOFTWARE"
   ],
   "RNAscope": [
-    "TECHNIQUE",
-    "LAB_TECHNIQUE"
+    "LAB_TECHNIQUE",
+    "TECHNIQUE"
   ],
   "RNAscope Multiplex Fluorescent v2 Assay": [
     "PROCEDURE",
@@ -1120,8 +939,8 @@
     "METHOD"
   ],
   "RRHO heatmaps": [
-    "MATERIAL",
     "DATA_VISUALIZATION",
+    "MATERIAL",
     "VISUALIZATION"
   ],
   "RRHO2": [
@@ -1160,16 +979,16 @@
     "STRAIN"
   ],
   "Sprague-Dawley rat": [
-    "ORGANISM",
-    "SPECIES"
+    "SPECIES",
+    "ORGANISM"
   ],
   "Sprague-Dawley rats": [
-    "LAB_ANIMAL",
-    "SPECIES",
+    "ORGANISM",
     "ANIMAL",
     "MODEL_ORGANISM",
-    "ORGANISM",
-    "ANIMAL_MODEL"
+    "ANIMAL_MODEL",
+    "LAB_ANIMAL",
+    "SPECIES"
   ],
   "Sst": [
     "GENE"
@@ -1198,22 +1017,22 @@
     "GENE"
   ],
   "TSA buffer": [
+    "BUFFER",
     "REAGENT",
-    "CHEMICAL",
-    "BUFFER"
+    "CHEMICAL"
   ],
   "Texas Red PE": [
+    "FLUOROPHORE",
     "REAGENT",
-    "DYE",
     "FLUORESCENT_DYE",
-    "FLUOROPHORE"
+    "DYE"
   ],
   "The NAc": [
     "BRAIN_REGION"
   ],
   "The mesolimbic dopamine pathway": [
-    "BRAIN_PATHWAY",
-    "NEURAL_PATHWAY"
+    "NEURAL_PATHWAY",
+    "BRAIN_PATHWAY"
   ],
   "This dataset": [
     "DATASET"
@@ -1238,15 +1057,15 @@
     "GENE"
   ],
   "UAB Heflin Genomics core": [
-    "RESEARCH_FACILITY",
+    "FACILITY",
     "LABORATORY",
-    "FACILITY"
+    "RESEARCH_FACILITY"
   ],
   "UMAP": [
-    "MOL_TOOL",
-    "TECHNIQUE",
+    "BRAIN_STRUCTURE",
     "DATA_REPRESENTATION",
-    "BRAIN_STRUCTURE"
+    "TECHNIQUE",
+    "MOL_TOOL"
   ],
   "United States": [
     "LOCATION"
@@ -1259,18 +1078,21 @@
     "INSTITUTION"
   ],
   "VTA": [
-    "BRAIN_REGION_ABBREVIATION",
-    "BRAIN_REGION"
+    "BRAIN_REGION",
+    "BRAIN_REGION_ABBREVIATION"
   ],
   "Within the past few decades": [
-    "TIME_PERIOD",
-    "TIMEFRAME"
+    "TIMEFRAME",
+    "TIME_PERIOD"
   ],
   "Zhang et al., 2005": [
     "PUBLICATION"
   ],
   "Zhang et al., 2006": [
     "PUBLICATION"
+  ],
+  "a": [
+    "ARTICLE"
   ],
   "abuse": [
     "BEHAVIOR"
@@ -1288,30 +1110,30 @@
     "PROTEIN"
   ],
   "acute": [
-    "CONDITION",
+    "EXPOSURE_TYPE",
     "TEMPORAL_CONTEXT",
+    "TIME_FRAME",
+    "TREATMENT_CONDITION",
     "EXPOSURE",
     "TREATMENT_PROTOCOL",
-    "TREATMENT_CONDITION",
-    "TIME_FRAME",
-    "EXPOSURE_TYPE",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "CONDITION"
   ],
   "acute and repeated exposures": [
     "EXPERIMENTAL_CONDITION"
   ],
   "acute cocaine": [
-    "CONDITION",
     "EXPOSURE_TYPE",
     "DRUG_TREATMENT",
     "DRUG_ADMINISTRATION",
+    "CONDITION",
     "DRUG"
   ],
   "acute cocaine exposure": [
+    "EXPERIMENTAL_CONDITION",
     "DRUG_EXPOSURE",
-    "TREATMENT",
     "DRUG",
-    "EXPERIMENTAL_CONDITION"
+    "TREATMENT"
   ],
   "acute dataset": [
     "DATA_TYPE",
@@ -1329,40 +1151,39 @@
     "BEHAVIOR"
   ],
   "adaptive behavior": [
-    "BEHAVIOR",
-    "BEHAVIORAL_PROCESS"
+    "BEHAVIORAL_PROCESS",
+    "BEHAVIOR"
   ],
   "addiction": [
     "NEUROLOGICAL_DISORDER",
     "NEUROPSYCHIATRIC_DISORDER"
   ],
   "addiction epidemic": [
-    "EPIDEMIC",
-    "EVENT"
+    "EVENT",
+    "EPIDEMIC"
   ],
   "addiction-linked": [
     "BEHAVIOR"
   ],
   "addiction-linked behaviors": [
-    "BEHAVIOR",
-    "BEHAVIORAL_PROCESS"
+    "BEHAVIORAL_PROCESS",
+    "BEHAVIOR"
   ],
   "additional": [
     "PROPERTY"
   ],
   "adjusted p-value": [
-    "STATISTICAL_METRIC",
     "STATISTICAL_MEASURE",
-    "VALUE"
+    "STATISTICAL_METRIC"
   ],
   "adult": [
-    "DEVELOPMENTAL_STAGE",
     "ANIMAL_DEVELOPMENTAL_STAGE",
-    "AGE"
+    "AGE",
+    "DEVELOPMENTAL_STAGE"
   ],
   "adult rat": [
-    "ANIMAL",
-    "ORGANISM"
+    "ORGANISM",
+    "ANIMAL"
   ],
   "adult rat NAc": [
     "ANATOMICAL_STRUCTURE"
@@ -1371,30 +1192,33 @@
     "PROPERTY"
   ],
   "ambient RNA": [
-    "BIOLOGICAL_CONTAMINANT",
     "BIOMOLECULE",
-    "RNA"
+    "RNA",
+    "BIOLOGICAL_CONTAMINANT"
+  ],
+  "an": [
+    "ARTICLE"
   ],
   "analysis": [
-    "PROCESS",
     "RESEARCH_METHOD",
+    "PROCESS",
     "METHOD",
-    "METHODOLOGY",
-    "ANALYSIS_METHOD"
+    "ANALYSIS_METHOD",
+    "METHODOLOGY"
   ],
   "animal": [
-    "RESEARCH_SUBJECT",
-    "SPECIES"
+    "SPECIES",
+    "RESEARCH_SUBJECT"
   ],
   "animal variability": [
     "VARIABLE",
     "EXPERIMENTAL_VARIABLE"
   ],
   "animals": [
-    "ANIMAL",
     "ORGANISM",
-    "SPECIES",
-    "RESEARCH_SUBJECT"
+    "ANIMAL",
+    "RESEARCH_SUBJECT",
+    "SPECIES"
   ],
   "approach": [
     "METHOD"
@@ -1403,8 +1227,8 @@
     "TECHNIQUE"
   ],
   "assay": [
-    "TECHNIQUE",
-    "ASSAY"
+    "ASSAY",
+    "TECHNIQUE"
   ],
   "associated Opal dye": [
     "REAGENT"
@@ -1426,8 +1250,8 @@
     "METHOD"
   ],
   "batches": [
-    "BATCH",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "BATCH"
   ],
   "behavior": [
     "BEHAVIOR"
@@ -1438,31 +1262,28 @@
   ],
   "behavioral adaptations": [
     "BIOLOGICAL_PROCESS",
+    "PHENOMENON",
     "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE",
-    "PHENOMENON"
+    "BEHAVIORAL_RESPONSE"
   ],
   "behavioral effects": [
-    "BEHAVIOR",
-    "PHENOMENON"
+    "PHENOMENON",
+    "BEHAVIOR"
   ],
   "behavioral response": [
     "BEHAVIOR"
   ],
   "behavioral responses": [
-    "PHENOTYPE",
-    "BEHAVIOR"
+    "BEHAVIOR",
+    "PHENOTYPE"
   ],
   "behaviors": [
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
-  ],
-  "between 2019 and 2020": [
-    "TIME"
+    "BEHAVIORAL_RESPONSE",
+    "BEHAVIOR"
   ],
   "biological": [
-    "METHODOLOGY",
-    "BIOLOGICAL"
+    "BIOLOGICAL",
+    "METHODOLOGY"
   ],
   "biological and technical replicates": [
     "METHOD"
@@ -1493,8 +1314,8 @@
     "PROTEIN"
   ],
   "calcium": [
-    "MOLECULE",
-    "ION"
+    "ION",
+    "MOLECULE"
   ],
   "calcium binding protein": [
     "PROTEIN_DESCRIPTOR",
@@ -1533,32 +1354,29 @@
   "cascade": [
     "BIOLOGICAL_PROCESS"
   ],
-  "catalog no. 1000092": [
-    "PRODUCT_ID"
-  ],
   "cell": [
     "CELL_TYPE"
   ],
   "cell populations": [
     "CELL",
-    "CELL_STRUCTURE",
     "CELLULAR_PHENOMENON",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_STRUCTURE",
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "cell type": [
     "CELL_TYPE"
   ],
   "cell type heterogeneity": [
     "BIOLOGICAL_CONCEPT",
-    "CELLULAR_PROCESS",
     "CELL_TYPE",
+    "CELLULAR_PROCESS",
     "CELLULAR_PHENOMENON"
   ],
   "cell type-specific": [
     "GENETIC",
-    "PROPERTY",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "PROPERTY"
   ],
   "cell type-specific gene program": [
     "GENE_PROGRAM"
@@ -1586,13 +1404,13 @@
     "GENE_EXPRESSION"
   ],
   "cell types": [
-    "CELL_GROUP",
-    "BIOLOGICAL_ENTITY",
-    "CELL",
     "CELL_ENTITY",
+    "CELL",
+    "BIOLOGICAL_ENTITY",
     "CELLULAR_PHENOMENON",
-    "CELL_TYPE",
-    "CELL_COMPONENT"
+    "CELL_GROUP",
+    "CELL_COMPONENT",
+    "CELL_TYPE"
   ],
   "cell typespecific transcriptional signatures": [
     "CELLULAR_CHARACTERISTIC"
@@ -1601,11 +1419,11 @@
     "CELL_TYPE"
   ],
   "cell-type heterogeneity": [
-    "BIOLOGY_CONCEPT",
+    "CONCEPT",
     "CELLULAR_PROCESS",
     "NEUROANATOMY",
-    "CONCEPT",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "BIOLOGY_CONCEPT"
   ],
   "cell-type specific": [
     "CELL_TYPE"
@@ -1614,8 +1432,8 @@
     "BIOLOGICAL_PROCESS"
   ],
   "cells": [
-    "CELL_COMPONENT",
     "CELLULAR_COMPONENT",
+    "CELL_COMPONENT",
     "CELL",
     "CELL_TYPE"
   ],
@@ -1623,23 +1441,23 @@
     "CELLULAR_COMPONENT"
   ],
   "cellular": [
-    "BIOLOGICAL_PROCESSES",
+    "CONCEPT",
     "PROCESS",
-    "CELLULAR_PROCESS",
-    "CELL",
     "BIOLOGICAL_LEVEL",
-    "CELLULAR",
     "BIOLOGICAL_PROCESS",
-    "CONCEPT"
+    "CELL",
+    "CELLULAR_PROCESS",
+    "CELLULAR",
+    "BIOLOGICAL_PROCESSES"
   ],
   "cellular and behavioral responses": [
     "RESPONSE"
   ],
   "cellular atlases": [
-    "DATASET",
+    "DATA",
     "TECHNIQUE",
-    "CELLULAR_STRUCTURE",
-    "DATA"
+    "DATASET",
+    "CELLULAR_STRUCTURE"
   ],
   "changes": [
     "BIOLOGICAL_PROCESS"
@@ -1651,57 +1469,57 @@
     "PROPERTY"
   ],
   "chat-interneurons": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "cholinergic": [
     "NEUROTRANSMITTER"
   ],
   "cholinergic interneuron population": [
-    "NEURON",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "cholinergic interneurons": [
     "CELL_TYPE"
   ],
   "cluster": [
+    "CLUSTER",
     "POPULATION",
     "ANATOMICAL_STRUCTURE",
-    "DATA_REPRESENTATION",
-    "CLUSTER",
+    "CELL_POPULATION",
     "GROUP",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "DATA_REPRESENTATION",
+    "CELL_TYPE"
   ],
   "cluster-specific expression": [
     "BIOLOGICAL_PROCESS",
-    "GENE_EXPRESSION",
-    "MOLECULAR_PHENOMENON"
+    "MOLECULAR_PHENOMENON",
+    "GENE_EXPRESSION"
   ],
   "clusters": [
+    "NEURONAL_POPULATION",
     "METHODOLOGY",
     "DATASET_COMPONENT",
-    "NEURONAL_POPULATION",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "cocaine": [
     "CONDITION",
     "PHARMACOLOGICAL_SUBSTANCE",
+    "DRUG",
     "CHEMICAL",
-    "SUBSTANCE",
-    "DRUG"
+    "SUBSTANCE"
   ],
   "cocaine DEGs": [
     "GENETIC_ELEMENT"
   ],
   "cocaine experience": [
-    "DRUG_EXPERIENCE",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "DRUG_EXPERIENCE"
   ],
   "cocaine exposure": [
-    "DRUG_EXPOSURE",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "DRUG_EXPOSURE"
   ],
   "cocaine injection": [
     "DRUG_ADMINISTRATION"
@@ -1713,19 +1531,19 @@
     "DRUG_PARADIGM"
   ],
   "cocaine paradigms": [
-    "EXPERIMENTAL_PARADIGM",
-    "PARADIGM"
+    "PARADIGM",
+    "EXPERIMENTAL_PARADIGM"
   ],
   "cocaine seeking": [
+    "BEHAVIORAL_RESPONSE",
     "DRUG_BEHAVIOR",
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
+    "BEHAVIOR"
   ],
   "cocaine self-administration": [
-    "EXPERIMENTAL_PARADIGM",
+    "DRUG_ADMINISTRATION",
     "BEHAVIOR",
     "PARADIGM",
-    "DRUG_ADMINISTRATION"
+    "EXPERIMENTAL_PARADIGM"
   ],
   "cocaine-dependent": [
     "DRUG_DEPENDENCE"
@@ -1741,8 +1559,8 @@
     "CONDITION"
   ],
   "cocaine-regulated genes": [
-    "GENE",
-    "GENE_SET"
+    "GENE_SET",
+    "GENE"
   ],
   "cocainedependent gene expression changes": [
     "GENE_EXPRESSION"
@@ -1771,8 +1589,8 @@
   "conditioned place preference": [
     "BEHAVIORAL_TASK",
     "BEHAVIOR",
-    "BEHAVIORAL_TEST",
-    "BEHAVIORAL_ASSAY"
+    "BEHAVIORAL_ASSAY",
+    "BEHAVIORAL_TEST"
   ],
   "confounding variable": [
     "VARIABLE",
@@ -1791,46 +1609,40 @@
     "BIOLOGICAL_ENTITY"
   ],
   "coronal sections": [
-    "ANATOMICAL_STRUCTURE",
-    "BRAIN_REGION"
-  ],
-  "counts": [
-    "COUNT"
-  ],
-  "counts 5": [
-    "PARAMETER"
+    "BRAIN_REGION",
+    "ANATOMICAL_STRUCTURE"
   ],
   "counts < 5": [
     "SEQUENCING_METRIC"
   ],
   "covariate": [
-    "STATISTICAL_PARAMETER",
     "STATISTICAL_MEASURE",
-    "STATISTICAL_TERM",
-    "VARIABLE"
+    "VARIABLE",
+    "STATISTICAL_PARAMETER",
+    "STATISTICAL_TERM"
   ],
   "covariates": [
-    "STATISTICAL_PARAMETER",
     "STATISTICAL_MEASURE",
-    "STATISTICAL_TERM",
-    "VARIABLE"
+    "VARIABLE",
+    "STATISTICAL_PARAMETER",
+    "STATISTICAL_TERM"
   ],
   "craving": [
+    "BEHAVIORAL_RESPONSE",
     "DRUG_BEHAVIOR",
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
+    "BEHAVIOR"
   ],
   "critical mediators": [
     "FACTOR"
   ],
   "cross-species comparisons": [
-    "ANALYSIS_METHOD",
     "RESEARCH_METHOD",
-    "COMPARISON"
+    "COMPARISON",
+    "ANALYSIS_METHOD"
   ],
   "cytoskeletal regulator": [
-    "GENE",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "cytoskeletal regulator Elmo2": [
     "PROTEIN"
@@ -1846,26 +1658,22 @@
     "DATA_SET"
   ],
   "data structure": [
-    "METHODOLOGY",
-    "DATA_ANALYSIS"
+    "DATA_ANALYSIS",
+    "METHODOLOGY"
   ],
   "dataset": [
-    "DATASET",
-    "DATA_SET",
+    "DATA",
     "RESOURCE",
-    "DATA"
+    "DATASET",
+    "DATA_SET"
   ],
   "datasets": [
     "DATA_ENTITY",
-    "DATASET",
-    "RESOURCE"
+    "RESOURCE",
+    "DATASET"
   ],
   "day": [
-    "TIME",
     "TIME_UNIT"
-  ],
-  "default parameters": [
-    "PARAMETER"
   ],
   "delta opioid receptor": [
     "RECEPTOR",
@@ -1896,13 +1704,13 @@
     "METHOD"
   ],
   "differential expression methods": [
-    "METHODOLOGY",
-    "RESEARCH_TOOL"
+    "RESEARCH_TOOL",
+    "METHODOLOGY"
   ],
   "differential expression testing": [
     "METHOD",
-    "ANALYSIS_METHOD",
-    "GENE_EXPRESSION"
+    "GENE_EXPRESSION",
+    "ANALYSIS_METHOD"
   ],
   "differentially": [
     "PROPERTY"
@@ -1911,13 +1719,13 @@
     "GENE_DESCRIPTOR"
   ],
   "differentially expressed genes": [
-    "GENE",
-    "GENE_DESCRIPTOR"
+    "GENE_DESCRIPTOR",
+    "GENE"
   ],
   "dimensionality reduction": [
+    "STATISTICAL_METHOD",
     "DATA_PROCESSING",
-    "METHOD",
-    "STATISTICAL_METHOD"
+    "METHOD"
   ],
   "direction": [
     "DIRECTION"
@@ -1943,37 +1751,36 @@
     "NEURON"
   ],
   "dose": [
-    "QUANTITY",
     "DOSE"
   ],
   "dose of cocaine": [
     "DRUG_DOSE"
   ],
   "doublets": [
+    "PHENOMENON",
     "CELL_ARTIFACT",
     "CELL_TYPE",
-    "PHENOMENON",
     "TECHNICAL_ARTIFACT"
   ],
   "downregulated": [
+    "MOLECULAR_ENTITY",
     "GENE_EXPRESSION",
-    "GENE_MODULATION",
-    "MOLECULAR_ENTITY"
+    "GENE_MODULATION"
   ],
   "downregulated genes": [
     "GENE"
   ],
   "drd1": [
+    "RECEPTOR",
     "GENE",
     "PROTEIN",
-    "RECEPTOR",
     "RECEPTOR_ABBREVIATION"
   ],
   "droplet": [
-    "LABORATORY_REAGENT",
-    "EXPERIMENTAL_METHOD",
     "MATERIAL",
-    "DROPLET"
+    "EXPERIMENTAL_METHOD",
+    "DROPLET",
+    "LABORATORY_REAGENT"
   ],
   "droplet-based single-cell single-nucleus technologies": [
     "TECHNOLOGY"
@@ -1983,32 +1790,32 @@
     "TECHNOLOGY"
   ],
   "drug": [
-    "CHEMICAL",
     "PHARMACOLOGICAL_SUBSTANCE",
-    "DRUG"
+    "DRUG",
+    "CHEMICAL"
   ],
   "drug addiction": [
-    "NEUROLOGICAL_DISORDER",
-    "CONDITION",
     "DISORDER",
+    "CONDITION",
+    "NEUROLOGICAL_DISORDER",
     "NEUROPSYCHIATRIC_DISORDER"
   ],
   "drug addiction research": [
     "RESEARCH_FIELD"
   ],
   "drug experience": [
-    "PROCEDURE",
-    "NEUROLOGICAL_PROCESS",
-    "DRUG_EXPERIENCE",
-    "BEHAVIOR",
     "EXPERIENCE",
-    "EXPERIMENTAL_CONDITION"
+    "PROCEDURE",
+    "EXPERIMENTAL_CONDITION",
+    "BEHAVIOR",
+    "NEUROLOGICAL_PROCESS",
+    "DRUG_EXPERIENCE"
   ],
   "drug exposure": [
     "PROCEDURE",
+    "EXPERIMENTAL_CONDITION",
     "EXPOSURE",
-    "NEUROLOGICAL_PROCESS",
-    "EXPERIMENTAL_CONDITION"
+    "NEUROLOGICAL_PROCESS"
   ],
   "drug of abuse": [
     "DRUG"
@@ -2017,13 +1824,13 @@
     "ADVERSE_EFFECT"
   ],
   "drug overdose deaths": [
+    "MEDICAL_CONDITION",
     "CONDITION",
-    "DEATH",
-    "MEDICAL_CONDITION"
+    "DEATH"
   ],
   "drug-induced behavioral adaptations": [
-    "PHENOTYPE",
     "NEUROADAPTATION",
+    "PHENOTYPE",
     "NEURO_FUNCTION"
   ],
   "drug-induced molecular adaptations": [
@@ -2033,8 +1840,8 @@
     "CONDITION"
   ],
   "drug-na\u00efve": [
-    "STUDY_CONDITION",
-    "DESCRIPTOR"
+    "DESCRIPTOR",
+    "STUDY_CONDITION"
   ],
   "drug-taking behaviors": [
     "BEHAVIOR"
@@ -2043,25 +1850,22 @@
     "DRUG"
   ],
   "drugs of abuse": [
-    "DRUG_CATEGORY",
     "DRUGS_ABUSE",
     "SUBSTANCE",
+    "DRUG_CLASS",
     "DRUG",
-    "DRUG_CLASS"
+    "DRUG_CATEGORY"
   ],
   "dry ice": [
     "CHEMICAL",
     "MATERIAL"
   ],
-  "duration": [
-    "TIME"
-  ],
   "early gene expression changes": [
     "GENE_EXPRESSION"
   ],
   "economic distress": [
-    "STRESS",
     "CONDITION",
+    "STRESS",
     "BEHAVIOR",
     "ECONOMIC_ISSUE"
   ],
@@ -2106,29 +1910,29 @@
     "DRUG_ADMINISTRATION"
   ],
   "experimenter-administered cocaine injections": [
-    "EXPERIMENTAL_PARADIGM",
     "PROCEDURE",
-    "PARADIGM"
+    "PARADIGM",
+    "EXPERIMENTAL_PARADIGM"
   ],
   "experimenter-administered injection": [
     "DRUG_ADMINISTRATION"
   ],
   "experimenter-administered injections": [
-    "EXPERIMENTAL_PARADIGM",
     "PROCEDURE",
-    "PARADIGM"
+    "PARADIGM",
+    "EXPERIMENTAL_PARADIGM"
   ],
   "experimenteradministered injections": [
-    "EXPERIMENTAL_PARADIGM",
-    "PROCEDURE"
+    "PROCEDURE",
+    "EXPERIMENTAL_PARADIGM"
   ],
   "experiments": [
     "EXPERIMENT"
   ],
   "exposure": [
     "PROCEDURE",
-    "PROCESS",
-    "EXPOSURE"
+    "EXPOSURE",
+    "PROCESS"
   ],
   "exposure length": [
     "VARIABLE",
@@ -2137,8 +1941,8 @@
   "exposure paradigm": [
     "EXPERIMENTAL_PARADIGM",
     "CONDITION",
-    "EXPERIMENTAL_FACTOR",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "EXPERIMENTAL_FACTOR"
   ],
   "exposure type": [
     "RESEARCH_PARAMETER"
@@ -2152,30 +1956,30 @@
     "PROCESS"
   ],
   "expression": [
-    "BIOLOGICAL_RESPONSE",
     "PROCESS",
+    "BIOLOGICAL_PROCESS",
     "CELLULAR_PROCESS",
     "GENE_EXPRESSION",
-    "BIOLOGICAL_PROCESS",
-    "MOLECULAR_ENTITY",
-    "MOLECULAR_PROCESS"
+    "BIOLOGICAL_RESPONSE",
+    "MOLECULAR_PROCESS",
+    "MOLECULAR_ENTITY"
   ],
   "expression programs": [
     "PROCESS"
   ],
   "extracellular concentrations": [
     "MEASUREMENT",
-    "CONCENTRATION",
-    "BIOCHEMICAL_PROCESS"
+    "BIOCHEMICAL_PROCESS",
+    "CONCENTRATION"
   ],
   "fastq files": [
     "FILE_FORMAT"
   ],
   "female": [
-    "GENDER",
     "SEX",
+    "BIOLOGICAL_SEX",
     "ANIMAL_GENDER",
-    "BIOLOGICAL_SEX"
+    "GENDER"
   ],
   "female rats": [
     "ANIMAL_MODEL"
@@ -2191,13 +1995,13 @@
     "EQUIPMENT"
   ],
   "fluorescence in situ hybridization": [
-    "TECHNIQUE",
-    "LAB_TECHNIQUE"
+    "LAB_TECHNIQUE",
+    "TECHNIQUE"
   ],
   "fosb": [
-    "PROTEIN",
+    "MOL_PROTEIN",
     "GENE",
-    "MOL_PROTEIN"
+    "PROTEIN"
   ],
   "g:GOSt": [
     "SOFTWARE"
@@ -2212,15 +2016,15 @@
     "LABORATORY_EQUIPMENT"
   ],
   "gene": [
-    "GENE",
-    "GENETIC_ENTITY",
     "GENE_DESCRIPTOR",
+    "GENETIC_ENTITY",
+    "GENE",
     "MOLECULAR_ENTITY"
   ],
   "gene counts": [
+    "DATA_FORMAT",
     "DATA_TYPE",
-    "GENE_EXPRESSION",
-    "DATA_FORMAT"
+    "GENE_EXPRESSION"
   ],
   "gene expression": [
     "BIOLOGICAL_PROCESS",
@@ -2228,9 +2032,9 @@
     "MOLECULAR_PROCESS"
   ],
   "gene expression changes": [
+    "MOLECULAR_PHENOMENON",
     "GENE_EXPRESSION",
-    "GENE",
-    "MOLECULAR_PHENOMENON"
+    "GENE"
   ],
   "gene expression matrices": [
     "BIOLOGICAL_PROCESS"
@@ -2238,8 +2042,8 @@
   "gene expression patterns": [
     "BIOLOGICAL_PROCESS",
     "GENE_EXPRESSION",
-    "GENE",
-    "EXPRESSION_PATTERN"
+    "EXPRESSION_PATTERN",
+    "GENE"
   ],
   "gene expression profiles": [
     "BIOLOGICAL_PROCESS",
@@ -2251,33 +2055,33 @@
     "EXPRESSION_PROGRAM"
   ],
   "gene expression signatures": [
+    "GENE_SIGNATURE",
     "GENE_EXPRESSION",
-    "EXPRESSION_SIGNATURE",
-    "GENE_SIGNATURE"
+    "EXPRESSION_SIGNATURE"
   ],
   "gene lists": [
-    "GENE",
-    "GENE_SET"
+    "GENE_SET",
+    "GENE"
   ],
   "gene networks": [
-    "METHODOLOGY",
     "GENE_NETWORK",
-    "GENE_FUNCTION"
+    "GENE_FUNCTION",
+    "METHODOLOGY"
   ],
   "gene programs": [
     "GENE"
   ],
   "genes": [
+    "GENE_SET",
     "MOLECULAR_ENTITY",
     "GENE",
-    "GENETIC_ELEMENT",
-    "GENE_SET"
+    "GENETIC_ELEMENT"
   ],
   "genetic sex": [
-    "BIOLOGICAL_VARIABLE",
-    "VARIABLE",
     "GENETIC_SEX",
-    "BIOLOGICAL_ATTRIBUTE"
+    "BIOLOGICAL_ATTRIBUTE",
+    "VARIABLE",
+    "BIOLOGICAL_VARIABLE"
   ],
   "glial clusters": [
     "CELL_TYPE"
@@ -2297,17 +2101,17 @@
   ],
   "heatmap": [
     "VISUALIZATION_METHOD",
-    "METHOD",
     "DATA_VISUALIZATION",
+    "METHOD",
     "VISUALIZATION"
   ],
   "heterogeneous": [
     "DESCRIPTOR"
   ],
   "heterotypic doublets": [
-    "PHENOMENON",
-    "TECHNICAL_ARTIFACT",
     "CELL_ARTIFACT",
+    "TECHNICAL_ARTIFACT",
+    "PHENOMENON",
     "CELL_TYPE"
   ],
   "hierarchical clustering": [
@@ -2319,8 +2123,8 @@
     "SPECIES"
   ],
   "higher order mammals": [
-    "TAXONOMIC_GROUP",
     "ANIMAL",
+    "TAXONOMIC_GROUP",
     "MAMMALS"
   ],
   "highly": [
@@ -2328,20 +2132,20 @@
   ],
   "htr4": [
     "RECEPTOR",
-    "GENE",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "https:github.comJeremy-Day-LabPhillips_2023_NAc": [
     "URL",
-    "RESOURCE_URL",
-    "DATABASE_RESOURCE"
+    "DATABASE_RESOURCE",
+    "RESOURCE_URL"
   ],
   "human": [
-    "SPECIES",
-    "MODEL",
+    "ORGANISM",
     "ANIMAL",
     "MODEL_ORGANISM",
-    "ORGANISM"
+    "MODEL",
+    "SPECIES"
   ],
   "i.e., all (cocaine": [
     "DRUG"
@@ -2364,8 +2168,8 @@
   ],
   "in situ experiments": [
     "TECHNIQUE",
-    "METHOD",
-    "LAB_EXPERIMENT"
+    "LAB_EXPERIMENT",
+    "METHOD"
   ],
   "individual cell populations": [
     "CELLULAR_PHENOMENON"
@@ -2391,9 +2195,9 @@
     "METHOD"
   ],
   "interneurons": [
-    "NEURON",
     "NEURON_TYPE",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "NEURON"
   ],
   "intraperitoneally": [
     "ROUTE",
@@ -2427,12 +2231,12 @@
     "SOFTWARE"
   ],
   "locomotor sensitization": [
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
+    "BEHAVIORAL_RESPONSE",
+    "BEHAVIOR"
   ],
   "log-normalized": [
-    "NORMALIZATION",
-    "DATA_PROCESSING"
+    "DATA_PROCESSING",
+    "NORMALIZATION"
   ],
   "log-normalized expression values": [
     "MEASUREMENT",
@@ -2443,16 +2247,16 @@
     "FUNCTION"
   ],
   "mRNA": [
-    "MOLECULE",
+    "MOLECULAR",
     "GENE",
-    "MOLECULAR"
+    "MOLECULE"
   ],
   "male": [
-    "GENDER",
+    "SEX",
+    "BIOLOGICAL_SEX",
     "ANIMAL_GENDER",
     "BIOLOGICAL_CHARACTERISTIC",
-    "SEX",
-    "BIOLOGICAL_SEX"
+    "GENDER"
   ],
   "male and female": [
     "SEX"
@@ -2465,20 +2269,20 @@
     "GENDER"
   ],
   "mammalian": [
-    "ORGANISM",
-    "SPECIES"
+    "SPECIES",
+    "ORGANISM"
   ],
   "mammalian brain": [
-    "ANATOMICAL_STRUCTURE",
-    "BRAIN_REGION"
+    "BRAIN_REGION",
+    "ANATOMICAL_STRUCTURE"
   ],
   "mammalian species": [
-    "ANIMAL_SPECIES",
-    "SPECIES"
+    "SPECIES",
+    "ANIMAL_SPECIES"
   ],
   "mammals": [
-    "ORGANISM",
-    "SPECIES"
+    "SPECIES",
+    "ORGANISM"
   ],
   "manufacturer's protocol": [
     "PROCEDURE"
@@ -2497,12 +2301,12 @@
     "GENE"
   ],
   "marker gene": [
-    "GENE_GROUP",
     "GENE",
-    "GENE_BIOMARKER",
-    "MOLECULE",
     "GENETIC_ELEMENT",
-    "GENE_TYPE"
+    "GENE_BIOMARKER",
+    "GENE_TYPE",
+    "MOLECULE",
+    "GENE_GROUP"
   ],
   "marker genes": [
     "GENE_GROUP",
@@ -2510,9 +2314,9 @@
     "GENETIC_ELEMENT"
   ],
   "markers": [
-    "GENE",
     "GENE_FUNCTION",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "mechanism": [
     "PROCESS"
@@ -2545,21 +2349,21 @@
     "UNIT"
   ],
   "model organism": [
+    "ORGANISM",
     "MODEL_ORGANISM",
-    "METHODOLOGY",
-    "ORGANISM"
+    "METHODOLOGY"
   ],
   "molecular": [
-    "BIOLOGICAL_PROCESSES",
+    "CONCEPT",
     "PROCESS",
     "BIOLOGICAL_PROCESS",
     "MOLECULE",
-    "CONCEPT"
+    "BIOLOGICAL_PROCESSES"
   ],
   "molecular adaptations": [
     "BIOLOGICAL_PROCESS",
-    "MOLECULAR_RESPONSE",
-    "ADAPTATION"
+    "ADAPTATION",
+    "MOLECULAR_RESPONSE"
   ],
   "molecular correlate": [
     "MOLECULAR_FEATURE"
@@ -2570,20 +2374,20 @@
   ],
   "molecular heterogeneity": [
     "MOLECULAR_PROPERTY",
-    "MOLECULAR_PHENOMENON",
     "BIOLOGICAL_CONCEPT",
+    "MOLECULAR_PHENOMENON",
     "MOLECULE",
     "NEURO_PROCESS"
   ],
   "monkey": [
-    "ANIMAL",
-    "SPECIES"
+    "SPECIES",
+    "ANIMAL"
   ],
   "mouse": [
-    "MODEL_ORGANISM",
-    "ANIMAL",
     "ORGANISM",
-    "MODEL"
+    "MODEL_ORGANISM",
+    "MODEL",
+    "ANIMAL"
   ],
   "multiplexed analysis": [
     "TECHNIQUE",
@@ -2602,8 +2406,8 @@
     "CELL_TYPE"
   ],
   "neuronal populations": [
-    "POPULATION",
-    "CELL_TYPE"
+    "CELL_TYPE",
+    "POPULATION"
   ],
   "neurons": [
     "NEURON_TYPE",
@@ -2611,39 +2415,39 @@
     "CELL_TYPE"
   ],
   "neuropsychiatric disorder": [
-    "NEUROLOGICAL_DISORDER",
     "DISORDER",
-    "NEUROPSYCHIATRIC_DISORDER"
+    "NEUROPSYCHIATRIC_DISORDER",
+    "NEUROLOGICAL_DISORDER"
   ],
   "neurotransmission": [
     "PROCESS"
   ],
   "neurotransmitter receptor systems": [
-    "PROTEIN_FAMILY",
-    "MOLECULAR_PATHWAY",
     "RECEPTOR",
-    "RECEPTOR_SYSTEM"
+    "RECEPTOR_SYSTEM",
+    "MOLECULAR_PATHWAY",
+    "PROTEIN_FAMILY"
   ],
   "non-human primate": [
-    "SPECIES",
-    "MODEL",
+    "ORGANISM",
     "ANIMAL",
     "MODEL_ORGANISM",
-    "ORGANISM"
+    "MODEL",
+    "SPECIES"
   ],
   "non-human primates": [
-    "ANIMAL",
+    "SPECIES",
     "ORGANISM",
-    "SPECIES"
+    "ANIMAL"
   ],
   "nonhuman primate": [
-    "ANIMAL",
+    "SPECIES",
     "ORGANISM",
-    "SPECIES"
+    "ANIMAL"
   ],
   "normalization": [
-    "NORMALIZATION",
-    "DATA_PROCESSING"
+    "DATA_PROCESSING",
+    "NORMALIZATION"
   ],
   "novel marker genes": [
     "GENE"
@@ -2652,17 +2456,14 @@
     "CELLULAR_COMPONENT",
     "CELL",
     "CELL_STRUCTURE",
-    "CELL_TYPE",
-    "CELL_COMPONENT"
+    "CELL_COMPONENT",
+    "CELL_TYPE"
   ],
   "nucleus accumbens": [
     "BRAIN_REGION"
   ],
   "number of replicates": [
     "EXPERIMENTAL_DESIGN"
-  ],
-  "one": [
-    "QUANTIFIER"
   ],
   "one injection": [
     "TREATMENT"
@@ -2675,14 +2476,14 @@
     "DRUG"
   ],
   "opioid receptors": [
-    "RECEPTOR",
     "RECEPTOR_FAMILY",
+    "RECEPTOR",
     "PROTEIN"
   ],
   "opioid use disorder": [
-    "NEUROLOGICAL_DISORDER",
     "DISORDER",
-    "NEUROPSYCHIATRIC_DISORDER"
+    "NEUROPSYCHIATRIC_DISORDER",
+    "NEUROLOGICAL_DISORDER"
   ],
   "opioid-associated overdose deaths": [
     "MORBIDITY",
@@ -2696,18 +2497,18 @@
     "TECHNIQUE"
   ],
   "orthologs": [
-    "GENE",
-    "GENE_TYPE"
+    "GENE_TYPE",
+    "GENE"
   ],
   "overdose": [
+    "MEDICAL_CONDITION",
     "CONDITION",
-    "ADVERSE_EFFECT",
-    "MEDICAL_CONDITION"
+    "ADVERSE_EFFECT"
   ],
   "overdose deaths": [
+    "MEDICAL_CONDITION",
     "CONDITION",
-    "DEATH",
-    "MEDICAL_CONDITION"
+    "DEATH"
   ],
   "overdose epidemic": [
     "EPIDEMIC"
@@ -2722,8 +2523,8 @@
     "GENE_EXPRESSION"
   ],
   "paradigms": [
-    "METHODOLOGY",
     "RESEARCH_TOOL",
+    "METHODOLOGY",
     "METHOD"
   ],
   "paradigmspecific transcriptional changes": [
@@ -2734,15 +2535,15 @@
     "PROTEIN"
   ],
   "pathway": [
-    "BRAIN_PATHWAY",
+    "NEURAL_PATHWAY",
     "PATHWAY",
-    "NEURAL_PATHWAY"
+    "BRAIN_PATHWAY"
   ],
   "pathways": [
-    "METHODOLOGY",
-    "PATHWAY",
     "NEURAL_PATHWAY",
-    "BIOLOGICAL_PATHWAY"
+    "PATHWAY",
+    "BIOLOGICAL_PATHWAY",
+    "METHODOLOGY"
   ],
   "pattern": [
     "PATTERN"
@@ -2766,8 +2567,8 @@
   ],
   "physiological": [
     "BIOLOGICAL_PROCESS",
-    "PHYSIOLOGICAL_PROCESS",
-    "PHYSIOLOGICAL"
+    "PHYSIOLOGICAL",
+    "PHYSIOLOGICAL_PROCESS"
   ],
   "physiological responses": [
     "PROCESS"
@@ -2775,9 +2576,9 @@
   "population": [
     "POPULATION",
     "NEURONAL_POPULATION",
+    "CELL_POPULATION",
     "GROUP",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_TYPE"
   ],
   "population of neurons": [
     "CELL_TYPE"
@@ -2787,17 +2588,17 @@
   ],
   "populations": [
     "POPULATION",
-    "CELL_STRUCTURE",
     "CELLULAR_PHENOMENON",
-    "CELL_TYPE",
-    "CELL_POPULATION"
+    "CELL_STRUCTURE",
+    "CELL_POPULATION",
+    "CELL_TYPE"
   ],
   "populations of cells": [
     "CELL_TYPE"
   ],
   "potassium": [
-    "MOLECULE",
-    "ION"
+    "ION",
+    "MOLECULE"
   ],
   "potassium channels": [
     "ION_CHANNEL",
@@ -2819,9 +2620,6 @@
   "preparation": [
     "PROCESS"
   ],
-  "previously": [
-    "TIME"
-  ],
   "primarily used techniques": [
     "METHODOLOGY"
   ],
@@ -2829,8 +2627,8 @@
     "REAGENT"
   ],
   "probe sets": [
-    "RESEARCH_TOOL",
-    "LAB_TOOL"
+    "LAB_TOOL",
+    "RESEARCH_TOOL"
   ],
   "prolonged withdrawal period": [
     "CONDITION"
@@ -2848,8 +2646,8 @@
     "PROTEIN"
   ],
   "pseudobulk approach": [
-    "METHODOLOGY",
     "RESEARCH_TOOL",
+    "METHODOLOGY",
     "METHOD"
   ],
   "pseudobulk treatment": [
@@ -2859,22 +2657,22 @@
     "ANALYSIS_METHOD"
   ],
   "pseudobulked gene expression matrices": [
-    "DATA_TYPE",
     "DATA_FORMAT",
-    "MATRIX"
+    "MATRIX",
+    "DATA_TYPE"
   ],
   "pseudobulked gene expression matrix": [
-    "DATA_TYPE",
     "DATA_FORMAT",
-    "MATRIX"
+    "MATRIX",
+    "DATA_TYPE"
   ],
   "psychedelic drugs": [
-    "DRUG",
-    "DRUG_CLASS"
+    "DRUG_CLASS",
+    "DRUG"
   ],
   "psychedelics": [
-    "DRUG",
-    "DRUG_CLASS"
+    "DRUG_CLASS",
+    "DRUG"
   ],
   "psychostimulants": [
     "DRUG"
@@ -2884,10 +2682,10 @@
     "CELLULAR_STRUCTURE"
   ],
   "rat": [
-    "MODEL_ORGANISM",
-    "ANIMAL",
+    "SPECIES",
     "ORGANISM",
-    "SPECIES"
+    "MODEL_ORGANISM",
+    "ANIMAL"
   ],
   "rat MSN DEGs": [
     "GENE_EXPRESSION",
@@ -2900,9 +2698,9 @@
     "CELL_TYPE"
   ],
   "rats": [
+    "ORGANISM",
     "ANIMAL",
     "MODEL_ORGANISM",
-    "ORGANISM",
     "MODEL"
   ],
   "raw fastq files": [
@@ -2923,9 +2721,9 @@
     "PROTEIN"
   ],
   "receptor systems": [
-    "PROTEIN_COMPLEX",
-    "RECEPTOR",
     "RECEPTOR_FAMILY",
+    "RECEPTOR",
+    "PROTEIN_COMPLEX",
     "RECEPTOR_SYSTEM"
   ],
   "regulated": [
@@ -2938,8 +2736,8 @@
     "BIOLOGICAL_PROCESS"
   ],
   "reldist": [
-    "PACKAGE",
-    "SOFTWARE"
+    "SOFTWARE",
+    "PACKAGE"
   ],
   "reldist v1.6-6 package": [
     "SOFTWARE"
@@ -2949,30 +2747,30 @@
     "PROCESS"
   ],
   "repeated": [
-    "CONDITION",
-    "TEMPORAL_CONTEXT",
     "EXPOSURE_TYPE",
+    "TEMPORAL_CONTEXT",
     "TIME_FRAME",
     "TREATMENT_CONDITION",
+    "CONDITION",
     "EXPERIMENTAL_CONDITION"
   ],
   "repeated cocaine": [
-    "CONDITION",
     "EXPOSURE_TYPE",
     "DRUG_TREATMENT",
     "DRUG_ADMINISTRATION",
+    "CONDITION",
     "DRUG"
   ],
   "repeated cocaine exposure": [
+    "EXPERIMENTAL_CONDITION",
     "DRUG_EXPOSURE",
-    "TREATMENT",
     "DRUG",
-    "EXPERIMENTAL_CONDITION"
+    "TREATMENT"
   ],
   "repeated dataset": [
     "DATA_TYPE",
-    "DATA_SET",
-    "DATA"
+    "DATA",
+    "DATA_SET"
   ],
   "repeated exposure": [
     "EXPOSURE_TYPE",
@@ -2982,9 +2780,9 @@
     "RESEARCH_TOOL"
   ],
   "research": [
-    "PROCESS",
     "RESEARCH_ACTIVITY",
     "RESEARCH",
+    "PROCESS",
     "METHOD"
   ],
   "resolution": [
@@ -2993,9 +2791,6 @@
   "resolution value": [
     "STATISTICAL_MEASURE"
   ],
-  "resolution value of 0.1": [
-    "PARAMETER"
-  ],
   "resource": [
     "RESOURCE"
   ],
@@ -3003,36 +2798,33 @@
     "BIOLOGICAL_PROCESS"
   ],
   "results": [
-    "FINDING",
-    "RESEARCH_ACTIVITY"
+    "RESEARCH_ACTIVITY",
+    "FINDING"
   ],
   "reward processing": [
-    "Cognitive_Function",
     "BIOLOGICAL_PROCESS",
+    "Cognitive_Function",
     "NEURO_PROCESS"
   ],
   "reward-predictive cues": [
+    "BEHAVIORAL_PROCESS",
     "STIMULUS",
     "CONCEPT",
-    "BEHAVIORAL_PROCESS",
     "CUE"
   ],
   "reward-related research": [
     "RESEARCH_FIELD",
     "NEURO_PROCESS"
   ],
-  "room temperature": [
-    "TEMPERATURE"
-  ],
   "s": [
     "UNIT",
     "UNITS"
   ],
   "saline": [
-    "CONTROL",
-    "SOLUTION",
     "CONDITION",
-    "DRUG"
+    "SOLUTION",
+    "DRUG",
+    "CONTROL"
   ],
   "same cell-type": [
     "CELL_TYPE"
@@ -3043,9 +2835,6 @@
   "scaling factor": [
     "STATISTICAL_MEASURE"
   ],
-  "scaling factor of 10,000": [
-    "PARAMETER"
-  ],
   "section": [
     "BIOLOGICAL_ENTITY"
   ],
@@ -3055,21 +2844,21 @@
     "LAB_PROCEDURE"
   ],
   "self-administration": [
-    "EXPERIMENTAL_PARADIGM",
+    "DRUG_ADMINISTRATION",
     "BEHAVIOR",
     "PARADIGM",
-    "DRUG_ADMINISTRATION"
+    "EXPERIMENTAL_PARADIGM"
   ],
   "sensitization": [
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
+    "BEHAVIORAL_RESPONSE",
+    "BEHAVIOR"
   ],
   "sensitized response": [
     "BEHAVIOR"
   ],
   "sensitized responses": [
-    "BEHAVIOR",
-    "BEHAVIORAL_RESPONSE"
+    "BEHAVIORAL_RESPONSE",
+    "BEHAVIOR"
   ],
   "sensitized responses to cocaine": [
     "BEHAVIOR"
@@ -3083,43 +2872,40 @@
     "PROTEIN"
   ],
   "serotonin receptors": [
-    "RECEPTOR",
     "RECEPTOR_FAMILY",
+    "RECEPTOR",
     "PROTEIN"
   ],
-  "seven": [
-    "NUMBER"
-  ],
   "sex": [
-    "BIOLOGICAL_VARIABLE",
-    "DEMOGRAPHIC",
-    "ORGANISM_ATTRIBUTE",
-    "BIOLOGICAL_SEX",
-    "GENDER",
-    "BIOLOGICAL_CHARACTERISTIC",
-    "VARIABLE",
     "SEX",
-    "BIOLOGICAL_ATTRIBUTE"
+    "BIOLOGICAL_SEX",
+    "BIOLOGICAL_ATTRIBUTE",
+    "ORGANISM_ATTRIBUTE",
+    "BIOLOGICAL_VARIABLE",
+    "GENDER",
+    "DEMOGRAPHIC",
+    "VARIABLE",
+    "BIOLOGICAL_CHARACTERISTIC"
   ],
   "sex differences": [
     "BIOLOGICAL_PROCESS"
   ],
   "sex-combined": [
-    "BIOLOGICAL_CHARACTERISTIC",
-    "BIOLOGICAL_PROCESS"
+    "BIOLOGICAL_PROCESS",
+    "BIOLOGICAL_CHARACTERISTIC"
   ],
   "sex-combined identification": [
     "ANALYSIS_METHOD"
   ],
   "sex-specific": [
-    "BIOLOGICAL_CHARACTERISTIC",
     "BIOLOGICAL_PROCESS",
-    "BIOLOGICAL_ATTRIBUTE"
+    "BIOLOGICAL_ATTRIBUTE",
+    "BIOLOGICAL_CHARACTERISTIC"
   ],
   "sexes": [
+    "BIOLOGICAL_ATTRIBUTE",
     "BIOLOGICAL_CHARACTERISTIC",
-    "GENDER",
-    "BIOLOGICAL_ATTRIBUTE"
+    "GENDER"
   ],
   "sexspecific": [
     "BIOLOGICAL_PROCESS"
@@ -3136,25 +2922,21 @@
   ],
   "signaling": [
     "BIOLOGICAL_PROCESS",
-    "PROCESS",
     "CELLULAR_PROCESS",
-    "NEUROTRANSMISSION"
+    "NEUROTRANSMISSION",
+    "PROCESS"
   ],
   "signatures": [
     "PROPERTY"
   ],
   "significance criteria": [
-    "STATISTICAL_METRIC",
-    "STATISTICAL_CONCEPT"
+    "STATISTICAL_CONCEPT",
+    "STATISTICAL_METRIC"
   ],
   "significance threshold": [
     "STATISTICAL_MEASURE",
     "VARIABLE",
-    "PARAMETER",
     "STATISTICAL_TERM"
-  ],
-  "single": [
-    "QUANTIFIER"
   ],
   "single cells": [
     "CELLULAR_COMPONENT",
@@ -3172,8 +2954,8 @@
     "GENE_EXPRESSION"
   ],
   "single-nuclei transcriptional profiles": [
-    "METHODOLOGY",
     "GENE",
+    "METHODOLOGY",
     "METHOD"
   ],
   "slide": [
@@ -3183,25 +2965,25 @@
     "LAB_SUPPLIES"
   ],
   "snRNA-seq": [
+    "ASSAY",
     "TECHNOLOGY",
-    "METHODOLOGY",
-    "GENETIC_ANALYSIS",
-    "SEQUENCING_TECHNIQUE",
     "TECHNIQUE",
+    "METHODOLOGY",
     "RESEARCH_METHOD",
-    "METHOD",
+    "GENETIC_ANALYSIS",
     "GENE_EXPRESSION_PROFILING_METHOD",
-    "ASSAY"
+    "SEQUENCING_TECHNIQUE",
+    "METHOD"
   ],
   "snRNA-seq dataset": [
-    "DATASET",
+    "DATA",
     "RESOURCE",
-    "DATA"
+    "DATASET"
   ],
   "social isolation": [
-    "SOCIAL_ISSUE",
     "CONDITION",
-    "BEHAVIOR"
+    "BEHAVIOR",
+    "SOCIAL_ISSUE"
   ],
   "somatostatin": [
     "NEUROTRANSMITTER",
@@ -3221,9 +3003,9 @@
   ],
   "spatial location": [
     "CELLULAR_COMPONENT",
-    "BRAIN_LOCATION",
     "SPATIAL_ORGANIZATION",
-    "ANATOMICAL_FEATURE"
+    "ANATOMICAL_FEATURE",
+    "BRAIN_LOCATION"
   ],
   "spatial marker": [
     "BIOMARKER",
@@ -3241,8 +3023,8 @@
     "PROCESS"
   ],
   "species": [
-    "ORGANISM",
-    "SPECIES"
+    "SPECIES",
+    "ORGANISM"
   ],
   "sst-interneuron cluster": [
     "CELL_ENTITY",
@@ -3254,13 +3036,12 @@
   "statistical domain scope": [
     "STATISTICAL_MEASURE",
     "VARIABLE",
-    "PARAMETER",
     "STATISTICAL_TERM"
   ],
   "stimulant use disorder": [
-    "NEUROLOGICAL_DISORDER",
     "DISORDER",
-    "NEUROPSYCHIATRIC_DISORDER"
+    "NEUROPSYCHIATRIC_DISORDER",
+    "NEUROLOGICAL_DISORDER"
   ],
   "strength": [
     "PROPERTY"
@@ -3285,13 +3066,13 @@
     "BRAIN_REGION"
   ],
   "studies": [
-    "RESEARCH_ACTIVITY",
     "RESEARCH_METHOD",
-    "RESEARCH"
+    "RESEARCH",
+    "RESEARCH_ACTIVITY"
   ],
   "study": [
-    "RESEARCH_WORK",
-    "RESEARCH"
+    "RESEARCH",
+    "RESEARCH_WORK"
   ],
   "subpopulations": [
     "CELL_POPULATION"
@@ -3304,27 +3085,27 @@
     "DISEASE"
   ],
   "surface expression": [
-    "MEASUREMENT",
     "BIOLOGICAL_PROCESS",
+    "MEASUREMENT",
     "GENE_EXPRESSION"
   ],
   "synaptic": [
     "BIOLOGICAL_PROCESS",
-    "CELLULAR_PROCESS",
+    "CELL_BEHAVIOR",
     "STRUCTURE",
-    "CELL_BEHAVIOR"
+    "CELLULAR_PROCESS"
   ],
   "synthetic opioids": [
     "DRUG"
   ],
   "t-statistic": [
-    "STATISTICAL_METRIC",
     "STATISTICAL_MEASURE",
+    "STATISTICAL_METRIC",
     "STATISTIC"
   ],
   "t-statistics": [
-    "STATISTICAL_METRIC",
-    "STATISTIC"
+    "STATISTIC",
+    "STATISTICAL_METRIC"
   ],
   "technical": [
     "TECHNICAL"
@@ -3338,6 +3119,9 @@
   ],
   "testing": [
     "PROCEDURE"
+  ],
+  "the": [
+    "ARTICLE"
   ],
   "the University of Alabama at Birmingham": [
     "INSTITUTION"
@@ -3359,12 +3143,12 @@
     "SOFTWARE"
   ],
   "transcript": [
-    "MOLECULE",
-    "GENE"
+    "GENE",
+    "MOLECULE"
   ],
   "transcription elongation factor": [
-    "GENE",
-    "PROTEIN"
+    "PROTEIN",
+    "GENE"
   ],
   "transcription elongation factor Ell2": [
     "PROTEIN"
@@ -3374,15 +3158,15 @@
   ],
   "transcriptional": [
     "BIOLOGICAL_PROCESS",
-    "PROCESS",
     "NEURO_PROCESS",
+    "PROCESS",
     "MOLECULAR_PROCESS"
   ],
   "transcriptional atlas": [
-    "GENE_EXPRESSION_PROFILING",
-    "DATASET",
     "NEURO_PROCESS",
-    "DATA"
+    "DATA",
+    "GENE_EXPRESSION_PROFILING",
+    "DATASET"
   ],
   "transcriptional atlases": [
     "GENE_EXPRESSION",
@@ -3390,11 +3174,11 @@
     "DATA"
   ],
   "transcriptional changes": [
+    "BIOLOGICAL_PROCESS",
     "GENETIC_VARIATION",
     "CELLULAR_PROCESS",
-    "MOLECULAR_PHENOMENON",
-    "BIOLOGICAL_PROCESS",
     "TRANSCRIPTOME",
+    "MOLECULAR_PHENOMENON",
     "MOLECULAR_PROCESS"
   ],
   "transcriptional diversity": [
@@ -3403,18 +3187,18 @@
   ],
   "transcriptional effects": [
     "BIOLOGICAL_PROCESS",
-    "PROCESS",
+    "MOLECULAR_PHENOMENON",
     "CELLULAR_PROCESS",
-    "MOLECULAR_PHENOMENON"
+    "PROCESS"
   ],
   "transcriptional level": [
     "BIOLOGY_CONCEPT",
-    "BIOLOGICAL_LEVEL",
-    "NEURO_PROCESS"
+    "NEURO_PROCESS",
+    "BIOLOGICAL_LEVEL"
   ],
   "transcriptional profiles": [
-    "BIOMOLECULE",
     "PROFILE",
+    "BIOMOLECULE",
     "GENE_EXPRESSION",
     "MOLECULAR_PROCESS"
   ],
@@ -3422,32 +3206,32 @@
     "METHOD"
   ],
   "transcriptional response": [
-    "GENETIC_VARIATION",
+    "GENE",
     "PROCESS",
+    "BIOLOGICAL_PROCESS",
+    "GENETIC_VARIATION",
     "CELLULAR_PROCESS",
     "GENE_EXPRESSION",
-    "GENE",
     "MOLECULAR_PHENOMENON",
-    "BIOLOGICAL_PROCESS",
+    "MOLECULAR_PROCESS",
     "MOLECULAR_ENTITY",
-    "NEURO_PROCESS",
-    "MOLECULAR_PROCESS"
+    "NEURO_PROCESS"
   ],
   "transcriptional response to cocaine": [
     "GENE_EXPRESSION"
   ],
   "transcriptional responses": [
-    "MOLECULAR_RESPONSE",
-    "GENE_EXPRESSION",
     "GENE",
     "BIOLOGICAL_PROCESS",
-    "MOLECULAR_PROCESS"
+    "GENE_EXPRESSION",
+    "MOLECULAR_PROCESS",
+    "MOLECULAR_RESPONSE"
   ],
   "transcriptionally": [
     "PROCESS",
+    "MOLECULAR_PROCESS",
     "CELLULAR_PROCESS",
-    "GENE_EXPRESSION",
-    "MOLECULAR_PROCESS"
+    "GENE_EXPRESSION"
   ],
   "transcriptionally defined": [
     "DESCRIPTOR"
@@ -3472,8 +3256,8 @@
     "CELL_POPULATION"
   ],
   "transcriptionally distinct populations": [
-    "POPULATION",
-    "CELL_POPULATION"
+    "CELL_POPULATION",
+    "POPULATION"
   ],
   "transcriptionally distinct populations of neurons": [
     "CELL_TYPE"
@@ -3487,22 +3271,22 @@
   ],
   "transcriptome": [
     "CELLULAR_COMPONENT",
+    "MOLECULAR_ENTITY",
     "GENE_EXPRESSION",
-    "GENE",
-    "MOLECULAR_ENTITY"
+    "GENE"
   ],
   "transcriptomic change": [
     "GENE_EXPRESSION"
   ],
   "transcriptomic changes": [
     "BIOLOGICAL_PROCESS",
-    "GENE",
-    "TRANSCRIPTOME"
+    "TRANSCRIPTOME",
+    "GENE"
   ],
   "transgenic animal models": [
-    "ANIMAL_MODEL",
+    "MODEL",
     "MODEL_ORGANISM",
-    "MODEL"
+    "ANIMAL_MODEL"
   ],
   "transmission": [
     "NEUROTRANSMISSION",
@@ -3513,15 +3297,15 @@
   ],
   "treatment": [
     "CONDITION",
-    "EXPERIMENTAL_FACTOR",
+    "EXPERIMENTAL_CONDITION",
     "VARIABLE",
-    "TREATMENT",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_FACTOR",
+    "TREATMENT"
   ],
   "treatment group": [
     "GROUP",
-    "EXPERIMENTAL_GROUP",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "EXPERIMENTAL_GROUP"
   ],
   "treatments": [
     "THERAPY",
@@ -3562,14 +3346,14 @@
     "PROCEDURE"
   ],
   "upregulated": [
-    "GENE_EXPRESSION",
-    "GENE_MODULATION",
+    "REGULATION",
     "MOLECULAR_ENTITY",
-    "REGULATION"
+    "GENE_EXPRESSION",
+    "GENE_MODULATION"
   ],
   "upregulated DEGs": [
-    "GENE",
-    "MOLECULAR_ENTITY"
+    "MOLECULAR_ENTITY",
+    "GENE"
   ],
   "v1.0": [
     "VERSION"
@@ -3612,21 +3396,21 @@
     "VERSION"
   ],
   "version 3 chemistry": [
-    "CHEMICAL",
     "EXPERIMENTAL_METHOD",
+    "CHEMICAL",
     "TECHNOLOGY"
   ],
   "volitional cocaine paradigm": [
     "DRUG_PARADIGM"
   ],
   "volitional cocaine paradigms": [
-    "EXPERIMENTAL_PARADIGM",
+    "PARADIGM",
     "RESEARCH_TOOL",
-    "PARADIGM"
+    "EXPERIMENTAL_PARADIGM"
   ],
   "withdrawal period": [
-    "WITHDRAWAL",
-    "EXPERIMENTAL_CONDITION"
+    "EXPERIMENTAL_CONDITION",
+    "WITHDRAWAL"
   ],
   "work": [
     "RESEARCH_WORK"
