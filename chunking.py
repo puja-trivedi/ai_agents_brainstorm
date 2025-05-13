@@ -40,11 +40,12 @@ def section_tokenizer(text:dict, save_to_file:bool=False, file_name:str="section
         }
         all_chunks.append(chunk)
         section_index += 1
+    output = {"metadata": text.get("metadata", {}), "chunks": all_chunks}
     if save_to_file:
         with open(file_name, "w", encoding="utf-8") as f:
-            json.dump(all_chunks, f, indent=4)
-        print(f"Saved section chunks to {file_name}")
-    return {"metadata": text.get("metadata", {}), "chunks": all_chunks}
+            json.dump(output, f, indent=4)
+        print(f"Saved sentence chunks to {file_name}")
+    return output
 
 # paragraph level segmentation
 def paragraph_tokenizer(text:dict, save_to_file:bool=False, file_name:str="paragraph_chunks.json"):
@@ -81,11 +82,12 @@ def paragraph_tokenizer(text:dict, save_to_file:bool=False, file_name:str="parag
             all_chunks.append(chunk)
             paragraph_index += 1
         section_index += 1
+    output = {"metadata": text.get("metadata", {}), "chunks": all_chunks}
     if save_to_file:
         with open(file_name, "w", encoding="utf-8") as f:
-            json.dump(all_chunks, f, indent=4)
-        print(f"Saved paragraph chunks to {file_name}")
-    return {"metadata": text.get("metadata", {}), "chunks": all_chunks}
+            json.dump(output, f, indent=4)
+        print(f"Saved sentence chunks to {file_name}")
+    return output
 
 # sentence level segmentation
 def sentence_tokenizer(text:dict, save_to_file:bool=False, file_name:str="sentence_chunks.json"):
@@ -126,8 +128,9 @@ def sentence_tokenizer(text:dict, save_to_file:bool=False, file_name:str="senten
                 sentence_index += 1
             paragraph_index += 1
         section_index += 1
+    output = {"metadata": text.get("metadata", {}), "chunks": all_chunks}
     if save_to_file:
         with open(file_name, "w", encoding="utf-8") as f:
-            json.dump(all_chunks, f, indent=4)
+            json.dump(output, f, indent=4)
         print(f"Saved sentence chunks to {file_name}")
-    return {"metadata": text.get("metadata", {}), "chunks": all_chunks}
+    return output
