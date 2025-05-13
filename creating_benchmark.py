@@ -33,7 +33,6 @@ def union_ner_entities(json_files: List[Union[str, Path]], output_file_name=None
                 label = ent["label"]
                 if label not in LABEL_FILTER:
                     entity_labels[standardized_name][name].add(label)
-        print(entity_labels['drug addiction'])
     output = defaultdict(list)
     for standardized_name, names in entity_labels.items():
         if len(names) > 1:
@@ -48,6 +47,8 @@ def union_ner_entities(json_files: List[Union[str, Path]], output_file_name=None
         else:
             for name, labels in names.items():
                 output[name] = list(labels)
+    # sort the output by entity name
+    output = dict(sorted(output.items(), key=lambda x: x[0]))
     if output_file_name:
         with open(output_file_name, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2)
