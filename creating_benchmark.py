@@ -3,11 +3,13 @@ from pathlib import Path
 from typing import List, Dict, Set, Tuple, Union
 from collections import defaultdict
 LABEL_FILTER = {
-    "ACTION", "ADJECTIVE", "ADVERB", "ARTICLE", "AUXILIARY", "CITATION", "CONJUNCTION", "COUNT",
+    "ACTION", "ADJECTIVE", "ADVERB", "ARTICLE", "AUXILIARY", "AUTHOR_AND_DATE", 
+    "CITATION", "CONJUNCTION", "COUNT",
     "DIMENSION", "DURATION", "EFFECT", "FIGURE", "FIGURE_PART", "FIGURE_REFERENCE",
     "IDENTIFIER", "MODIFIER", "NOUN", "NUMBER", "OTHER", "PARAMETER", "PHRASE",
     "PREPOSITION", "PRONOUN", "PRODUCT_ID", "PROPERTY", "QUANTITY", "QUANTIFIER",
-    "REFERENCE", "TEMPERATURE", "TIME", "TIME_DURATION", "TIME_POINT", "VALUE", "VERB"
+    "REFERENCE", "TEMPERATURE", "TIME", "TIME_DURATION", "TIME_POINT", "TRANSITION_WORD"
+    "VALUE", "VERB", "UNIT", "UNITS", "PUBLICATION"
 }
 
 def union_ner_entities(json_files: List[Union[str, Path]], output_file_name=None) -> Dict[str, Set[str]]:
