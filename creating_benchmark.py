@@ -1,9 +1,16 @@
 import json
 from pathlib import Path
 from typing import List, Dict, Set, Tuple, Union
+from collections import defaultdict
+LABEL_FILTER = {
+    "ACTION", "ADJECTIVE", "ADVERB", "ARTICLE", "AUXILIARY", "CITATION", "CONJUNCTION", "COUNT",
+    "DIMENSION", "DURATION", "EFFECT", "FIGURE", "FIGURE_PART", "FIGURE_REFERENCE",
+    "IDENTIFIER", "MODIFIER", "NOUN", "NUMBER", "OTHER", "PARAMETER", "PHRASE",
+    "PREPOSITION", "PRONOUN", "PRODUCT_ID", "PROPERTY", "QUANTITY", "QUANTIFIER",
+    "REFERENCE", "TEMPERATURE", "TIME", "TIME_DURATION", "TIME_POINT", "VALUE", "VERB"
+}
 
-
-def union_ner_entities(json_files: List[Union[str, Path]]) -> Dict[str, Set[str]]:
+def union_ner_entities(json_files: List[Union[str, Path]], output_file_name=None) -> Dict[str, Set[str]]:
     """
     Reads multiple NER-output JSON files and returns a mapping from each entity
     (normalized to lowercase) to the set of labels it was assigned across all files.
@@ -15,7 +22,7 @@ def union_ner_entities(json_files: List[Union[str, Path]]) -> Dict[str, Set[str]
     Returns:
         A dict where keys are entity strings (lowercase) and values are sets of labels.
     """
-    entity_labels: Dict[str, Set[str]] = {}
+    entity_labels = defaultdict(lambda: defaultdict(set))
 
     for fp in json_files:
         path = Path(fp)
@@ -27,10 +34,31 @@ def union_ner_entities(json_files: List[Union[str, Path]]) -> Dict[str, Set[str]
         for res in results.values():
             for ent in res.get("entities", []):
                 # normalize entity text to lowercase
-                name = ent["entity"].strip().lower()
+                name = ent["entity"].strip()
+                standardized_name = name.lower()
                 label = ent["label"]
-                entity_labels.setdefault(name, set()).add(label)
-
+                if label not in LABEL_FILTER:
+                    entity_labels[standardized_name][name].add(label)
+    output = defaultdict(list)
+    for standardized_name, names in entity_labels.items():
+        if len(names) > 1:
+            # If there are multiple names for the same entity, we need to merge them
+            # into a single entry in the output.
+            # This is a simple way to handle it, but you might want to customize this
+            # logic based on your specific requirements.
+            merged_labels = set()
+            for name_variants in names.values():
+                merged_labels.update(name_variants)
+            output[standardized_name] = list(merged_labels)
+        else:
+            for name, labels in names.items():
+                output[name] = list(labels)
+    # sort the output by entity name
+    output = dict(sorted(output.items(), key=lambda x: x[0]))
+    if output_file_name:
+        with open(output_file_name, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2)
+            print(f"Wrote merged entity map to {Path(output_file_name).resolve()}")
     return entity_labels
 
 def union_ner_entities_with_positions(
@@ -203,9 +231,9 @@ if __name__ == "__main__":
     # merged_with_position = union_ner_entities_with_positions(files)
     # save_entity_map_to_json(merged_with_position, "phillips_allmodels_merged_entities_positions.json")
     
-    merge_ner_sections(files, "merged_sections.json")
+    #merge_ner_sections(files, "merged_sections.json")
 
-
+    union_ner_entities(files,"output/prompt_5/benchmark_generation/phillips_merged_filtered_entities_allmodels.json")
     # # Example print‑out
     # for entity, spans in merged_with_position.items():
     #     for (start, end), labels in spans.items():
